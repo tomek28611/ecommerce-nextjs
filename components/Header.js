@@ -4,10 +4,12 @@ import Center from "@/components/Center";
 import { useContext, useState } from "react";
 import { CartContext } from "@/components/CartContext";
 import BarsIcon from "@/components/icons/Bars";
+import Image from "next/image";
+
 
 const StyledHeader = styled.header`
   background-color: #222;
-  z-index: 4; /* Dodajemy wyższy z-index, aby menu było nad karuzelą */
+  z-index: 4; 
   position: relative;
 `;
 
@@ -38,7 +40,7 @@ const StyledNav = styled.nav`
   right: 0;
   padding: 70px 20px 20px;
   background-color: #222;
-  z-index: 4; /* Menu nad innymi elementami */
+  z-index: 4; 
   @media screen and (min-width: 768px) {
     display: flex;
     position: static;
@@ -76,14 +78,15 @@ export default function Header({ setMenuOpen }) {
 
   const toggleMenu = () => {
     setMobileNavActive(prev => !prev);
-    setMenuOpen(prev => !prev); // Informujemy `Featured` o stanie menu
+    setMenuOpen(prev => !prev); 
   };
 
   return (
     <StyledHeader>
       <Center>
         <Wrapper>
-          <Logo href={'/'}>Auto Dily</Logo>
+          {/* <Logo href={'/'}>Auto Dily</Logo> */}
+          <img src="https://auto-dily.s3.amazonaws.com/9bdbdb29-cffb-4481-8a83-8cc472143fa3_audo-dily-logo.png" width={120}/>
           <StyledNav mobileNavActive={mobileNavActive}>
             <NavLink href={'/'}>Home</NavLink>
             <NavLink href={'/products'}>Všechny produkty</NavLink>

@@ -6,12 +6,12 @@ import NewProducts from "@/components/NewProducts";
 import { useState } from "react";
 
 export default function HomePage({featuredProduct, newProducts}) {
-  const [menuOpen, setMenuOpen] = useState(false); // Stan dla otwartego/zamkniętego menu
+  const [menuOpen, setMenuOpen] = useState(false); 
 
   return (
     <div>
-      <Header setMenuOpen={setMenuOpen} /> {/* Przekazujemy funkcję zmieniającą stan */}
-      <Featured product={featuredProduct} menuOpen={menuOpen} /> {/* Przekazujemy stan otwartego menu */}
+      <Header setMenuOpen={setMenuOpen} /> 
+      <Featured product={featuredProduct} menuOpen={menuOpen} /> 
       <NewProducts products={newProducts} />
     </div>
   );

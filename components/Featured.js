@@ -49,7 +49,7 @@ const Column = styled.div`
   align-items: center;
   justify-content: center;
   width: 200%;
-  animation: ${props => props.menuOpen ? "none" : css`${moveImages} 8s linear infinite`}; /* Animacja tylko, gdy menu jest zamknięte */
+  animation: ${props => props.menuOpen ? "none" : css`${moveImages} 8s linear infinite`}; 
 `;
 
 const ImgWrapper = styled.div`
