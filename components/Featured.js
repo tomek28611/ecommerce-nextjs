@@ -28,7 +28,7 @@ const ColumnsWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   gap: 40px;
-  overflow: hidden; /* Dodane, aby ukryć obrazy poza ekranem */
+  overflow: hidden; /* Ukrycie obrazów poza ekranem */
   position: relative;
 
   @media screen and (min-width: 768px) {
@@ -38,10 +38,10 @@ const ColumnsWrapper = styled.div`
 
 const moveImages = keyframes`
   0% {
-    transform: translateX(100%);
+    transform: translateX(50%); /* Zaczynamy od środka, aby szybciej były widoczne */
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-100%); /* Przesuwamy obrazy do lewej */
   }
 `;
 
@@ -49,16 +49,16 @@ const Column = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: ${moveImages} 15s linear infinite; /* Animacja */
-  width: 200%; /* Podwajamy szerokość kontenera na obrazy, aby przesuwać oba obrazy */
+  animation: ${moveImages} 8s linear infinite; /* Skrócony czas animacji */
+  width: 200%; /* Podwójna szerokość kontenera dla dwóch obrazów */
 `;
 
 const ImgWrapper = styled.div`
   width: 50%;
-  padding: 0 10px; /* Opcjonalne, dla odstępu między obrazami */
+  padding: 0 10px;
   img {
     max-width: 100%;
-    max-height: 320px; /* Powiększone */
+    max-height: 320px;
     display: block;
     margin: 0 auto;
   }
@@ -88,27 +88,53 @@ export default function Featured({product}) {
                 alt="auto-dily-Feature"
               />
             </ImgWrapper>
-            <ImgWrapper>
-              <img
-                src="https://auto-dily.s3.amazonaws.com/8c774139-f3ba-4ee6-89a8-b9d1f42ef8dd_mb1.jpg"
-                alt="auto-dily-Feature"
-              />
-            </ImgWrapper>
-            <ImgWrapper>
-              <img
-                src="https://auto-dily.s3.amazonaws.com/e1f25212-7b77-47b3-9a1b-eb0e18f7367e_mb2.jpg"
-                alt="auto-dily-Feature"
-              />
-            </ImgWrapper>
-            <ImgWrapper>
-              <img
-                src="https://auto-dily.s3.amazonaws.com/3efc9b5b-d6fa-466a-b333-e2d869eb07cc_1j.webp"
-                alt="auto-dily-Feature"
-              />
-            </ImgWrapper>
+            
           </Column>
         </ColumnsWrapper>
       </Center>
     </Bg>
   );
 }
+
+
+//   return (
+//     <Bg>
+//       <Center>
+//         <ColumnsWrapper>
+//           <Column>
+//             <ImgWrapper>
+//               <img
+//                 src="https://auto-dily.s3.amazonaws.com/dfdeb168-c6a0-43a0-b5ca-1490255fcaca_merc-parts.png"
+//                 alt="auto-dily-Feature"
+//               />
+//             </ImgWrapper>
+//             <ImgWrapper>
+//               <img
+//                 src="https://auto-dily.s3.amazonaws.com/326a5212-f9a2-4d8f-9322-21ba475e7a6a_247 gla.webp"
+//                 alt="auto-dily-Feature"
+//               />
+//             </ImgWrapper>
+//             <ImgWrapper>
+//               <img
+//                 src="https://auto-dily.s3.amazonaws.com/8c774139-f3ba-4ee6-89a8-b9d1f42ef8dd_mb1.jpg"
+//                 alt="auto-dily-Feature"
+//               />
+//             </ImgWrapper>
+//             <ImgWrapper>
+//               <img
+//                 src="https://auto-dily.s3.amazonaws.com/e1f25212-7b77-47b3-9a1b-eb0e18f7367e_mb2.jpg"
+//                 alt="auto-dily-Feature"
+//               />
+//             </ImgWrapper>
+//             <ImgWrapper>
+//               <img
+//                 src="https://auto-dily.s3.amazonaws.com/3efc9b5b-d6fa-466a-b333-e2d869eb07cc_1j.webp"
+//                 alt="auto-dily-Feature"
+//               />
+//             </ImgWrapper>
+//           </Column>
+//         </ColumnsWrapper>
+//       </Center>
+//     </Bg>
+//   );
+// }
