@@ -1,8 +1,7 @@
 import Center from "@/components/Center";
-import styled, { keyframes } from "styled-components";
-import CartIcon from "@/components/icons/CartIcon";
-import {useContext} from "react";
-import {CartContext} from "@/components/CartContext";
+import styled, { keyframes, css } from "styled-components";
+import { useContext, useState, useEffect } from "react";
+import { CartContext } from "@/components/CartContext";
 
 const Bg = styled.div`
   background-color: #222;
@@ -38,10 +37,10 @@ const ColumnsWrapper = styled.div`
 
 const moveImages = keyframes`
   0% {
-    transform: translateX(50%); /* Zaczynamy od środka, aby szybciej były widoczne */
+    transform: translateX(50%);
   }
   100% {
-    transform: translateX(-100%); /* Przesuwamy obrazy do lewej */
+    transform: translateX(-100%);
   }
 `;
 
@@ -49,8 +48,8 @@ const Column = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: ${moveImages} 8s linear infinite; /* Skrócony czas animacji */
-  width: 200%; /* Podwójna szerokość kontenera dla dwóch obrazów */
+  width: 200%;
+  animation: ${props => props.menuOpen ? "none" : css`${moveImages} 8s linear infinite`}; /* Animacja tylko, gdy menu jest zamknięte */
 `;
 
 const ImgWrapper = styled.div`
@@ -64,8 +63,8 @@ const ImgWrapper = styled.div`
   }
 `;
 
-export default function Featured({product}) {
-  const {addProduct} = useContext(CartContext);
+export default function Featured({ product, menuOpen }) {
+  const { addProduct } = useContext(CartContext);
 
   function addFeaturedToCart() {
     addProduct(product._id);
@@ -75,7 +74,7 @@ export default function Featured({product}) {
     <Bg>
       <Center>
         <ColumnsWrapper>
-          <Column>
+          <Column menuOpen={menuOpen}>
             <ImgWrapper>
               <img
                 src="https://auto-dily.s3.amazonaws.com/dfdeb168-c6a0-43a0-b5ca-1490255fcaca_merc-parts.png"
@@ -88,13 +87,13 @@ export default function Featured({product}) {
                 alt="auto-dily-Feature"
               />
             </ImgWrapper>
-            
           </Column>
         </ColumnsWrapper>
       </Center>
     </Bg>
   );
 }
+
 
 
 //   return (

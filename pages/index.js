@@ -3,15 +3,15 @@ import Featured from "@/components/Featured";
 import {Product} from "@/models/Product";
 import {mongooseConnect} from "@/lib/mongoose";
 import NewProducts from "@/components/NewProducts";
+import { useState } from "react";
 
+export default function HomePage({featuredProduct, newProducts}) {
+  const [menuOpen, setMenuOpen] = useState(false); // Stan dla otwartego/zamkniętego menu
 
-
-export default function HomePage({featuredProduct,newProducts}) {
   return (
     <div>
-   
-      <Header />
-      <Featured product={featuredProduct} />
+      <Header setMenuOpen={setMenuOpen} /> {/* Przekazujemy funkcję zmieniającą stan */}
+      <Featured product={featuredProduct} menuOpen={menuOpen} /> {/* Przekazujemy stan otwartego menu */}
       <NewProducts products={newProducts} />
     </div>
   );
