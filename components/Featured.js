@@ -10,7 +10,7 @@ import FeaturedImg from "../public/black.png";
 const Bg = styled.div`
   background-color: #222;
   color:#fff;
-  padding: 50px 0;
+  padding: 50px 0px;
 `;
 const Title = styled.h1`
   margin:0;
@@ -70,6 +70,7 @@ export default function Featured({product}) {
         <ColumnsWrapper>
           <Column>
             <div>
+              abc
               {/* <Title>{product.title}</Title>
               <Desc>{product.description}</Desc>
               <ButtonsWrapper>

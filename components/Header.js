@@ -17,7 +17,7 @@ const Logo = styled(Link)`
 const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 20px 0;
+  padding: 20px 0px;
 `;
 const StyledNav = styled.nav`
   ${props => props.mobileNavActive ? `
