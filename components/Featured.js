@@ -2,11 +2,12 @@ import Center from "@/components/Center";
 import styled, { keyframes, css } from "styled-components";
 import { useContext, useState, useEffect } from "react";
 import { CartContext } from "@/components/CartContext";
+import Link from 'next/link';
 
 const Bg = styled.div`
   background-color: #222;
   color: #fff;
-  padding: 50px 0;
+  padding: 20px 0;
 `;
 
 const Title = styled.h1`
@@ -63,7 +64,7 @@ const ImgWrapper = styled.div`
   }
 `;
 
-export default function Featured({ product, menuOpen }) {
+export default function Featured({ product, menuOpen, heroBanner }) {
   const { addProduct } = useContext(CartContext);
 
   function addFeaturedToCart() {
@@ -71,26 +72,57 @@ export default function Featured({ product, menuOpen }) {
   }
 
   return (
-    <Bg>
-      <Center>
-        <ColumnsWrapper>
-          <Column menuOpen={menuOpen}>
-            <ImgWrapper>
-              <img
-                src="https://auto-dily.s3.amazonaws.com/dfdeb168-c6a0-43a0-b5ca-1490255fcaca_merc-parts.png"
-                alt="auto-dily-Feature"
-              />
-            </ImgWrapper>
-            <ImgWrapper>
-              <img
-                src="https://auto-dily.s3.amazonaws.com/326a5212-f9a2-4d8f-9322-21ba475e7a6a_247 gla.webp"
-                alt="auto-dily-Feature"
-              />
-            </ImgWrapper>
-          </Column>
-        </ColumnsWrapper>
-      </Center>
-    </Bg>
+
+    <div className="hero-banner-container ">
+      <div>
+        <p className="beats-solo">Text 1</p>
+        <h3>Text 2</h3>
+        <h1>Text 3</h1>
+        <img src="/banner-image.png" alt="hedphones" className="hero-banner-image" />
+
+        <div>
+          <Link href={`/products`}>
+            <button type="button" className="">Všechny produkty</button>
+
+          </Link>
+          <div className="desc">
+                <h5>Text 4</h5>
+                <p>Text 5</p>
+            </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    // <Bg>
+    //   <Center>
+    //     <ColumnsWrapper>
+    //       <Column menuOpen={menuOpen}>
+    //         {/* <ImgWrapper>
+    //           <img
+    //             src="https://auto-dily.s3.amazonaws.com/dfdeb168-c6a0-43a0-b5ca-1490255fcaca_merc-parts.png"
+    //             alt="auto-dily-Feature"
+    //           />
+    //         </ImgWrapper> */}
+    //         <ImgWrapper>
+    //           <img
+    //             src="https://auto-dily.s3.amazonaws.com/326a5212-f9a2-4d8f-9322-21ba475e7a6a_247 gla.webp"
+    //             alt="auto-dily-Feature"
+    //           />
+    //         </ImgWrapper>
+    //         <ImgWrapper>
+    //           <img
+    //             src="https://auto-dily.s3.amazonaws.com/326a5212-f9a2-4d8f-9322-21ba475e7a6a_247 gla.webp"
+    //             alt="auto-dily-Feature"
+    //           />
+    //         </ImgWrapper>
+
+
+    //       </Column>
+    //     </ColumnsWrapper>
+    //   </Center>
+    // </Bg>
   );
 }
 

@@ -29,7 +29,7 @@ const ImageButton = styled.div`
   `;
 const BigImageWrapper = styled.div`
   text-align: center;
-`;
+`;  
 
 export default function ProductImages({images}) {
   const [activeImage,setActiveImage] = useState(images?.[0]);
