@@ -4,6 +4,7 @@ import {Product} from "@/models/Product";
 import {mongooseConnect} from "@/lib/mongoose";
 import NewProducts from "@/components/NewProducts";
 import { useState } from "react";
+import Footer from "@/components/Footer";
 
 export default function HomePage({featuredProduct, newProducts}) {
   const [menuOpen, setMenuOpen] = useState(false); 
@@ -13,6 +14,7 @@ export default function HomePage({featuredProduct, newProducts}) {
       <Header setMenuOpen={setMenuOpen} /> 
       <Featured product={featuredProduct} menuOpen={menuOpen} /> 
       <NewProducts products={newProducts} />
+      <Footer />
     </div>
   );
 }

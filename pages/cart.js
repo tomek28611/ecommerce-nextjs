@@ -7,6 +7,7 @@ import {CartContext} from "@/components/CartContext";
 import axios from "axios";
 import Table from "@/components/Table";
 import Input from "@/components/Input";
+import Spinner from "@/components/Spinner"; 
 
 const ColumnsWrapper = styled.div`
   display: grid;
@@ -67,25 +68,34 @@ const CityHolder = styled.div`
 `;
 
 export default function CartPage() {
-  const {cartProducts,addProduct,removeProduct,clearCart} = useContext(CartContext);
-  const [products,setProducts] = useState([]);
-  const [name,setName] = useState('');
-  const [email,setEmail] = useState('');
-  const [city,setCity] = useState('');
-  const [postalCode,setPostalCode] = useState('');
-  const [streetAddress,setStreetAddress] = useState('');
-  const [country,setCountry] = useState('');
-  const [isSuccess,setIsSuccess] = useState(false);
+  const {cartProducts, addProduct, removeProduct, clearCart} = useContext(CartContext);
+  const [products, setProducts] = useState([]);
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [city, setCity] = useState('');
+  const [postalCode, setPostalCode] = useState('');
+  const [streetAddress, setStreetAddress] = useState('');
+  const [country, setCountry] = useState('');
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [isLoading, setIsLoading] = useState(true); 
+
   useEffect(() => {
     if (cartProducts.length > 0) {
-      axios.post('/api/cart', {ids:cartProducts})
+      setIsLoading(true); 
+      axios.post('/api/cart', {ids: cartProducts})
         .then(response => {
           setProducts(response.data);
+          setIsLoading(false); 
         })
+        .catch(() => {
+          setIsLoading(false); 
+        });
     } else {
       setProducts([]);
+      setIsLoading(false); 
     }
   }, [cartProducts]);
+
   useEffect(() => {
     if (typeof window === 'undefined') {
       return;
@@ -95,21 +105,25 @@ export default function CartPage() {
       clearCart();
     }
   }, []);
+
   function moreOfThisProduct(id) {
     addProduct(id);
   }
+
   function lessOfThisProduct(id) {
     removeProduct(id);
   }
+
   async function goToPayment() {
     const response = await axios.post('/api/checkout', {
-      name,email,city,postalCode,streetAddress,country,
+      name, email, city, postalCode, streetAddress, country,
       cartProducts,
     });
     if (response.data.url) {
       window.location = response.data.url;
     }
   }
+
   let total = 0;
   for (const productId of cartProducts) {
     const price = products.find(p => p._id === productId)?.price || 0;
@@ -131,6 +145,7 @@ export default function CartPage() {
       </>
     );
   }
+
   return (
     <>
       <Header />
@@ -138,48 +153,52 @@ export default function CartPage() {
         <ColumnsWrapper>
           <Box>
             <h2>Košík</h2>
-            {!cartProducts?.length && (
-              <div>Váš košík je prázdný</div>
-            )}
-            {products?.length > 0 && (
-              <Table>
-                <thead>
-                  <tr>
-                    <th>Produkt</th>
-                    <th>Množství</th>
-                    <th>Cena</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {products.map(product => (
-                    <tr key={product._id}>
-                      <ProductInfoCell>
-                        <ProductImageBox>
-                          <img src={product.images[0]} alt=""/>
-                        </ProductImageBox>
-                        {product.title}
-                      </ProductInfoCell>
-                      <td>
-                        <Button
-                          onClick={() => lessOfThisProduct(product._id)}>-</Button>
-                        <QuantityLabel>
-                          {cartProducts.filter(id => id === product._id).length}
-                        </QuantityLabel>
-                        <Button
-                          onClick={() => moreOfThisProduct(product._id)}>+</Button>
-                      </td>
-                      <td>
-                        CZK-{cartProducts.filter(id => id === product._id).length * product.price}
-                      </td>
-                    </tr>
-                  ))}
-                  <tr>
-                    <td></td>
-                    <td></td>
-                    <td>CZK-{total}</td>
-                  </tr>
-                </tbody>
-              </Table>
+            {isLoading ? (
+              <Spinner /> 
+            ) : (
+              <>
+                {!cartProducts?.length && (
+                  <div>Váš košík je prázdný</div>
+                )}
+                {products?.length > 0 && (
+                  <Table>
+                    <thead>
+                      <tr>
+                        <th>Produkt</th>
+                        <th>Množství</th>
+                        <th>Cena</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {products.map(product => (
+                        <tr key={product._id}>
+                          <ProductInfoCell>
+                            <ProductImageBox>
+                              <img src={product.images[0]} alt=""/>
+                            </ProductImageBox>
+                            {product.title}
+                          </ProductInfoCell>
+                          <td>
+                            <Button onClick={() => lessOfThisProduct(product._id)}>-</Button>
+                            <QuantityLabel>
+                              {cartProducts.filter(id => id === product._id).length}
+                            </QuantityLabel>
+                            <Button onClick={() => moreOfThisProduct(product._id)}>+</Button>
+                          </td>
+                          <td>
+                            CZK-{cartProducts.filter(id => id === product._id).length * product.price}
+                          </td>
+                        </tr>
+                      ))}
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td>CZK-{total}</td>
+                      </tr>
+                    </tbody>
+                  </Table>
+                )}
+              </>
             )}
           </Box>
           {!!cartProducts?.length && (

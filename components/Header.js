@@ -5,7 +5,8 @@ import { useContext, useState } from "react";
 import { CartContext } from "@/components/CartContext";
 import BarsIcon from "@/components/icons/Bars";
 import Image from "next/image";
-
+import Spinner from "@/components/Spinner"; 
+import { useRouter } from "next/router"; 
 
 const StyledHeader = styled.header`
   background-color: #dcdcdc;
@@ -46,19 +47,19 @@ const StyledNav = styled.nav`
   background-color: #222;
   z-index: 4; 
   @media screen and (min-width: 768px) {
-  background-color: #dcdcdc;
+    background-color: #dcdcdc;
     display: flex;
     position: static;
     padding: 0;
-    
   }
 `;
 
-const NavLink = styled(Link)`
+const NavLink = styled.a`
   display: block;
   color: white;
   text-decoration: none;
   padding: 10px 0;
+  cursor: pointer;
   @media screen and (min-width: 768px) {
     padding: 0;
     color: black;
@@ -82,10 +83,17 @@ const NavButton = styled.button`
 export default function Header({ setMenuOpen }) {
   const { cartProducts } = useContext(CartContext);
   const [mobileNavActive, setMobileNavActive] = useState(false);
+  const [isLoading, setIsLoading] = useState(false); 
+  const router = useRouter();
 
   const toggleMenu = () => {
     setMobileNavActive(prev => !prev);
     setMenuOpen(prev => !prev); 
+  };
+
+  const handleNavigation = (url) => {
+    setIsLoading(true); 
+    router.push(url).then(() => setIsLoading(false)); 
   };
 
   return (
@@ -93,17 +101,17 @@ export default function Header({ setMenuOpen }) {
       <Center>
         <Wrapper>
           <Logo href={'/'}>Auto Dily</Logo>
-          {/* <img src="https://auto-dily.s3.amazonaws.com/9bdbdb29-cffb-4481-8a83-8cc472143fa3_audo-dily-logo.png" width={120}/> */}
           <StyledNav mobileNavActive={mobileNavActive}>
-            <NavLink href={'/'}>Home</NavLink>
-            <NavLink href={'/products'}>Všechny produkty</NavLink>
-            <NavLink href={'/account'}>Účet</NavLink>
-            <NavLink href={'/cart'}>Košík ({cartProducts.length})</NavLink>
+            <NavLink onClick={() => handleNavigation('/')}>Home</NavLink>
+            <NavLink onClick={() => handleNavigation('/products')}>Všechny produkty</NavLink>
+            <NavLink onClick={() => handleNavigation('/account')}>Účet</NavLink>
+            <NavLink onClick={() => handleNavigation('/cart')}>Košík ({cartProducts.length})</NavLink>
           </StyledNav>
           <NavButton onClick={toggleMenu}>
             <BarsIcon />
           </NavButton>
         </Wrapper>
+        {isLoading && <Spinner />} 
       </Center>
     </StyledHeader>
   );

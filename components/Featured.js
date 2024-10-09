@@ -1,8 +1,10 @@
 import Center from "@/components/Center";
 import styled, { keyframes, css } from "styled-components";
-import { useContext, useState, useEffect } from "react";
+import { useContext, useState } from "react";
 import { CartContext } from "@/components/CartContext";
 import Link from 'next/link';
+import { useRouter } from 'next/router'; // Import routera
+import Spinner from "@/components/Spinner"; // Import komponentu Spinner
 
 const Bg = styled.div`
   background-color: #222;
@@ -28,7 +30,7 @@ const ColumnsWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   gap: 40px;
-  overflow: hidden; /* Ukrycie obrazów poza ekranem */
+  overflow: hidden;
   position: relative;
 
   @media screen and (min-width: 768px) {
@@ -66,14 +68,22 @@ const ImgWrapper = styled.div`
 
 export default function Featured({ product, menuOpen, heroBanner }) {
   const { addProduct } = useContext(CartContext);
+  const router = useRouter();
+  const [isLoading, setIsLoading] = useState(false); // Stan dla spinnera
 
   function addFeaturedToCart() {
     addProduct(product._id);
   }
 
-  return (
+  const handleButtonClick = () => {
+    setIsLoading(true); // Pokazanie spinnera
+    router.push('/products').then(() => {
+      setIsLoading(false); // Ukrycie spinnera po nawigacji
+    });
+  };
 
-    <div className="hero-banner-container ">
+  return (
+    <div className="hero-banner-container">
       <div>
         <p className="beats-solo">Text 1</p>
         <h3>Text 2</h3>
@@ -81,91 +91,20 @@ export default function Featured({ product, menuOpen, heroBanner }) {
         <img src="/banner-image.png" alt="hedphones" className="hero-banner-image" />
 
         <div>
-          <Link href={`/products`}>
-            <button type="button" className="">Všechny produkty</button>
+          {isLoading ? (
+            <Spinner /> // Pokazanie spinnera podczas ładowania
+          ) : (
+            <button type="button" className="" onClick={handleButtonClick}>
+              Všechny produkty
+            </button>
+          )}
 
-          </Link>
           <div className="desc">
-                <h5>Text 4</h5>
-                <p>Text 5</p>
-            </div>
-
+            <h5>Text 4</h5>
+            <p>Text 5</p>
+          </div>
         </div>
       </div>
-
     </div>
-
-    // <Bg>
-    //   <Center>
-    //     <ColumnsWrapper>
-    //       <Column menuOpen={menuOpen}>
-    //         {/* <ImgWrapper>
-    //           <img
-    //             src="https://auto-dily.s3.amazonaws.com/dfdeb168-c6a0-43a0-b5ca-1490255fcaca_merc-parts.png"
-    //             alt="auto-dily-Feature"
-    //           />
-    //         </ImgWrapper> */}
-    //         <ImgWrapper>
-    //           <img
-    //             src="https://auto-dily.s3.amazonaws.com/326a5212-f9a2-4d8f-9322-21ba475e7a6a_247 gla.webp"
-    //             alt="auto-dily-Feature"
-    //           />
-    //         </ImgWrapper>
-    //         <ImgWrapper>
-    //           <img
-    //             src="https://auto-dily.s3.amazonaws.com/326a5212-f9a2-4d8f-9322-21ba475e7a6a_247 gla.webp"
-    //             alt="auto-dily-Feature"
-    //           />
-    //         </ImgWrapper>
-
-
-    //       </Column>
-    //     </ColumnsWrapper>
-    //   </Center>
-    // </Bg>
   );
 }
-
-
-
-//   return (
-//     <Bg>
-//       <Center>
-//         <ColumnsWrapper>
-//           <Column>
-//             <ImgWrapper>
-//               <img
-//                 src="https://auto-dily.s3.amazonaws.com/dfdeb168-c6a0-43a0-b5ca-1490255fcaca_merc-parts.png"
-//                 alt="auto-dily-Feature"
-//               />
-//             </ImgWrapper>
-//             <ImgWrapper>
-//               <img
-//                 src="https://auto-dily.s3.amazonaws.com/326a5212-f9a2-4d8f-9322-21ba475e7a6a_247 gla.webp"
-//                 alt="auto-dily-Feature"
-//               />
-//             </ImgWrapper>
-//             <ImgWrapper>
-//               <img
-//                 src="https://auto-dily.s3.amazonaws.com/8c774139-f3ba-4ee6-89a8-b9d1f42ef8dd_mb1.jpg"
-//                 alt="auto-dily-Feature"
-//               />
-//             </ImgWrapper>
-//             <ImgWrapper>
-//               <img
-//                 src="https://auto-dily.s3.amazonaws.com/e1f25212-7b77-47b3-9a1b-eb0e18f7367e_mb2.jpg"
-//                 alt="auto-dily-Feature"
-//               />
-//             </ImgWrapper>
-//             <ImgWrapper>
-//               <img
-//                 src="https://auto-dily.s3.amazonaws.com/3efc9b5b-d6fa-466a-b333-e2d869eb07cc_1j.webp"
-//                 alt="auto-dily-Feature"
-//               />
-//             </ImgWrapper>
-//           </Column>
-//         </ColumnsWrapper>
-//       </Center>
-//     </Bg>
-//   );
-// }
