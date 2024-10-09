@@ -19,7 +19,7 @@ export default function ProductsPage({ products }) {
   return (
     <>
       <Header />
-      <Header />
+     
       <Center>
         <Title>Díly pro model B-Třída</Title>
         {products.length === 0 ? (
@@ -40,7 +40,7 @@ export async function getServerSideProps() {
   const allProducts = await Product.find({}, null, { sort: { '_id': -1 } });
 
 
-  const modelNumbers = ["246", "247"];
+  const modelNumbers = ["W246", "W247"];
 
 
   const filteredProducts = allProducts.filter(product =>
