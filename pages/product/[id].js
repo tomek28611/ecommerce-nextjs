@@ -158,7 +158,7 @@ export default function ProductPage({ product }) {
                 .message-container {
                     background-color: #f0f0f0; /* Light gray background */
                     border-radius: 8px;
-                    padding: 20px;
+                    padding: 40px;
                     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
                     text-align: center;
                     border: 5px solid green;

@@ -88,7 +88,7 @@ export default function Featured({ product, menuOpen, heroBanner }) {
         <p className="beats-solo">Kvalitní náhradní díly pro Mercedes</p>
         <h3>Rychlé dodání a skvělé ceny</h3>
         <h1>Podpora</h1>
-        <img src="/banner-image.png" alt="hedphones" className="hero-banner-image" />
+        <img src="/engine.gif" alt="hedphones" className="hero-banner-image" />
 
         <div>
           {isLoading ? (
