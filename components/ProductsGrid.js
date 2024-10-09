@@ -27,7 +27,7 @@ const SearchInput = styled.input`
     border-color: #333;
   }
 `;
-
+ 
 export default function ProductsGrid({ products }) {
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredProducts, setFilteredProducts] = useState(products);

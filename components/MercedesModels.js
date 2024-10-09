@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { useRouter } from "next/router";
 
+
 const StyledModelsGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr;
@@ -25,27 +26,29 @@ const ModelBox = styled.div`
 `;
 
 const models = [
-  { class: "S-Třída", variants: ["W221", "W222", "W223"] },
-  { class: "E-Třída", variants: ["W212", "W213"] },
-  { class: "C-Třída", variants: ["W204", "W205", "W206"] },
-  { class: "A-Třída", variants: ["W169", "W176", "W177"] },
-  { class: "G-Třída", variants: ["W463"] },
-  { class: "GLK-Třída", variants: ["X204"] },
-  { class: "GLC-Třída", variants: ["X253", "X254"] },
-  { class: "GLE-Třída", variants: ["W166", "W167"] },
-  { class: "GLS-Třída", variants: ["X166", "X167"] },
-  { class: "CLA-Třída", variants: ["C117", "C118"] },
-  { class: "CLS-Třída", variants: ["W218", "W257"] },
-  { class: "SLK-Třída", variants: ["R171", "R172"] },
-  { class: "SLC-Třída", variants: ["R172"] },
-  { class: "B-Třída", variants: ["W246", "W247"] },
+  { class: "S-Trida", variants: ["W221", "W222", "W223"] },
+  { class: "E-Trida", variants: ["W212", "W213"] },
+  { class: "C-Trida", variants: ["W204", "W205", "W206"] },
+  { class: "A-Trida", variants: ["W169", "W176", "W177"] },
+  { class: "G-Trida", variants: ["W463"] },
+  { class: "GLK-Trida", variants: ["X204"] },
+  { class: "GLC-Trida", variants: ["X253", "X254"] },
+  { class: "GLE-Trida", variants: ["W166", "W167"] },
+  { class: "GLS-Trida", variants: ["X166", "X167"] },
+  { class: "CLA-Trida", variants: ["C117", "C118"] },
+  { class: "CLS-Trida", variants: ["W218", "W257"] },
+  { class: "SLK-Trida", variants: ["R171", "R172"] },
+  { class: "SLC-Trida", variants: ["R172"] },
+  { class: "B-Trida", variants: ["W246", "W247"] },
 ];
 
-export default function MercedesModels() {
+export default function MercedesModels({products}) {
   const router = useRouter();
 
+
+
   const handleModelClick = (className) => {
-    router.push(`/products?class=${className}`);
+    router.push(`/produkty/tridy/${className}`);
   };
 
   return (
