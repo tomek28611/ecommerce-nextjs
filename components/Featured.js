@@ -85,9 +85,9 @@ export default function Featured({ product, menuOpen, heroBanner }) {
   return (
     <div className="hero-banner-container">
       <div>
-        <p className="beats-solo">Text 1</p>
-        <h3>Text 2</h3>
-        <h1>Text 3</h1>
+        <p className="beats-solo">Kvalitní náhradní díly pro Mercedes</p>
+        <h3>Rychlé dodání a skvělé ceny</h3>
+        <h1>Podpora</h1>
         <img src="/banner-image.png" alt="hedphones" className="hero-banner-image" />
 
         <div>
