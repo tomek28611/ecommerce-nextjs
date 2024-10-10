@@ -3,8 +3,8 @@ import styled, { keyframes, css } from "styled-components";
 import { useContext, useState } from "react";
 import { CartContext } from "@/components/CartContext";
 import Link from 'next/link';
-import { useRouter } from 'next/router'; // Import routera
-import Spinner from "@/components/Spinner"; // Import komponentu Spinner
+import { useRouter } from 'next/router'; 
+import Spinner from "@/components/Spinner"; 
 
 const Bg = styled.div`
   background-color: #222;
@@ -69,16 +69,16 @@ const ImgWrapper = styled.div`
 export default function Featured({ product, menuOpen, heroBanner }) {
   const { addProduct } = useContext(CartContext);
   const router = useRouter();
-  const [isLoading, setIsLoading] = useState(false); // Stan dla spinnera
+  const [isLoading, setIsLoading] = useState(false); 
 
   function addFeaturedToCart() {
     addProduct(product._id);
   }
 
   const handleButtonClick = () => {
-    setIsLoading(true); // Pokazanie spinnera
+    setIsLoading(true); 
     router.push('/products').then(() => {
-      setIsLoading(false); // Ukrycie spinnera po nawigacji
+      setIsLoading(false); 
     });
   };
 
@@ -92,7 +92,7 @@ export default function Featured({ product, menuOpen, heroBanner }) {
 
         <div>
           {isLoading ? (
-            <Spinner /> // Pokazanie spinnera podczas ładowania
+            <Spinner /> 
           ) : (
             <button type="button" className="" onClick={handleButtonClick}>
               Všechny produkty

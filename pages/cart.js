@@ -237,7 +237,7 @@ export default function CartPage() {
                      name="country"
                      onChange={ev => setCountry(ev.target.value)}/>
               <Button black block
-                      onClick={goToPayment} disabled>
+                      onClick={goToPayment} >
                 Pokračovat
               </Button>
             </Box>

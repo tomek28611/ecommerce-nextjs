@@ -3,11 +3,18 @@ import Featured from "@/components/Featured";
 import {Product} from "@/models/Product";
 import {mongooseConnect} from "@/lib/mongoose";
 import NewProducts from "@/components/NewProducts";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Footer from "@/components/Footer";
 
 export default function HomePage({featuredProduct, newProducts}) {
   const [menuOpen, setMenuOpen] = useState(false); 
+
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('message') === 'success') {
+      alert('Zpráva byla odeslána!');
+    }
+  }, []);
 
   return (
     <div>
