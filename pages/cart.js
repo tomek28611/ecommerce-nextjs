@@ -77,7 +77,7 @@ export default function CartPage() {
   const [streetAddress, setStreetAddress] = useState('');
   const [country, setCountry] = useState('');
   const [isSuccess, setIsSuccess] = useState(false);
-  const [isLoading, setIsLoading] = useState(true); 
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     if (cartProducts.length > 0) {
@@ -115,13 +115,14 @@ export default function CartPage() {
   }
 
   async function goToPayment() {
-    const response = await axios.post('/api/checkout', {
-      name, email, city, postalCode, streetAddress, country,
-      cartProducts,
+    // Tworzenie zamówienia w bazie danych bez Stripe
+    await axios.post('/api/checkout', {
+      name, email, city, postalCode, streetAddress, country, cartProducts,
     });
-    if (response.data.url) {
-      window.location = response.data.url;
-    }
+
+    // Oznacz sukces zamówienia i wyczyść koszyk
+    setIsSuccess(true);
+    clearCart(); 
   }
 
   let total = 0;
@@ -137,8 +138,8 @@ export default function CartPage() {
         <Center>
           <ColumnsWrapper>
             <Box>
-              <h1>Thanks for your order!</h1>
-              <p>We will email you when your order will be sent.</p>
+              <h1>Děkujeme za Vaši objednávku!</h1>
+              <p>Objednávka byla přijata. Vystavíme fakturu a brzy vás budeme kontaktovat.</p>
             </Box>
           </ColumnsWrapper>
         </Center>
