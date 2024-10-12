@@ -34,7 +34,7 @@ const models = [
   { class: "GLA-Trida", variants: ["X156", "H247"] },
   { class: "GLK-Trida", variants: ["X204"] },
   { class: "GLC-Trida", variants: ["X253", "X254"] },
-  { class: "GLE-Trida", variants: ["W166", "W167"] },
+  { class: "GLE-(ML)-Trida", variants: ["W166", "W167"] },
   { class: "GLS-Trida", variants: ["X166", "X167"] },
   { class: "CLA-Trida", variants: ["C117", "C118"] },
   { class: "CLS-Trida", variants: ["W218", "W257"] },
