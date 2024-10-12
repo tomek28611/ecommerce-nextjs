@@ -122,7 +122,10 @@ width: 100%;
 .product-card:hover{
   transform: scale(1.1,1.1)
 }
+
+
 .product-image{
+  object-fit: cover;
   border-radius: 15px;
  background-color: #ebebeb;
   transform: scale(1, 1);
