@@ -58,6 +58,7 @@ const models = [
   { class: "SLC-Trida", variants: ["R172"] },
   { class: "B-Trida", variants: ["W246", "W247"] },
 ];
+const sortedModels = models.sort((a, b) => a.class.localeCompare(b.class));
 
 export default function MercedesModels({ products }) {
   const router = useRouter();
