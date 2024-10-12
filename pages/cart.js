@@ -115,12 +115,12 @@ export default function CartPage() {
   }
 
   async function goToPayment() {
-    // Tworzenie zamówienia w bazie danych bez Stripe
+   
     await axios.post('/api/checkout', {
       name, email, city, postalCode, streetAddress, country, cartProducts,
     });
 
-    // Oznacz sukces zamówienia i wyczyść koszyk
+  
     setIsSuccess(true);
     clearCart(); 
   }
