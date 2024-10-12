@@ -2,7 +2,11 @@ import styled from "styled-components";
 import Center from "@/components/Center";
 import ProductsGrid from "@/components/ProductsGrid";
 import MercedesModels from "./MercedesModels";
-import Link from "next/link"; // Import the Link component from Next.js
+import { useRouter } from "next/router"; 
+import { useContext, useState } from "react";
+import Spinner from "@/components/Spinner"; 
+
+
 
 const Title = styled.h2`
   font-size: 2rem;
@@ -10,8 +14,8 @@ const Title = styled.h2`
   font-weight: normal;
 `;
 
-const HighlightedLink = styled(Link)`
-  color: #0070f3; /* Change to your desired color */
+const HighlightedLink = styled.a`
+  color: #0070f3; 
   text-decoration: none;
 
   &:hover {
@@ -20,11 +24,21 @@ const HighlightedLink = styled(Link)`
 `;
 
 export default function NewProducts({ products }) {
+  const [isLoading, setIsLoading] = useState(false); 
+  const router = useRouter();
+
+  const handleNavigation = (url) => {
+    setIsLoading(true); 
+    router.push(url).then(() => setIsLoading(false)); 
+  };
+
   return (
     <Center>
       <Title>
         Vyberte třídu nebo{" "}
-        <HighlightedLink href="/products">Všechny produkty...</HighlightedLink>
+        <HighlightedLink onClick={() => handleNavigation('/products')}>Všechny produkty...</HighlightedLink>
+        
+        {isLoading && <Spinner />}
       </Title>
       <MercedesModels products={products} />
     </Center>

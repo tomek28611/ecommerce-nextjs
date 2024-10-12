@@ -1,6 +1,8 @@
+// { class: "GLE-(ML)-Trida", variants: ["W166", "W167", "C167", "C292"] },
 import styled from "styled-components";
 import { useRouter } from "next/router";
-
+import { useState } from "react";
+import Spinner from "@/components/Spinner"; // Import Spinner component
 
 const StyledModelsGrid = styled.div`
   display: grid;
@@ -25,6 +27,19 @@ const ModelBox = styled.div`
   }
 `;
 
+const Overlay = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure it's on top of everything */
+`;
+
 const models = [
   { class: "S-Trida", variants: ["W221", "W222", "W223"] },
   { class: "E-Trida", variants: ["W212", "W213"] },
@@ -34,7 +49,8 @@ const models = [
   { class: "GLA-Trida", variants: ["X156", "H247"] },
   { class: "GLK-Trida", variants: ["X204"] },
   { class: "GLC-Trida", variants: ["X253", "X254"] },
-  { class: "GLE-(ML)-Trida", variants: ["W166", "W167"] },
+  { class: "GLE-(ML)-Trida", variants: ["W166", "W167", "C167", "C292"] },
+  { class: "GLB-Trida", variants: ["X247"] },
   { class: "GLS-Trida", variants: ["X166", "X167"] },
   { class: "CLA-Trida", variants: ["C117", "C118"] },
   { class: "CLS-Trida", variants: ["W218", "W257"] },
@@ -43,23 +59,30 @@ const models = [
   { class: "B-Trida", variants: ["W246", "W247"] },
 ];
 
-export default function MercedesModels({products}) {
+export default function MercedesModels({ products }) {
   const router = useRouter();
-
-
+  const [loading, setLoading] = useState(false); // State for spinner
 
   const handleModelClick = (className) => {
+    setLoading(true); // Show spinner and darken screen
     router.push(`/produkty/tridy/${className}`);
   };
 
   return (
-    <StyledModelsGrid>
-      {models.map((model) => (
-        <ModelBox key={model.class} onClick={() => handleModelClick(model.class)}>
-          <h3>{model.class}</h3>
-          <p>Modele: {model.variants.join(", ")}</p>
-        </ModelBox>
-      ))}
-    </StyledModelsGrid>
+    <>
+      {loading && (
+        <Overlay>
+          <Spinner /> {/* Centered spinner */}
+        </Overlay>
+      )}
+      <StyledModelsGrid>
+        {models.map((model) => (
+          <ModelBox key={model.class} onClick={() => handleModelClick(model.class)}>
+            <h3>{model.class}</h3>
+            <p>Modele: {model.variants.join(", ")}</p>
+          </ModelBox>
+        ))}
+      </StyledModelsGrid>
+    </>
   );
 }
