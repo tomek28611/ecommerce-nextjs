@@ -39,7 +39,7 @@ export async function getServerSideProps() {
   const allProducts = await Product.find({}, null, { sort: { '_id': -1 } });
 
 
-  const modelNumbers = ["166", "167"];
+  const modelNumbers = ["166", "167", "292"];
 
 
   const filteredProducts = allProducts.filter(product =>
