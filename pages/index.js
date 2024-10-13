@@ -5,6 +5,7 @@ import {mongooseConnect} from "@/lib/mongoose";
 import NewProducts from "@/components/NewProducts";
 import { useState, useEffect } from "react";
 import Footer from "@/components/Footer";
+import ButtonsGroup from "@/components/ButtonsGroup";
 
 export default function HomePage({featuredProduct, newProducts}) {
   const [menuOpen, setMenuOpen] = useState(false); 
@@ -19,8 +20,11 @@ export default function HomePage({featuredProduct, newProducts}) {
   return (
     <div>
       <Header setMenuOpen={setMenuOpen} /> 
+      <ButtonsGroup />
       <Featured product={featuredProduct} menuOpen={menuOpen} /> 
-      <NewProducts products={newProducts} />
+      <div id="new-products">
+        <NewProducts products={newProducts} />
+      </div>
       <Footer />
     </div>
   );

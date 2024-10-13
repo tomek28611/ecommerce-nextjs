@@ -66,6 +66,12 @@ const ImgWrapper = styled.div`
   }
 `;
 
+const HideOnMobileButton = styled.button`
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
+
 export default function Featured({ product, menuOpen, heroBanner }) {
   const { addProduct } = useContext(CartContext);
   const router = useRouter();
@@ -88,15 +94,15 @@ export default function Featured({ product, menuOpen, heroBanner }) {
         <p className="beats-solo">Kvalitní náhradní díly pro Mercedes</p>
         <h3>Rychlé dodání a skvělé ceny</h3>
         <h1>Podpora</h1>
-        <img src="/engine.gif" alt="hedphones" className="hero-banner-image" />
+        <img src="/engine.gif" alt="auto-dily-motor" className="hero-banner-image" />
 
         <div>
           {isLoading ? (
             <Spinner /> 
           ) : (
-            <button type="button" className="" onClick={handleButtonClick}>
+            <HideOnMobileButton type="button" onClick={handleButtonClick}>
               Všechny produkty
-            </button>
+            </HideOnMobileButton>
           )}
 
           <div className="desc">

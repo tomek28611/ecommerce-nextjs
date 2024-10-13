@@ -33,6 +33,7 @@ export default function NewProducts({ products }) {
   };
 
   return (
+    <div id="new-products">
     <Center>
       <Title>
         Vyberte třídu nebo{" "}
@@ -42,5 +43,6 @@ export default function NewProducts({ products }) {
       </Title>
       <MercedesModels products={products} />
     </Center>
+    </div>
   );
 }
