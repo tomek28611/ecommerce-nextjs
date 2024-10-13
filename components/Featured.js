@@ -7,7 +7,7 @@ import { useRouter } from 'next/router';
 import Spinner from "@/components/Spinner"; 
 
 const Bg = styled.div`
-  background-color: #222;
+ // background-color: #222;
   color: #fff;
   padding: 20px 0;
 `;

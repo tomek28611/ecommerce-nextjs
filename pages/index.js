@@ -6,6 +6,41 @@ import NewProducts from "@/components/NewProducts";
 import { useState, useEffect } from "react";
 import Footer from "@/components/Footer";
 import ButtonsGroup from "@/components/ButtonsGroup";
+import styled from "styled-components";
+
+const BackgroundContainer = styled.div`
+   background-image: url('/bg-engine.avif');
+   
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex; 
+  flex-direction: column; 
+  height: 100vh;
+`;
+
+const BackgroundImage = styled.div`
+  background-image: url('/bg-engine.avif'); 
+ 
+  background-size: cover;
+  background-position: center;
+  height: 100%; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+`;
+
+const Overlay = styled.div`
+  background-color: rgba(0, 0, 0, 0.5); 
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+`;
+
 
 export default function HomePage({featuredProduct, newProducts}) {
   const [menuOpen, setMenuOpen] = useState(false); 
@@ -19,6 +54,8 @@ export default function HomePage({featuredProduct, newProducts}) {
 
   return (
     <div>
+            {/* <BackgroundImage />
+            <Overlay /> */}
       <Header setMenuOpen={setMenuOpen} /> 
       <ButtonsGroup />
       <Featured product={featuredProduct} menuOpen={menuOpen} /> 

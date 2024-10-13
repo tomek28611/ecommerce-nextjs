@@ -9,7 +9,7 @@ const GlobalStyles = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
   body{
     background-color: white;
-    padding:15px;
+     padding:15px;
     margin:0;
     font-family: 'Poppins', sans-serif;
   }
@@ -23,7 +23,7 @@ export default function App({ Component, pageProps }) {
     async function fetchProducts() {
       const response = await fetch('/api/products');
       const data = await response.json();
-      console.log("Fetched products:", data); // Log the fetched products
+      console.log("Fetched products:", data);
       setProducts(data);
     }
 

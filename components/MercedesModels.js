@@ -1,8 +1,8 @@
-// { class: "GLE-(ML)-Trida", variants: ["W166", "W167", "C167", "C292"] },
+
 import styled from "styled-components";
 import { useRouter } from "next/router";
 import { useState } from "react";
-import Spinner from "@/components/Spinner"; // Import Spinner component
+import Spinner from "@/components/Spinner"; 
 
 const StyledModelsGrid = styled.div`
   display: grid;
@@ -62,10 +62,10 @@ const sortedModels = models.sort((a, b) => a.class.localeCompare(b.class));
 
 export default function MercedesModels({ products }) {
   const router = useRouter();
-  const [loading, setLoading] = useState(false); // State for spinner
+  const [loading, setLoading] = useState(false); 
 
   const handleModelClick = (className) => {
-    setLoading(true); // Show spinner and darken screen
+    setLoading(true); 
     router.push(`/produkty/tridy/${className}`);
   };
 
@@ -73,7 +73,7 @@ export default function MercedesModels({ products }) {
     <>
       {loading && (
         <Overlay>
-          <Spinner /> {/* Centered spinner */}
+          <Spinner /> 
         </Overlay>
       )}
       <StyledModelsGrid>

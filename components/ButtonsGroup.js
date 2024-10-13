@@ -100,12 +100,12 @@ export default function Buttons({ setMenuOpen }) {
       <Center>
         <Wrapper>
           <StyledNav>
-            <NavLink onClick={() => handleNavigation('/')}>Motory</NavLink>
-            <NavLink onClick={() => handleNavigation('/')}>Pozastavení</NavLink>
-            <NavLink onClick={() => handleNavigation('/')}>Karoserie</NavLink>
-            <NavLink onClick={() => handleNavigation('/')}>Elektrika</NavLink>
-            <NavLink onClick={() => handleNavigation('/')}>Ráfky</NavLink>
-            <NavLink onClick={() => handleNavigation('/')}>Interiér</NavLink>
+            <NavLink onClick={() => handleNavigation('/motory')}>Motory</NavLink>
+            <NavLink onClick={() => handleNavigation('/naprava')}>Náprava</NavLink>
+            <NavLink onClick={() => handleNavigation('/karoserie')}>Karoserie</NavLink>
+            <NavLink onClick={() => handleNavigation('/elektrika')}>Elektrika</NavLink>
+            <NavLink onClick={() => handleNavigation('/rafky')}>Ráfky</NavLink>
+            <NavLink onClick={() => handleNavigation('/interier')}>Interiér</NavLink>
             <NavLink onClick={handleScrollToNewProducts}>Najít podle modelu</NavLink>
 
           </StyledNav>

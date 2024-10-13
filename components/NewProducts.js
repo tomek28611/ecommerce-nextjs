@@ -19,7 +19,7 @@ const HighlightedLink = styled.a`
   text-decoration: none;
 
   &:hover {
-    text-decoration: underline; /* Optional: underline on hover */
+    text-decoration: underline; 
   }
 `;
 
