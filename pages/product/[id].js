@@ -4,7 +4,8 @@ import { CartContext } from "@/components/CartContext";
 import { mongooseConnect } from "@/lib/mongoose";
 import { Product } from "@/models/Product";
 import Header from "@/components/Header";
-import Link from 'next/link'; 
+import Link from 'next/link';
+import Info from "@/components/InfoSupport"; 
 
 export default function ProductPage({ product }) {
     const [index, setIndex] = useState(0);
@@ -83,6 +84,7 @@ export default function ProductPage({ product }) {
                     </div>
                 </div>
             </div>
+            <Info />
 
            
             {message && (
