@@ -7,7 +7,6 @@ import { useRouter } from 'next/router';
 import Spinner from "@/components/Spinner"; 
 
 const Bg = styled.div`
- // background-color: #222;
   color: #fff;
   padding: 20px 0;
 `;
@@ -72,6 +71,16 @@ const HideOnMobileButton = styled.button`
   }
 `;
 
+
+const StyledHeading = styled.h2`
+  margin: 0;
+  font-weight: normal;
+  font-size: 1.5rem;
+  @media screen and (min-width: 768px) {
+    font-size: 3rem;
+  }
+`;
+
 export default function Featured({ product, menuOpen, heroBanner }) {
   const { addProduct } = useContext(CartContext);
   const router = useRouter();
@@ -91,9 +100,10 @@ export default function Featured({ product, menuOpen, heroBanner }) {
   return (
     <div className="hero-banner-container">
       <div>
-        <p className="beats-solo">Kvalitní náhradní díly pro Mercedes</p>
+        <h1 className="beats-solo">Kvalitní náhradní díly pro Mercedes</h1>
         <h3>Rychlé dodání a skvělé ceny</h3>
-        <h1>Podpora</h1>
+      
+        <StyledHeading>Podpora</StyledHeading>
         <img src="/engine.gif" alt="auto-dily-motor" className="hero-banner-image" />
 
         <div>
@@ -106,7 +116,6 @@ export default function Featured({ product, menuOpen, heroBanner }) {
           )}
 
           <div className="desc">
-          
             <h5>Zveme vás!</h5>
             <p onClick={handleButtonClick}>Podívejte se na nabídku</p>
           </div>
