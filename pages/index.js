@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import ButtonsGroup from "@/components/ButtonsGroup";
 import styled from "styled-components";
 import Head from "next/head";
+import TextMain from "@/components/TextMain";
 
 const BackgroundContainer = styled.div`
    background-image: url('/bg-engine.avif');
@@ -57,7 +58,7 @@ export default function HomePage({featuredProduct, newProducts}) {
     <div>
               <Head>
         <link rel="icon" href="/favicon.ico" />
-        <title>Kvalitní autodíly pro Mercedes – Rychlé a spolehlivé dodání | Auto Dily Express</title>
+        <title>Autodíly pro Mercedes – Rychlé a spolehlivé dodání </title>
         <meta
           name="description"
           content="Objevte širokou nabídku kvalitních autodílů pro vozy Mercedes. Nabízíme motorové díly, prvky karoserie, elektrické součástky a další. Rychlá dodávka, skvělé ceny a spolehlivý servis. Vaše auto si zaslouží to nejlepší!"
@@ -86,6 +87,7 @@ export default function HomePage({featuredProduct, newProducts}) {
       <div id="new-products">
         <NewProducts products={newProducts} />
       </div>
+      <TextMain/>
       <Footer />
     </div>
   );

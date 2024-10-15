@@ -16,6 +16,44 @@ const NoProductsContainer = styled.div`
   background-color: #f9f9f9;
   text-align: center;
 `;
+const SEOText = styled.div`
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #000;
+  }
+
+  p {
+    margin-bottom: 15px;
+  }
+
+  strong {
+    color: #000;
+    font-weight: bold;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 1.2rem;
+  }
+`;
+
+const seoTextContent = `
+  Vítejte na naší stránce zaměřené na <strong>náhradní díly pro automobily Mercedes GLC třídy</strong>. 
+  Nabízíme široký sortiment kvalitních autodílů, které splňují nejvyšší standardy kvality a spolehlivosti. 
+  Mezi naše produkty patří motorové díly, brzdové součástky, karosářské prvky a další klíčové komponenty potřebné pro opravy a údržbu vašeho vozu.
+
+  Díky naší rychlé dodávce a výhodným cenám si můžete být jisti, že naleznete přesně to, co potřebujete. 
+  Naším cílem je poskytnout vám prvotřídní zákaznický servis a pomoci vám udržet vaše auto v perfektním stavu. 
+  Objevte naši nabídku a vyberte si z našich produktů, které jsou ideální pro všechny modely Mercedes GLC třídy.
+`;
 
 export default function ProductsPage({ products }) {
   return (
@@ -47,7 +85,11 @@ export default function ProductsPage({ products }) {
       </Head>
          <Header />
       <Center>
-        <Title>Díly pro model GLC-Třída</Title>
+      <h1>Náhradní díly pro model Mercedes GLC-Třída</h1>
+        <SEOText>
+          <h2>Nabídka náhradních dílů</h2>
+          <p dangerouslySetInnerHTML={{ __html: seoTextContent }} />
+        </SEOText>
         {products.length === 0 ? (
           <NoProductsContainer>
             <h2>Žádné produkty nenalezeny</h2>

@@ -100,7 +100,7 @@ export default function Featured({ product, menuOpen, heroBanner }) {
   return (
     <div className="hero-banner-container">
       <div>
-        <h1 className="beats-solo">Kvalitní náhradní díly pro Mercedes</h1>
+        <h1 className="beats-solo">Kvalitní auto díly pro Mercedes</h1>
         <h3>Rychlé dodání a skvělé ceny</h3>
       
         <StyledHeading>Podpora</StyledHeading>

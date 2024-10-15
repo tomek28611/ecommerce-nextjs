@@ -6,6 +6,7 @@ import { Product } from "@/models/Product";
 import ProductsGrid from "@/components/ProductsGrid";
 import Title from "@/components/Title";
 import Head from "next/head";
+import AllProductsText from "@/components/AllProductsText";
 
 export default function ProductsPage({ products }) {
   return (
@@ -39,6 +40,7 @@ export default function ProductsPage({ products }) {
       <Center>
         <Title>Všechny produkty</Title>
         <ProductsGrid products={products} />
+        <AllProductsText/>
       </Center>
     </>
   );
