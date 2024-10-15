@@ -73,11 +73,11 @@ const HideOnMobileButton = styled.button`
 
 
 const StyledHeading = styled.h2`
-  margin: 0;
+  display: none;
+  @media screen and (min-width: 768px) {
+     margin: 0;
   font-weight: normal;
   font-size: 1.5rem;
-  @media screen and (min-width: 768px) {
-    font-size: 3rem;
   }
 `;
 
