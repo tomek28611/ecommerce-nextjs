@@ -9,7 +9,6 @@ import { useRouter } from "next/router";
 
 const StyledHeader = styled.header`
   background-color: #dcdcdc;
-
   position: relative;
   border-radius: 20px;
   margin-bottom: 12px;
@@ -25,7 +24,7 @@ const StyledNav = styled.nav`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
-  
+
   @media screen and (min-width: 768px) {
     grid-template-columns: repeat(6, 1fr);
     gap: 25px;
@@ -33,14 +32,25 @@ const StyledNav = styled.nav`
 `;
 
 const NavLink = styled.a`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;  /* To ensure the text is at the bottom */
+  align-items: center;
   background-color: #222;
   color: white;
   text-align: center;
-  padding: 10px 20px;
+  padding: 10px;
   border-radius: 8px;
   text-decoration: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
+
+  background-image: url(${props => props.bgImage});
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  width: 150px;
+  position: relative;
 
   &:hover {
     background-color: #555;
@@ -49,12 +59,25 @@ const NavLink = styled.a`
   @media screen and (min-width: 768px) {
     color: black;
     background-color: #f0f0f0;
-    padding: 15px 30px;
+    padding: 15px;
 
     &:hover {
       background-color: #ccc;
     }
   }
+`;
+
+const Label = styled.span`
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 5px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0; /* Make sure it's at the bottom */
+  left: 0;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 `;
 
 const NavButton = styled.button`
@@ -65,8 +88,7 @@ const NavButton = styled.button`
   color: white;
   cursor: pointer;
   position: relative;
-  
-  
+
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -100,16 +122,28 @@ export default function Buttons({ setMenuOpen }) {
       <Center>
         <Wrapper>
           <StyledNav>
-            <NavLink onClick={() => handleNavigation('/motory')}>Motory</NavLink>
-            <NavLink onClick={() => handleNavigation('/naprava')}>Náprava</NavLink>
-            <NavLink onClick={() => handleNavigation('/karoserie')}>Karoserie</NavLink>
-            <NavLink onClick={() => handleNavigation('/elektrika')}>Elektrika</NavLink>
-            <NavLink onClick={() => handleNavigation('/rafky')}>Ráfky</NavLink>
-            <NavLink onClick={() => handleNavigation('/interier')}>Interiér</NavLink>
-            <NavLink onClick={handleScrollToNewProducts}>Najít podle modelu</NavLink>
-
+            <NavLink bgImage="/motor.png" onClick={() => handleNavigation('/motory')}>
+              <Label>Motory</Label>
+            </NavLink>
+            <NavLink bgImage="/naprava.png" onClick={() => handleNavigation('/naprava')}>
+              <Label>Náprava</Label>
+            </NavLink>
+            <NavLink bgImage="/karoseria.png" onClick={() => handleNavigation('/karoserie')}>
+              <Label>Karoserie</Label>
+            </NavLink>
+            <NavLink bgImage="/elektrika.png" onClick={() => handleNavigation('/elektrika')}>
+              <Label>Elektrika</Label>
+            </NavLink>
+            <NavLink bgImage="/rafky.png" onClick={() => handleNavigation('/rafky')}>
+              <Label>Ráfky</Label>
+            </NavLink>
+            <NavLink bgImage="/interier.jpg" onClick={() => handleNavigation('/interier')}>
+              <Label>Interiér</Label>
+            </NavLink>
+            <NavLink bgImage="/najit.jpg" onClick={handleScrollToNewProducts}>
+              <Label>Najít podle modelu</Label>
+            </NavLink>
           </StyledNav>
-         
         </Wrapper>
         {isLoading && <Spinner />} 
       </Center>
