@@ -5,21 +5,22 @@ import { mongooseConnect } from "@/lib/mongoose";
 import { Product } from "@/models/Product";
 import Header from "@/components/Header";
 import Link from 'next/link';
-import Info from "@/components/InfoSupport"; 
+import Info from "@/components/InfoSupport";
+import Head from "next/head";
 
 export default function ProductPage({ product }) {
     const [index, setIndex] = useState(0);
     const [isFullScreen, setIsFullScreen] = useState(false);
     const { addProduct } = useContext(CartContext);
-    const [menuOpen, setMenuOpen] = useState(false); 
-    const [message, setMessage] = useState(''); 
+    const [menuOpen, setMenuOpen] = useState(false);
+    const [message, setMessage] = useState('');
 
     const handleImageClick = () => {
-        setIsFullScreen(true); 
+        setIsFullScreen(true);
     };
 
     const handleCloseFullScreen = () => {
-        setIsFullScreen(false); 
+        setIsFullScreen(false);
     };
 
     const handleAddToCart = () => {
@@ -33,7 +34,32 @@ export default function ProductPage({ product }) {
 
     return (
         <div>
-           <Header setMenuOpen={setMenuOpen} /> 
+            <Head>
+                <link rel="icon" href="/favicon.ico" />
+                <title>Auto Dily Express | {product.title}</title>
+                <meta
+                    name="description"
+                    content="Objevte širokou nabídku kvalitních autodílů pro vozy Mercedes. Nabízíme motorové díly, prvky karoserie, elektrické součástky a další. Rychlá dodávka, skvělé ceny a spolehlivý servis. Vaše auto si zaslouží to nejlepší!"
+                />
+
+                <link rel="cannonical" href="https://autodilyexpress.cz/" />
+                <link rel="apple-touch-icon" sizes="180x180" href="/auto-dily-logo.png" />
+                <meta property="og:locale" content="cs_CZ" />
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Nabízíme motorové díly, prvky karoserie, elektrické součástky a další. Rychlá dodávka" />
+                <meta property="og:image" content="/auto-dily-logo.png" />
+                <meta property="og:image:width" content="50" />
+                <meta property="og:image:height" content="50" />
+                <meta property="og:image:type" content="image/png" />
+                <meta property="og:description" content="Nabízíme motorové díly, prvky karoserie, elektrické součástky a další. Rychlá dodávka" />
+                <meta property="og:url" content="https://autodilyexpress.cz" />
+                <meta property="og:site_name" content="autodilyexpress.cz" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Nabízíme motorové díly, prvky karoserie, elektrické součástky a další. Rychlá dodávka" />
+                <meta name="twitter:description" content="Nabízíme motorové díly, prvky karoserie, elektrické součástky a další. Rychlá dodávka"></meta>
+
+            </Head>
+            <Header setMenuOpen={setMenuOpen} />
             {isFullScreen && (
                 <div className="full-screen-overlay" onClick={handleCloseFullScreen}>
                     <img src={product.images[index]} className="full-screen-image" alt="Full Screen" />
@@ -86,7 +112,7 @@ export default function ProductPage({ product }) {
             </div>
             <Info />
 
-           
+
             {message && (
                 <div className="message-overlay">
                     <div className="message-container">

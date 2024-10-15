@@ -206,6 +206,9 @@ line-height: 1.3;
 display: flex;
 flex-direction: column;
  color: #324d67;
+ @media screen and (max-width: 768px) {
+  display: none;
+}
 
 }
 .desc p{

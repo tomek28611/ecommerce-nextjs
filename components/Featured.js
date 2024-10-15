@@ -106,6 +106,7 @@ export default function Featured({ product, menuOpen, heroBanner }) {
           )}
 
           <div className="desc">
+          
             <h5>Zveme vás!</h5>
             <p onClick={handleButtonClick}>Podívejte se na nabídku</p>
           </div>
