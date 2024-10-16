@@ -78,6 +78,8 @@ const models = [
   { class: "SLK-Trida", variants: ["R171", "R172"], image: "./slk.webp" },
   { class: "SLC-Trida", variants: ["R172"], image: "./slc.webp" },
   { class: "B-Trida", variants: ["W246", "W247"], image: "./b.webp" },
+  { class: "SL-Trida", variants: ["R232", "R231", "R230"], image: "./sl.webp" },
+
 ];
 const sortedModels = models.sort((a, b) => a.class.localeCompare(b.class));
 
