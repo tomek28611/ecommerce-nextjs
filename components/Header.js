@@ -8,13 +8,29 @@ import Image from "next/image";
 import Spinner from "@/components/Spinner"; 
 import { useRouter } from "next/router"; 
 
+// const StyledHeader = styled.header`
+//   background-color: #dcdcdc;
+//   z-index: 4; 
+//   position: relative;
+//   border-radius: 20px;
+//   margin-bottom: 12px;
+// `;
+
 const StyledHeader = styled.header`
   background-color: #dcdcdc;
-  z-index: 4; 
-  position: relative;
+  z-index: 10;
+  position: fixed;
+  top: 12px;
+  left: 12px; 
+  right: 12px; 
+  margin-bottom: 12px; 
+  padding: 14px; 
   border-radius: 20px;
-  margin-bottom: 12px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5); 
+  box-sizing: border-box;
 `;
+
+
 
 const Logo = styled(Link)`
   color: black;
@@ -80,6 +96,10 @@ const NavButton = styled.button`
   }
 `;
 
+const MainContent = styled.div`
+  padding-top: 110px; 
+`;
+
 export default function Header({ setMenuOpen }) {
   const { cartProducts } = useContext(CartContext);
   const [mobileNavActive, setMobileNavActive] = useState(false);
@@ -97,6 +117,7 @@ export default function Header({ setMenuOpen }) {
   };
 
   return (
+    <div>
     <StyledHeader>
       <Center>
         <Wrapper>
@@ -114,5 +135,7 @@ export default function Header({ setMenuOpen }) {
         {isLoading && <Spinner />} 
       </Center>
     </StyledHeader>
+    <MainContent />
+    </div>
   );
 }

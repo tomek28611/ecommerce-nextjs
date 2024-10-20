@@ -27,12 +27,45 @@ const SearchInput = styled.input`
     border-color: #333;
   }
 `;
- 
+
+const ScrollIndicator = styled.div`
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 12px;
+  height: 100vh;
+  background: #ddd;
+  cursor: pointer;
+`;
+
+const ProgressBar = styled.div`
+  background: #333;
+  width: 100%;
+  height: ${(props) => props.scrollPosition}%;
+  transition: height 0.3s ease;
+`;
+
 export default function ProductsGrid({ products }) {
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredProducts, setFilteredProducts] = useState(products);
-  const [isLoading, setIsLoading] = useState(false); 
+  const [isLoading, setIsLoading] = useState(false);
+  const [scrollPosition, setScrollPosition] = useState(0);
   const router = useRouter();
+
+  useEffect(() => {
+    const updateScrollPosition = () => {
+      const totalScroll = document.documentElement.scrollTop;
+      const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scroll = (totalScroll / windowHeight) * 100;
+      setScrollPosition(scroll);
+    };
+
+    window.addEventListener("scroll", updateScrollPosition);
+
+    return () => {
+      window.removeEventListener("scroll", updateScrollPosition);
+    };
+  }, []);
 
   useEffect(() => {
     if (searchTerm === "") {
@@ -49,6 +82,18 @@ export default function ProductsGrid({ products }) {
   const handleProductClick = (productId) => {
     setIsLoading(true); 
     router.push(`/product/${productId}`); 
+  };
+
+  const handleScrollClick = (e) => {
+    const clickY = e.clientY; // Y-owa pozycja kliknięcia
+    const windowHeight = window.innerHeight;
+    const pageHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrollTo = (clickY / windowHeight) * pageHeight;
+
+    window.scrollTo({
+      top: scrollTo,
+      behavior: 'smooth', 
+    });
   };
 
   return (
@@ -73,6 +118,10 @@ export default function ProductsGrid({ products }) {
           </div>
         </StyledProductsGrid>
       )}
+
+      <ScrollIndicator onClick={handleScrollClick}>
+        <ProgressBar scrollPosition={scrollPosition} />
+      </ScrollIndicator>
     </>
   );
 }

@@ -42,6 +42,12 @@ const Overlay = styled.div`
   right: 0;
   bottom: 0;
 `;
+const MainContent = styled.div`
+  padding-top: 100px; 
+`;
+
+
+
 
 
 export default function HomePage({ featuredProduct, newProducts }) {
