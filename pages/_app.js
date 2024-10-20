@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import { CartContextProvider } from "@/components/CartContext";
 import '../styles/globals.css';
+
 import { useRouter } from 'next/router';
 import { ProductProvider } from '@/context/ProductContext';
 import { useEffect, useState } from 'react';
@@ -9,7 +10,7 @@ const GlobalStyles = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
   body{
     background-color: white;
-     padding:15px;
+    padding:15px;
     margin:0;
     font-family: 'Poppins', sans-serif;
   }

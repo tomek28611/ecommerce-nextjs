@@ -87,14 +87,16 @@ export default function HomePage({ featuredProduct, newProducts }) {
         <meta name="twitter:description" content="Nabízíme motorové díly, prvky karoserie, elektrické součástky a další. Rychlá dodávka"></meta>
 
       </Head>
+      <div className="main-container">
       <Header setMenuOpen={setMenuOpen} />
       <ButtonsGroup />
       <Featured product={featuredProduct} menuOpen={menuOpen} />
       <div id="new-products">
-        <NewProducts products={newProducts} />
+        <NewProducts products={newProducts}  />
       </div>
       <TextMain />
       <Footer />
+    </div>
     </div>
   );
 }

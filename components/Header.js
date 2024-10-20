@@ -21,13 +21,40 @@ const StyledHeader = styled.header`
   box-sizing: border-box;
   transition: background-color 0.3s ease-in-out; 
 `;
-
 const Logo = styled(Link)`
   color: black;
   text-decoration: none;
   position: relative;
   z-index: 5;
+  transition: font-size 0.3s, font-weight 0.3s;
+
+  &:hover {
+    // font-size: 1.1em;
+    font-weight: bold;
+    
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.1); /* lekkie tło */
+    border-radius: 5px; /* zaokrąglenie */
+    z-index: -1; /* pod logo */
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
 `;
+;
+
 
 const Wrapper = styled.div`
   display: flex;
@@ -60,14 +87,47 @@ const NavLink = styled.a`
   text-decoration: none;
   padding: 10px 0;
   cursor: pointer;
+  transition: font-size 0.3s, font-weight 0.3s, background-color 0.3s;
+  
   @media screen and (min-width: 768px) {
     padding: 0;
     color: black;
+    padding: 4px;
   }
+
   &:hover {
-    background: none; 
+    
+    //font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 4px;
+    border-radius: 15px;
+    color: white;
   }
 `;
+
+// const NavLink = styled.a`
+//   display: block;
+//   color: white;
+//   text-decoration: none;
+//   padding: 10px 0;
+//   cursor: pointer;
+//   transition: font-size 0.3s, font-weight 0.3s, background-color 0.3s;
+  
+//   @media screen and (min-width: 768px) {
+//     padding: 0;
+//     color: black;
+//   }
+
+//   &:hover {
+    
+//     //font-weight: bold;
+//     background-color: rgba(0, 0, 0, 0.5);
+//     //padding: 2px;
+//     border-radius: 15px;
+//     color: white;
+//   }
+// `;
+
 
 const NavButton = styled.button`
   background-color: transparent;
