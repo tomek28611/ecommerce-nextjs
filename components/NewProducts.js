@@ -15,9 +15,9 @@ const Title = styled.h2`
 `;
 
 const HighlightedLink = styled.a`
-  color: #0070f3; 
+  color: black; 
   text-decoration: none;
-
+  font-weight: 700;
   &:hover {
     text-decoration: underline; 
   }
