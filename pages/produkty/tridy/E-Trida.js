@@ -86,7 +86,7 @@ export default function ProductsPage({ products }) {
       </Head>
       <Header />
       <Center>
-      <h1>Náhradní díly pro model Mercedes CLS-Třída</h1>
+      <h1>Náhradní díly pro model Mercedes E-Třída</h1>
         <SEOText>
           <h2>Nabídka náhradních dílů</h2>
           <p dangerouslySetInnerHTML={{ __html: seoTextContent }} />

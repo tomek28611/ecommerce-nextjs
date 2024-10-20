@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import Featured from "@/components/Featured";
-import {Product} from "@/models/Product";
-import {mongooseConnect} from "@/lib/mongoose";
+import { Product } from "@/models/Product";
+import { mongooseConnect } from "@/lib/mongoose";
 import NewProducts from "@/components/NewProducts";
 import { useState, useEffect } from "react";
 import Footer from "@/components/Footer";
@@ -44,8 +44,8 @@ const Overlay = styled.div`
 `;
 
 
-export default function HomePage({featuredProduct, newProducts}) {
-  const [menuOpen, setMenuOpen] = useState(false); 
+export default function HomePage({ featuredProduct, newProducts }) {
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
@@ -56,7 +56,7 @@ export default function HomePage({featuredProduct, newProducts}) {
 
   return (
     <div>
-              <Head>
+      <Head>
         <link rel="icon" href="/favicon.ico" />
         <title>Autodíly pro Mercedes – Rychlé a spolehlivé dodání </title>
         <meta
@@ -81,13 +81,13 @@ export default function HomePage({featuredProduct, newProducts}) {
         <meta name="twitter:description" content="Nabízíme motorové díly, prvky karoserie, elektrické součástky a další. Rychlá dodávka"></meta>
 
       </Head>
-      <Header setMenuOpen={setMenuOpen} /> 
+      <Header setMenuOpen={setMenuOpen} />
       <ButtonsGroup />
-      <Featured product={featuredProduct} menuOpen={menuOpen} /> 
+      <Featured product={featuredProduct} menuOpen={menuOpen} />
       <div id="new-products">
         <NewProducts products={newProducts} />
       </div>
-      <TextMain/>
+      <TextMain />
       <Footer />
     </div>
   );
@@ -97,7 +97,7 @@ export async function getServerSideProps() {
   const featuredProductId = '640de2b12aa291ebdf213d48';
   await mongooseConnect();
   const featuredProduct = await Product.findById(featuredProductId);
-  const newProducts = await Product.find({}, null, {sort: {'_id':-1}, limit:10});
+  const newProducts = await Product.find({}, null, { sort: { '_id': -1 }, limit: 10 });
   return {
     props: {
       featuredProduct: JSON.parse(JSON.stringify(featuredProduct)),
