@@ -17,6 +17,17 @@ const ColumnsWrapper = styled.div`
   }
   gap: 40px;
   margin-top: 40px;
+    display: flex;
+ gap: 40px;
+ margin: 1px;
+ margin-top: 10px;
+ color: #324d67;
+ padding: 50px 20px;
+  background-color: #dcdcdc;
+  border-radius: 15px;
+  position: relative;
+  line-height: 0.9; 
+  width: 100%;
 `;
 
 const Box = styled.div`
@@ -24,7 +35,7 @@ const Box = styled.div`
   border-radius: 10px;
   padding: 30px;
 `;
-
+ 
 const ProductInfoCell = styled.td`
   padding: 10px 0;
 `;
