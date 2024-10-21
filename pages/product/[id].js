@@ -10,17 +10,26 @@ import Head from "next/head";
 
 export default function ProductPage({ product }) {
     const [index, setIndex] = useState(0);
-    const [isFullScreen, setIsFullScreen] = useState(false);
     const { addProduct } = useContext(CartContext);
     const [menuOpen, setMenuOpen] = useState(false);
     const [message, setMessage] = useState('');
+    const [isZoomed, setIsZoomed] = useState(false);
+    const [zoomPosition, setZoomPosition] = useState({ x: 0, y: 0 });
 
-    const handleImageClick = () => {
-        setIsFullScreen(true);
+    const handleZoom = (e) => {
+        const { offsetX, offsetY, target } = e.nativeEvent;
+        const { width, height } = target.getBoundingClientRect();
+        const x = (offsetX / width) * 100;
+        const y = (offsetY / height) * 100;
+        setZoomPosition({ x, y });
     };
 
-    const handleCloseFullScreen = () => {
-        setIsFullScreen(false);
+    const handleMouseEnter = () => {
+        setIsZoomed(true);
+    };
+
+    const handleMouseLeave = () => {
+        setIsZoomed(false);
     };
 
     const handleAddToCart = () => {
@@ -39,40 +48,41 @@ export default function ProductPage({ product }) {
                 <title>Auto Dily Express | {product.title}</title>
                 <meta
                     name="description"
-                    content="Objevte širokou nabídku kvalitních autodílů pro vozy Mercedes. Nabízíme motorové díly, prvky karoserie, elektrické součástky a další. Rychlá dodávka, skvělé ceny a spolehlivý servis. Vaše auto si zaslouží to nejlepší!"
+                    content="Objevte širokou nabídku kvalitních autodílů pro vozy Mercedes..."
                 />
-
                 <link rel="cannonical" href="https://autodilyexpress.cz/" />
                 <link rel="apple-touch-icon" sizes="180x180" href="/auto-dily-logo.png" />
                 <meta property="og:locale" content="cs_CZ" />
                 <meta property="og:type" content="website" />
-                <meta property="og:title" content="Nabízíme motorové díly, prvky karoserie, elektrické součástky a další. Rychlá dodávka" />
+                <meta property="og:title" content="Nabízíme motorové díly..." />
                 <meta property="og:image" content="/auto-dily-logo.png" />
-                <meta property="og:image:width" content="50" />
-                <meta property="og:image:height" content="50" />
-                <meta property="og:image:type" content="image/png" />
-                <meta property="og:description" content="Nabízíme motorové díly, prvky karoserie, elektrické součástky a další. Rychlá dodávka" />
+                <meta property="og:description" content="Nabízíme motorové díly, prvky karoserie..." />
                 <meta property="og:url" content="https://autodilyexpress.cz" />
-                <meta property="og:site_name" content="autodilyexpress.cz" />
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Nabízíme motorové díly, prvky karoserie, elektrické součástky a další. Rychlá dodávka" />
-                <meta name="twitter:description" content="Nabízíme motorové díly, prvky karoserie, elektrické součástky a další. Rychlá dodávka"></meta>
-
             </Head>
             <Header setMenuOpen={setMenuOpen} />
-            {isFullScreen && (
-                <div className="full-screen-overlay" onClick={handleCloseFullScreen}>
-                    <img src={product.images[index]} className="full-screen-image" alt="Full Screen" />
-                </div>
-            )}
 
             <div className="product-detail-container">
                 <div>
                     <div className="image-wrapper">
-                        <div className="image-container" onClick={handleImageClick}>
+                        <div 
+                            className="image-container"
+                            onMouseMove={handleZoom}
+                            onMouseEnter={handleMouseEnter}
+                            onMouseLeave={handleMouseLeave}
+                            style={{
+                                backgroundImage: `url(${product.images[index]})`,
+                                backgroundPosition: isZoomed
+                                    ? `${zoomPosition.x}% ${zoomPosition.y}%`
+                                    : 'center',
+                                backgroundSize: isZoomed ? '200%' : 'contain',
+                            }}
+                        >
                             <img
                                 src={product.images[index]}
                                 className="product-detail-image"
+                                alt="Product Image"
+                                style={{ visibility: isZoomed ? 'hidden' : 'visible' }}
                             />
                         </div>
                     </div>
@@ -102,7 +112,6 @@ export default function ProductPage({ product }) {
                     <h4>Detail</h4>
                     <p>{product.description}</p>
                     <p className="price">CZK {product.price}</p>
-                    <div className="quantity"></div>
                     <div className="buttons">
                         <button type="button" className="add-to-cart" onClick={handleAddToCart}>
                             Přidat do košíku
@@ -112,7 +121,6 @@ export default function ProductPage({ product }) {
             </div>
             <Info />
 
-
             {message && (
                 <div className="message-overlay">
                     <div className="message-container">
@@ -121,53 +129,29 @@ export default function ProductPage({ product }) {
                             <Link href="/cart">
                                 <button className="view-cart-button">Podívejte se na košík</button>
                             </Link>
-                            <button className="continue-button" onClick={handleCloseMessage}>Pokračovat v prohlížení</button>
+                            <button className="continue-button" onClick={handleCloseMessage}>
+                                Pokračovat v prohlížení
+                            </button>
                         </div>
                     </div>
                 </div>
             )}
 
             <style jsx>{`
-                .full-screen-overlay {
-                    position: fixed;
-                    top: 0;
-                    left: 0;
+                .image-container {
+                    position: relative;
                     width: 100%;
                     height: 100%;
-                    background-color: rgba(0, 0, 0, 0.8);
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    z-index: 1000;
-                }
-
-                .full-screen-image {
-                    max-width: 90%;
-                    max-height: 90%;
-                }
-
-                .image-wrapper {
-                    position: relative;
-                    cursor: pointer;
-                }
-
-                .image-wrapper:hover::before {
-                    content: 'Ukázat fotku';
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    font-size: 16px;
-                    color: white;
-                    background-color: rgba(0, 0, 0, 0.6);
-                    padding: 5px 10px;
-                    border-radius: 5px;
-                    pointer-events: none;
+                    background-color: #f0f0f0;
+                    cursor: zoom-in;
+                    overflow: hidden;
                 }
 
                 .product-detail-image {
                     width: 100%;
-                    height: auto;
+                    height: 100%;
+                    object-fit: contain;
+                    display: block;
                 }
 
                 .message-overlay {
@@ -184,21 +168,16 @@ export default function ProductPage({ product }) {
                 }
 
                 .message-container {
-                    background-color: #f0f0f0; /* Light gray background */
+                    background-color: #f0f0f0;
                     border-radius: 8px;
                     padding: 40px;
-                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
                     text-align: center;
                     border: 5px solid green;
                 }
 
                 .message-text {
-                    color: green; 
-                    font-size: 18px; 
-                }
-
-                .message-buttons {
-                    margin-top: 15px;
+                    color: green;
+                    font-size: 18px;
                 }
 
                 .view-cart-button, .continue-button {
@@ -210,7 +189,6 @@ export default function ProductPage({ product }) {
                     margin: 5px;
                     cursor: pointer;
                     font-size: 16px;
-                    transition: background-color 0.3s;
                 }
 
                 .view-cart-button:hover, .continue-button:hover {
