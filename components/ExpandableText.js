@@ -25,11 +25,25 @@ const Container = styled.div`
     color: #000;
     font-weight: bold;
   }
+    button {
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
 
   @media (min-width: 768px) {
     font-size: 1.2rem;
   }
 `;
+
 
 const ExpandableText = ({ title, content }) => {
   const [showFullText, setShowFullText] = useState(false);
