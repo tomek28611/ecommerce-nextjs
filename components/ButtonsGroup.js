@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styled from "styled-components";
-import Center from "@/components/Center";
+import Center from "@/components/CenterB";
 import { useContext, useState } from "react";
 import { CartContext } from "@/components/CartContext";
 import BarsIcon from "@/components/icons/Bars";
@@ -26,7 +26,7 @@ const StyledNav = styled.nav`
   gap: 15px;
 
   @media screen and (min-width: 768px) {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     gap: 25px;
   }
 `;

@@ -447,11 +447,18 @@ padding: 30px 65px;
   transform: scale(1.1,1.1);
 }
 .product-detail-container{
+  
   display: flex;
  gap: 40px;
- margin: 40px;
- margin-top: 60px;
+ margin: 1px;
+ margin-top: 10px;
  color: #324d67;
+ padding: 50px 20px;
+  background-color: #dcdcdc;
+  border-radius: 15px;
+  position: relative;
+  line-height: 0.9; 
+  width: 100%;
 
 }
 
@@ -739,7 +746,7 @@ margin-top: 160px;
     width: 150px;
   }
   .product-detail-container{
-    margin: 20px;
+    margin: 1px;
   }
 
 .item-desc .flex{

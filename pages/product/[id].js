@@ -63,7 +63,7 @@ export default function ProductPage({ product }) {
             <Header setMenuOpen={setMenuOpen} />
 
             <div className="product-detail-container">
-                <div>
+                <div >
                     <div className="image-wrapper">
                         <div 
                             className="image-container"
@@ -98,7 +98,7 @@ export default function ProductPage({ product }) {
                     </div>
                 </div>
                 <div className="product-detail-desc">
-                    <h1>{product.title}</h1>
+                    <h2>{product.title}</h2>
                     <div className="reviews">
                         <div>
                             <AiFillStar />
