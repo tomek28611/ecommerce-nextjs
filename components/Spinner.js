@@ -3,8 +3,8 @@ import styled, { keyframes } from "styled-components";
 
 
 const SpinnerContainer = styled.div`
-  width: 160px; /* Szerokość kontenera */
-  height: 160px; /* Wysokość kontenera */
+  width: 300px; 
+  height: 300px;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -15,9 +15,9 @@ const SpinnerContainer = styled.div`
 `;
 
 const GifImage = styled.img`
-  width: 100%; /* Szerokość GIF-a */
-  height: 100%; /* Wysokość GIF-a */
-  object-fit: contain; /* Dostosowanie wielkości GIF-a do kontenera */
+  width: 100%; 
+  height: 100%; 
+  object-fit: contain; 
 `;
 
 export default function Spinner() {
