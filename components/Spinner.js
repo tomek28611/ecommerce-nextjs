@@ -7,13 +7,17 @@ const spin = keyframes`
 `;
 
 const SpinnerStyled = styled.div`
-  border: 4px solid rgba(0, 0, 0, 0.1);
+  border: 5px solid rgba(0, 0, 0, 0.1);
   border-left-color: #333;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   animation: ${spin} 1s linear infinite;
-  margin: 20px auto;
+  // margin: 20px auto;
 `;
 
 export default function Spinner() {

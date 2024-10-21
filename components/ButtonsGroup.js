@@ -34,7 +34,7 @@ const StyledNav = styled.nav`
 const NavLink = styled.a`
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;  /* To ensure the text is at the bottom */
+  justify-content: flex-end;  
   align-items: center;
   background-color: #222;
   color: white;
