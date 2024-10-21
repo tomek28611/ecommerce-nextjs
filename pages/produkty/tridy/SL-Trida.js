@@ -7,6 +7,7 @@ import ProductsGrid from "@/components/ProductsGrid";
 import Title from "@/components/Title";
 import Info from "@/components/InfoSupport";
 import Head from "next/head";
+import ExpandableText from "@/components/ExpandableText";
 
 const NoProductsContainer = styled.div`
   margin: 20px;

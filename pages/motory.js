@@ -7,6 +7,8 @@ import ProductsGrid from "@/components/ProductsGrid";
 import Title from "@/components/Title";
 import Info from "@/components/InfoSupport";
 import Head from "next/head";
+import { useState } from "react";
+
 
 const NoProductsContainer = styled.div`
   margin: 20px;
@@ -16,6 +18,7 @@ const NoProductsContainer = styled.div`
   background-color: #f9f9f9;
   text-align: center;
 `;
+
 const SEOText = styled.div`
   margin: 20px 0;
   padding: 20px;
@@ -51,21 +54,22 @@ Potřebujete nový motor pro svůj vůz? Nabízíme kompletní motory pro širok
 V našem sortimentu najdete motory pro všechny hlavní modely Mercedes, ale i další populární značky. Zajistěte svému vozu kvalitní motor, který zvládne každou cestu bez problémů. Rychlé dodání a odborná podpora jsou u nás samozřejmostí.
 
 Objevte naši nabídku motorů a vyměňte starý motor za nový, aby vaše auto zůstalo ve skvělé kondici.
-
-
 `;
+
 export default function ProductsPage({ products }) {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const toggleText = () => setIsExpanded(prev => !prev);
+
   return (
     <>
-     <Head>
+      <Head>
         <link rel="icon" href="/favicon.ico" />
         <title>Auto Dily Express | Náhradní díly pro Kompletní motory</title>
         <meta
           name="description"
           content="Objevte širokou nabídku kvalitních autodílů pro vozy Mercedes. Nabízíme motorové díly, prvky karoserie, elektrické součástky a další. Rychlá dodávka, skvělé ceny a spolehlivý servis. Vaše auto si zaslouží to nejlepší!"
         />
-
-        <link rel="cannonical" href="https://autodilyexpress.cz/motory" />
+        <link rel="canonical" href="https://autodilyexpress.cz/motory" />
         <link rel="apple-touch-icon" sizes="180x180" href="/auto-dily-logo.png" />
         <meta property="og:locale" content="cs_CZ" />
         <meta property="og:type" content="website" />
@@ -80,14 +84,18 @@ export default function ProductsPage({ products }) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Nabízíme motorové díly, prvky karoserie, elektrické součástky a další. Rychlá dodávka" />
         <meta name="twitter:description" content="Nabízíme motorové díly, prvky karoserie, elektrické součástky a další. Rychlá dodávka"></meta>
-
       </Head>
       <Header />
       <Center>
-      <h1>Náhradní díly pro model Mercedes Kompletní motory</h1>
+        <h1>Náhradní díly pro model Mercedes Kompletní motory</h1>
         <SEOText>
           <h2>Nabídka náhradních dílů</h2>
-          <p dangerouslySetInnerHTML={{ __html: seoTextContent }} />
+          <p>
+            {isExpanded ? seoTextContent : `${seoTextContent.slice(0, 100)}...`}
+          </p>
+          <button onClick={toggleText}>
+            {isExpanded ? "Méně" : "Více..."}
+          </button>
         </SEOText>
         {products.length === 0 ? (
           <NoProductsContainer>
@@ -98,26 +106,24 @@ export default function ProductsPage({ products }) {
           <ProductsGrid products={products} />
         )}
       </Center>
-      <Info/>
+      <Info />
     </>
   );
 }
 
 export async function getServerSideProps() {
-    await mongooseConnect();
-    const allProducts = await Product.find({}, null, { sort: { '_id': -1 } });
-  
-  
-    const modelNumbers = ["motor"];
-  
-  
-    const filteredProducts = allProducts.filter(product =>
-      modelNumbers.some(model => product.title.includes(model))
-    );
-  
-    return {
-      props: {
-        products: JSON.parse(JSON.stringify(filteredProducts)),
-      },
-    };
-  }
+  await mongooseConnect();
+  const allProducts = await Product.find({}, null, { sort: { '_id': -1 } });
+
+  const modelNumbers = ["motor"];
+
+  const filteredProducts = allProducts.filter(product =>
+    modelNumbers.some(model => product.title.includes(model))
+  );
+
+  return {
+    props: {
+      products: JSON.parse(JSON.stringify(filteredProducts)),
+    },
+  };
+}

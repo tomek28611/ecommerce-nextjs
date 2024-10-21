@@ -7,6 +7,8 @@ import ProductsGrid from "@/components/ProductsGrid";
 import Title from "@/components/Title";
 import Info from "@/components/InfoSupport";
 import Head from "next/head";
+import { useState } from "react";
+
 
 const NoProductsContainer = styled.div`
   margin: 20px;
@@ -53,6 +55,8 @@ Specializujeme se na náhradní díly pro Mercedes, ale máme také díly pro in
 Navštivte náš e-shop a prozkoumejte nabídku dílů pro interiér, které dodají vašemu autu nový nádech komfortu a elegance.
 `;
 export default function ProductsPage({ products }) {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const toggleText = () => setIsExpanded(prev => !prev);
   return (
     <>
      <Head>
@@ -83,9 +87,14 @@ export default function ProductsPage({ products }) {
       <Header />
       <Center>
       <h1>Náhradní díly pro model Mercedes interiér vozu</h1>
-        <SEOText>
+      <SEOText>
           <h2>Nabídka náhradních dílů</h2>
-          <p dangerouslySetInnerHTML={{ __html: seoTextContent }} />
+          <p>
+            {isExpanded ? seoTextContent : `${seoTextContent.slice(0, 100)}...`}
+          </p>
+          <button onClick={toggleText}>
+            {isExpanded ? "Méně" : "Více..."}
+          </button>
         </SEOText>
         {products.length === 0 ? (
           <NoProductsContainer>

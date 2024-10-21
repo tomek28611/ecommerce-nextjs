@@ -7,6 +7,7 @@ import ProductsGrid from "@/components/ProductsGrid";
 import Title from "@/components/Title";
 import Info from "@/components/InfoSupport";
 import Head from "next/head";
+import ExpandableText from "@/components/ExpandableText";
 
 const NoProductsContainer = styled.div`
   margin: 20px;
@@ -86,10 +87,7 @@ export default function ProductsPage({ products }) {
      
       <Center>
       <h1>Náhradní díly pro model Mercedes GLA-Třída</h1>
-        <SEOText>
-          <h2>Nabídka náhradních dílů</h2>
-          <p dangerouslySetInnerHTML={{ __html: seoTextContent }} />
-        </SEOText>
+      <ExpandableText title="Nabídka náhradních dílů" content={seoTextContent} /> 
         {products.length === 0 ? (
           <NoProductsContainer>
             <h2>Žádné produkty nenalezeny</h2>

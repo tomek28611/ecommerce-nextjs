@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import styled from "styled-components";
 
 const TextContainer = styled.div`
@@ -23,35 +24,51 @@ const TextContainer = styled.div`
   }
 
   strong {
-    color: #d9534f; /* Kolor dla wyróżnionych słów */
+    color: #d9534f; 
+  }
+
+  button {
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #0056b3;
+    }
   }
 `;
 
 export default function TextMain() {
+  const fullText = `
+    Hledáte kvalitní náhradní díly pro svůj vůz? Naše nabídka zahrnuje široký sortiment auto dílů,
+    včetně motorových dílů, brzdových systémů, podvozků, karoserií a dalších nezbytných komponentů.
+    Specializujeme se na náhradní díly pro Mercedes, ale nabízíme také díly pro další oblíbené značky automobilů.
+
+    V našem e-shopu s auto díly najdete vše, co potřebujete pro opravy a údržbu svého auta. 
+    Nabízíme rychlé dodání, výhodné ceny a prvotřídní zákaznický servis. 
+    Ať už sháníte brzdy, oleje, filtry, nebo náhradní díly pro karoserii, u nás si určitě vyberete.
+
+    Navštivte nás ještě dnes a podívejte se na naši nabídku autodílů. Jsme vaším spolehlivým partnerem
+    pro nákup kvalitních náhradních dílů za rozumné ceny.
+  `;
+
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const shortText = fullText.substring(0, 100) + "...";
+
   return (
     <TextContainer>
       <h2>Náhradní díly pro automobily - Auto díly za skvělé ceny</h2>
-
       <p>
-        Hledáte kvalitní náhradní díly pro svůj vůz? Naše nabídka zahrnuje
-        široký sortiment auto dílů, včetně motorových dílů, brzdových systémů,
-        podvozků, karoserií a dalších nezbytných komponentů. Specializujeme se
-        na náhradní díly pro <strong>Mercedes</strong>, ale nabízíme také díly pro
-        další oblíbené značky automobilů.
+        {isExpanded ? fullText : shortText}
       </p>
-
-      <p>
-        V našem e-shopu s auto díly najdete vše, co potřebujete pro opravy a
-        údržbu svého auta. Nabízíme rychlé dodání, výhodné ceny a prvotřídní
-        zákaznický servis. Ať už sháníte brzdy, oleje, filtry, nebo náhradní díly
-        pro karoserii, u nás si určitě vyberete.
-      </p>
-
-      <p>
-        Navštivte nás ještě dnes a podívejte se na naši nabídku autodílů. Jsme
-        vaším spolehlivým partnerem pro nákup kvalitních náhradních dílů za
-        rozumné ceny.
-      </p>
+      <button onClick={() => setIsExpanded(!isExpanded)}>
+        {isExpanded ? "Zobrazit méně" : "Zobrazit více"}
+      </button>
     </TextContainer>
   );
 }
