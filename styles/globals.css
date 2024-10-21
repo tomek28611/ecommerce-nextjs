@@ -460,6 +460,7 @@ padding: 30px 65px;
   line-height: 0.9; 
   width: 100%;
 
+
 }
 
 .product-detail-image{
@@ -471,14 +472,27 @@ padding: 30px 65px;
   cursor: pointer;
   transition: .3s ease-in-out;
 }
+
+.small-images-container img {
+  width: 100%;
+  max-width: 80px;
+  height: auto; 
+}
+
+@media (max-width: 600px) {
+  .small-images-container img {
+    max-width: 50px; 
+  }
+}
 .product-detail-image:hover{
   background-color: #f02d34;
 
 }
-.small-images-container{
+.small-images-container {
   display: flex;
   gap: 10px;
   margin-top: 20px;
+  overflow-x: auto; /* Przewijanie poziome */
 }
 .small-image{
   border-radius: 8px;
