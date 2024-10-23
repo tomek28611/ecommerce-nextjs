@@ -64,11 +64,10 @@ padding: 20px;  */
 }
 
 .track {
- 
-  /* white-space: nowrap; */
+  display: flex;
   will-change: transform;
   animation: marquee 25s linear infinite;
-  width: 160%;
+  width: 250%;
 }
 .track:hover {
   animation-play-state: paused;
