@@ -21,14 +21,13 @@ const Wrapper = styled.div`
 `;
 
 const StyledNav = styled.nav`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px;
+  display: flex;
+  gap: 24px;
   
-
   @media screen and (min-width: 768px) {
-    grid-template-columns: repeat(7, 1fr);
-    gap: 1px;
+  display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 22px;
     margin-top: 20px;
   }
 `;
@@ -163,8 +162,25 @@ export default function NewPromo({ setMenuOpen }) {
             <NavLink bgImage="/E-třída-W213,přední-světlomety,kompletní.webp" onClick={() => handleNavigation('/nahradni-dily/6713c175810ea2495dacae1e')}>
               <Label>Mercedes-Benz E-třída W213, přední světlomety, kompletní, Multibeam.</Label>
               <LabelP>56 300 kč</LabelP>
-
             </NavLink>
+            <NavLink bgImage="/G-Třída-W463.webp" onClick={() => handleNavigation('/nahradni-dily/6703d4a830fc9241852871e0')}>
+              <Label>Mercedes-Benz G-Třída W463 4. generace, karoserie blatník střecha víko čtvrtka šedá barva</Label>
+              <LabelP>486 500 kč</LabelP>
+            </NavLink>
+            <NavLink bgImage="/GLE-třída-W167,levá-přední-lampa.webp" onClick={() => handleNavigation('/nahradni-dily/67069fc7cb2b23b139ce7537')}>
+              <Label>Mercedes-Benz GLE-třída W167, levá přední lampa Multibeam</Label>
+              <LabelP>28 300 kč</LabelP>
+            </NavLink>
+            <NavLink bgImage="/SL-třída-R231.webp" onClick={() => handleNavigation('/nahradni-dily/670e755203e2d5baae7c0146')}>
+              <Label>Mercedes-Benz SL-třída R231, AMG nárazník přední před lift</Label>
+              <LabelP>486 500 kč</LabelP>
+            </NavLink>
+            <NavLink bgImage="/CLA-třída-C117,zadní-zavěšení.webp" onClick={() => handleNavigation('/nahradni-dily/6718b870a48d6eb46687ce64')}>
+              <Label>Mercedes-Benz CLA-třída C117, zadní zavěšení, rameno</Label>
+              <LabelP>8 500 kč</LabelP>
+            </NavLink>
+
+       
             {/* <NavLink bgImage="/interier.jpg" onClick={() => handleNavigation('/nahradni-dily/mercedes/interier')}>
               <Label>Interiér</Label>
             </NavLink>
@@ -173,9 +189,10 @@ export default function NewPromo({ setMenuOpen }) {
             </NavLink> */}
         
           </StyledNav>
-          
+         
           </div>
-          <Label>Můžete také najít podle modelu</Label>
+          <Label onClick={handleScrollToNewProducts}>Můžete také najít podle modelu</Label>
+         
         </Wrapper>
         {isLoading && <Spinner />} 
       </Center>
