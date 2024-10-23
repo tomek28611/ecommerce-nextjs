@@ -186,7 +186,7 @@ export default function Header({ setMenuOpen }) {
             <Logo href={'/'}>Auto Dily</Logo>
             <StyledNav mobileNavActive={mobileNavActive}>
               <NavLink onClick={() => handleNavigation('/')}>Home</NavLink>
-              <NavLink onClick={() => handleNavigation('/products')}>Všechny produkty</NavLink>
+              <NavLink onClick={() => handleNavigation('/nahradni-dily')}>Všechny produkty</NavLink>
               <NavLink onClick={() => handleNavigation('/podpora')}>Podpora</NavLink>
               <NavLink onClick={() => handleNavigation('/cart')}>Košík ({cartProducts.length})</NavLink>
             </StyledNav>

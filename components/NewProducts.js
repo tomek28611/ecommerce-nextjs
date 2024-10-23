@@ -37,7 +37,7 @@ export default function NewProducts({ products }) {
     <Center>
       <Title>
         Vyberte třídu nebo{" "}
-        <HighlightedLink onClick={() => handleNavigation('/products')}>Všechny produkty...</HighlightedLink>
+        <HighlightedLink onClick={() => handleNavigation('/nahradni-dily')}>Všechny produkty...</HighlightedLink>
         
         {isLoading && <Spinner />}
       </Title>

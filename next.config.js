@@ -4,6 +4,15 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
+  async redirects() {
+    return [
+      {
+        source: '/products',
+        destination: '/nahradni-dily', 
+        permanent: true, 
+      },
+    ];
+  },
 }
 
-module.exports = nextConfig
+module.exports = nextConfig;

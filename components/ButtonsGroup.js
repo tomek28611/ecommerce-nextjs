@@ -122,22 +122,22 @@ export default function Buttons({ setMenuOpen }) {
       <Center>
         <Wrapper>
           <StyledNav>
-            <NavLink bgImage="/motor.png" onClick={() => handleNavigation('/motory')}>
+            <NavLink bgImage="/motor.png" onClick={() => handleNavigation('/nahradni-dily/mercedes/motory')}>
               <Label>Motory</Label>
             </NavLink>
-            <NavLink bgImage="/naprava.png" onClick={() => handleNavigation('/naprava')}>
+            <NavLink bgImage="/naprava.png" onClick={() => handleNavigation('/nahradni-dily/mercedes/naprava')}>
               <Label>Náprava</Label>
             </NavLink>
-            <NavLink bgImage="/karoseria.png" onClick={() => handleNavigation('/karoserie')}>
+            <NavLink bgImage="/karoseria.png" onClick={() => handleNavigation('/nahradni-dily/mercedes/karoserie')}>
               <Label>Karoserie</Label>
             </NavLink>
-            <NavLink bgImage="/elektrika.png" onClick={() => handleNavigation('/elektrika')}>
+            <NavLink bgImage="/elektrika.png" onClick={() => handleNavigation('/nahradni-dily/mercedes/elektrika')}>
               <Label>Elektrika</Label>
             </NavLink>
-            <NavLink bgImage="/rafky.png" onClick={() => handleNavigation('/rafky')}>
+            <NavLink bgImage="/rafky.png" onClick={() => handleNavigation('/nahradni-dily/mercedes/rafky')}>
               <Label>Ráfky</Label>
             </NavLink>
-            <NavLink bgImage="/interier.jpg" onClick={() => handleNavigation('/interier')}>
+            <NavLink bgImage="/interier.jpg" onClick={() => handleNavigation('/nahradni-dily/mercedes/interier')}>
               <Label>Interiér</Label>
             </NavLink>
             <NavLink bgImage="/najit.jpg" onClick={handleScrollToNewProducts}>

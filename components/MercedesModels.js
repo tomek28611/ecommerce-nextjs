@@ -89,7 +89,7 @@ export default function MercedesModels({ products }) {
 
   const handleModelClick = (className) => {
     setLoading(true); 
-    router.push(`/produkty/tridy/${className}`);
+    router.push(`/nahradni-dily/mercedes/${className}`);
   };
 
   return (

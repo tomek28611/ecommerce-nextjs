@@ -92,7 +92,7 @@ export default function Featured({ product, menuOpen, heroBanner }) {
 
   const handleButtonClick = () => {
     setIsLoading(true); 
-    router.push('/products').then(() => {
+    router.push('/nahradni-dily').then(() => {
       setIsLoading(false); 
     });
   };
