@@ -67,7 +67,7 @@ padding: 20px;  */
  
   /* white-space: nowrap; */
   will-change: transform;
-  animation: marquee 15s linear infinite;
+  animation: marquee 25s linear infinite;
   width: 160%;
 }
 .track:hover {

@@ -173,7 +173,7 @@ export default function NewPromo({ setMenuOpen }) {
             </NavLink>
             <NavLink bgImage="/SL-třída-R231.webp" onClick={() => handleNavigation('/nahradni-dily/670e755203e2d5baae7c0146')}>
               <Label>Mercedes-Benz SL-třída R231, AMG nárazník přední před lift</Label>
-              <LabelP>486 500 kč</LabelP>
+              <LabelP>31 800 kč</LabelP>
             </NavLink>
             <NavLink bgImage="/CLA-třída-C117,zadní-zavěšení.webp" onClick={() => handleNavigation('/nahradni-dily/6718b870a48d6eb46687ce64')}>
               <Label>Mercedes-Benz CLA-třída C117, zadní zavěšení, rameno</Label>
