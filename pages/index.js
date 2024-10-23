@@ -9,6 +9,7 @@ import ButtonsGroup from "@/components/ButtonsGroup";
 import styled from "styled-components";
 import Head from "next/head";
 import TextMain from "@/components/TextMain";
+import NewPromo from "@/components/NewPromo";
 
 const BackgroundContainer = styled.div`
    background-image: url('/bg-engine.avif');
@@ -90,6 +91,7 @@ export default function HomePage({ featuredProduct, newProducts }) {
       <div className="main-container">
       <Header setMenuOpen={setMenuOpen} />
       <ButtonsGroup />
+      <NewPromo />
       <Featured product={featuredProduct} menuOpen={menuOpen} />
       <div id="new-products">
         <NewProducts products={newProducts}  />

@@ -103,7 +103,7 @@ export default function ProductsPage({ products }) {
     </>
   );
 }
-
+ 
 export async function getServerSideProps() {
   await mongooseConnect();
   const allProducts = await Product.find({}, null, { sort: { '_id': -1 } });

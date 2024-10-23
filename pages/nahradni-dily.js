@@ -46,7 +46,7 @@ export default function ProductsPage({ products }) {
       </Center>
     </>
   );
-}
+} 
 
 export async function getServerSideProps() {
   await mongooseConnect();

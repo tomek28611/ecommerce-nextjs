@@ -79,13 +79,13 @@ export default function ProductsGrid({ products }) {
     }
   }, [searchTerm, products]);
 
-  const handleProductClick = (productId) => {
+  const handleProductClick = (productId, productT, productF) => {
     setIsLoading(true); 
-    router.push(`/product/${productId}`); 
+    router.push(`/nahradni-dily/${productId}?${productT}?${productF}`); 
   };
 
   const handleScrollClick = (e) => {
-    const clickY = e.clientY; // Y-owa pozycja kliknięcia
+    const clickY = e.clientY; 
     const windowHeight = window.innerHeight;
     const pageHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     const scrollTo = (clickY / windowHeight) * pageHeight;
@@ -111,7 +111,7 @@ export default function ProductsGrid({ products }) {
         <StyledProductsGrid>
           <div className="products-container">
             {filteredProducts?.map((product) => (
-              <div key={product._id} onClick={() => handleProductClick(product._id)}>
+              <div key={product._id} onClick={() => handleProductClick(product._id, product.title, filteredProducts.title)}>
                 <ProductBox {...product} />
               </div>
             ))}
