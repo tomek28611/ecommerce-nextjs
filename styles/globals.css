@@ -47,7 +47,7 @@ padding: 20px;  */
 .navbar-container{
   display: flex;
   justify-content: space-between;
-  margin: 6px 18px;
+  margin: 6px 8px;
   position: relative;
 }
 .marquee-text{
@@ -64,11 +64,11 @@ padding: 20px;  */
 }
 
 .track {
-  position: absolute;
-  white-space: nowrap;
+ 
+  /* white-space: nowrap; */
   will-change: transform;
   animation: marquee 15s linear infinite;
-  width: 180%;
+  width: 160%;
 }
 .track:hover {
   animation-play-state: paused;
@@ -611,7 +611,7 @@ padding: 6px;
 .maylike-products-container{
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 8px;
   margin-top: 20px;
 }
 .max-qty{

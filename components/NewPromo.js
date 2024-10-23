@@ -23,11 +23,13 @@ const Wrapper = styled.div`
 const StyledNav = styled.nav`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 15px;
+  gap: 14px;
+  
 
   @media screen and (min-width: 768px) {
     grid-template-columns: repeat(7, 1fr);
-    gap: 25px;
+    gap: 1px;
+    margin-top: 20px;
   }
 `;
 
@@ -48,9 +50,11 @@ const NavLink = styled.a`
   background-image: url(${props => props.bgImage});
   background-size: cover;
   background-position: center;
-  height: 150px;
-  width: 150px;
+  height: 300px;
+  width: 250px;
   position: relative;
+   border: 2px solid black;
+  border-radius: 25px;
 
   &:hover {
     background-color: #555;
@@ -66,6 +70,19 @@ const NavLink = styled.a`
     }
   }
 `;
+const LabelP = styled.span`
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 5px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 0; 
+  left: 0;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  
+`;
 
 const Label = styled.span`
   background-color: rgba(0, 0, 0, 0.6);
@@ -74,10 +91,10 @@ const Label = styled.span`
   width: 100%;
   text-align: center;
   position: absolute;
-  bottom: 0; /* Make sure it's at the bottom */
+  bottom: 0; 
   left: 0;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 `;
 
 const NavButton = styled.button`
@@ -121,29 +138,44 @@ export default function NewPromo({ setMenuOpen }) {
     <StyledHeader>
       <Center>
         <Wrapper>
-          <StyledNav>
-            <NavLink bgImage="/motor.png" onClick={() => handleNavigation('/nahradni-dily/mercedes/motory')}>
-              <Label>Motory</Label>
+        <LabelP>Nové produkty</LabelP>
+            <div className="marquee"> 
+            
+          <StyledNav className="maylike-products-container track">
+            <NavLink bgImage="/E-Trida-pred.webp" onClick={() => handleNavigation('/nahradni-dily/67133625e7f3a41cfe8be661')}>
+              <Label>E-Trida kapota, nárazník, světlomety, chladiče</Label>
+              <LabelP>22 500 kč</LabelP>
             </NavLink>
-            <NavLink bgImage="/naprava.png" onClick={() => handleNavigation('/nahradni-dily/mercedes/naprava')}>
-              <Label>Náprava</Label>
+            <NavLink bgImage="/A-třídaW176,přední-nárazník.webp" onClick={() => handleNavigation('/nahradni-dily/671124b11fe2438ba959e428')}>
+              <Label>Mercedes-Benz A-třída W176, přední nárazník</Label>
+              <LabelP>15 500 kč</LabelP>
             </NavLink>
-            <NavLink bgImage="/karoseria.png" onClick={() => handleNavigation('/nahradni-dily/mercedes/karoserie')}>
-              <Label>Karoserie</Label>
+            <NavLink bgImage="/C-třída-W205,přední-dveře.webp" onClick={() => handleNavigation('/nahradni-dily/670d1a181c009991a4223936')}>
+              <Label>Mercedes-Benz C-třída W205, přední dveře</Label>
+              <LabelP>12 700 kč</LabelP>
+
             </NavLink>
-            <NavLink bgImage="/elektrika.png" onClick={() => handleNavigation('/nahradni-dily/mercedes/elektrika')}>
-              <Label>Elektrika</Label>
+            <NavLink bgImage="/W212-W218-chladič-ventilátor,klimatizace,chladič-vody.webp" onClick={() => handleNavigation('/nahradni-dily/6708311ee704dc30f605b043')}>
+              <Label>Mercedes-Benz W212 / W218 chladič ventilátor, klimatizace, chladič vody</Label>
+              <LabelP>28 300 kč</LabelP>
+
             </NavLink>
-            <NavLink bgImage="/rafky.png" onClick={() => handleNavigation('/nahradni-dily/mercedes/rafky')}>
-              <Label>Ráfky</Label>
+            <NavLink bgImage="/E-třída-W213,přední-světlomety,kompletní.webp" onClick={() => handleNavigation('/nahradni-dily/6713c175810ea2495dacae1e')}>
+              <Label>Mercedes-Benz E-třída W213, přední světlomety, kompletní, Multibeam.</Label>
+              <LabelP>56 300 kč</LabelP>
+
             </NavLink>
-            <NavLink bgImage="/interier.jpg" onClick={() => handleNavigation('/nahradni-dily/mercedes/interier')}>
+            {/* <NavLink bgImage="/interier.jpg" onClick={() => handleNavigation('/nahradni-dily/mercedes/interier')}>
               <Label>Interiér</Label>
             </NavLink>
             <NavLink bgImage="/najit.jpg" onClick={handleScrollToNewProducts}>
               <Label>Najít podle modelu</Label>
-            </NavLink>
+            </NavLink> */}
+        
           </StyledNav>
+          
+          </div>
+          <Label>Můžete také najít podle modelu</Label>
         </Wrapper>
         {isLoading && <Spinner />} 
       </Center>
