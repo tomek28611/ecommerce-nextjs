@@ -74,7 +74,7 @@ export default function Podpora() {
           content="Objevte širokou nabídku kvalitních autodílů pro vozy Mercedes. Nabízíme motorové díly, prvky karoserie, elektrické součástky a další. Rychlá dodávka, skvělé ceny a spolehlivý servis. Vaše auto si zaslouží to nejlepší!"
         />
 
-        <link rel="cannonical" href="https://autodilyexpress.cz/A-Trida" />
+        <link rel="cannonical" href="https://autodilyexpress.cz/podpora" />
         <link rel="apple-touch-icon" sizes="180x180" href="/auto-dily-logo.png" />
         <meta property="og:locale" content="cs_CZ" />
         <meta property="og:type" content="website" />
