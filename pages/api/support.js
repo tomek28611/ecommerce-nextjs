@@ -140,11 +140,11 @@ export default async function handler(req, res) {
       });
 
       // Send confirmation email to client
-      const clientEmail = req.body.email; // Adres e-mail klienta
+      const clientEmail = req.body.email; 
       await transporter.sendMail({
-        from: '"🚗 AUTO-DILY" <autodilyobchod@gmail.com>', // Adres nadawcy
-        to: clientEmail, // Adres klienta
-        subject: 'Potwierdzenie otrzymania wiadomości', // Temat
+        from: '"🚗 AUTO-DILY" <autodilyobchod@gmail.com>', 
+        to: clientEmail, 
+        subject: 'Potvrzení o přijetí zprávy', 
         html: `
           <div style="font-family: Arial, sans-serif; background-color: #f7f7f7; padding: 20px; border-radius: 8px;">
            <div style="text-align: center;">
@@ -179,7 +179,7 @@ export default async function handler(req, res) {
                 Navštivte naše webové stránky
               </a>
             </div>
-            <p style="text-align: center;">Dziękujemy za kontakt!</p>
+            <p style="text-align: center;">Děkujeme, že jste nás kontaktovali!</p>
           </div>
         `,
       });
