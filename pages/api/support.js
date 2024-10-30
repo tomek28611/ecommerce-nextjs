@@ -19,6 +19,7 @@ export default async function handler(req, res) {
           pass: process.env.EMAIL_PASSWORD,   
         },
         secure: false, // true if port is 465
+        logger: true,
       });
 
       // Send email
