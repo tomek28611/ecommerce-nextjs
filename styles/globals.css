@@ -166,6 +166,29 @@ padding: 20px;  */
   width: 100%;
 
 }
+.hero-banner-containerr{
+  padding: 40px 40px;
+  background-color: #dcdcdc;
+  border-radius: 15px;
+  position: relative;
+  min-height: 500px; 
+  line-height: 0.9; 
+  width: 100%;
+
+}
+
+.btn_reg {
+  border-radius: 15px;
+  padding: 10px 16px;
+  background-color: #f02d34;
+  color: white;
+  border: none;
+  margin-top: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  z-index:10000 !important;
+}
 .hero-banner-container .beats-solo{
   font-size: 20px;
 }
@@ -199,6 +222,36 @@ padding: 20px;  */
   width: 450px;
   height: 300px;
 }
+
+.image-container {
+  margin-top: 28px;
+  display: flex;                   
+  justify-content: center;          
+  align-items: center;              
+  gap: 20px;                        
+}
+
+.image {
+  width: 450px;                    
+  height: 250px;                   
+  object-fit: cover;                
+  border-radius: 10px;              
+}
+
+
+@media (max-width: 768px) {          
+  .image-container {
+      display: grid;           
+      grid-template-columns: repeat(1, 1fr); 
+      gap: 10px;                   
+  }
+
+  .image {
+      width: auto;               
+      height: 150px;               
+  }
+}
+
 
 
 .desc{

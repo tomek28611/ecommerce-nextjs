@@ -6,6 +6,7 @@ import { CartContext } from "@/components/CartContext";
 import BarsIcon from "@/components/icons/Bars";
 import Spinner from "@/components/Spinner"; 
 import { useRouter } from "next/router"; 
+import { FiChevronDown } from 'react-icons/fi';
 
 const StyledHeader = styled.header`
   background-color: #dcdcdc;
@@ -18,6 +19,9 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 20px 0;
+`;
+const Margin = styled.div`
+  margin-bottom: 6px;
 `;
 
 const StyledNav = styled.nav`
@@ -122,6 +126,9 @@ export default function Buttons({ setMenuOpen }) {
       <Center>
         <Wrapper>
           <StyledNav>
+          <NavLink bgImage="/miech.webp" onClick={() => handleNavigation('/regenerace-airmatic')}>
+              <Label>Regenerace vzduchových pérování</Label>
+            </NavLink>
             <NavLink bgImage="/motor.png" onClick={() => handleNavigation('/nahradni-dily/mercedes/motory')}>
               <Label>Motory</Label>
             </NavLink>
@@ -140,9 +147,15 @@ export default function Buttons({ setMenuOpen }) {
             <NavLink bgImage="/interier.jpg" onClick={() => handleNavigation('/nahradni-dily/mercedes/interier')}>
               <Label>Interiér</Label>
             </NavLink>
-            <NavLink bgImage="/najit.jpg" onClick={handleScrollToNewProducts}>
+            
+            {/* <NavLink bgImage="/najit.jpg" onClick={handleScrollToNewProducts}>
               <Label>Najít podle modelu</Label>
-            </NavLink>
+            </NavLink> */}
+            <Margin />
+            <Label onClick={handleScrollToNewProducts}>
+                        Můžete také najít podle modelu
+                        <FiChevronDown style={{ marginLeft: '15px' }} /> 
+                    </Label>
           </StyledNav>
         </Wrapper>
         {isLoading && <Spinner />} 
