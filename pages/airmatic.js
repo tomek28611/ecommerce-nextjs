@@ -6,6 +6,8 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Spinner from "@/components/Spinner";
 import Header from "@/components/Header";
+import Footer from '@/components/Footer';
+
 
 const Bg = styled.div`
   color: #fff;
@@ -187,8 +189,7 @@ export default function Featured({ product, menuOpen, heroBanner }) {
             <Header />
             <div className="hero-banner-containerr">
                 <div>
-                    <h1 className="beats-sol">Regenerace vzduchových pérování Mercedes / Audi / VW / BMW / Bentley<br />
-                        a hydraulické ABC- Active Body Control
+                    <h1 className="beats-sol">Regenerace vzduchových pérování a hydraulické ABC- Active Body Control<br /> 
                     </h1>
 
                     <ButtonContainer>
@@ -208,6 +209,7 @@ export default function Featured({ product, menuOpen, heroBanner }) {
                                                     <td>{model}</td>
                                                 </tr>
                                             ))}
+                                         
                                         </tbody>
                                     </ModelTable>
                                 )}
@@ -223,6 +225,7 @@ export default function Featured({ product, menuOpen, heroBanner }) {
                 </div>
 
             </div>
+            <Footer />
         </div>
     );
 }

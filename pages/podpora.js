@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import { useRouter } from 'next/router';
 import styles from '@/styles/Podpora.module.css';
 import Head from "next/head";
+import Footer from '@/components/Footer';
 
 export default function Podpora() {
   const router = useRouter();
@@ -115,6 +116,7 @@ export default function Podpora() {
           </button>
         </form>
       </div>
+      <Footer />
     </div>
   );
 }
