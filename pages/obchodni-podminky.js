@@ -43,14 +43,14 @@ const TermsAndConditions = () => {
       <Section>
         <Subheading>1. Úvodní ustanovení</Subheading>
         <Paragraph>
-          Tyto obchodní podmínky (dále jen "podmínky") upravují práva a povinnosti mezi prodávajícím a kupujícím při prodeji použitých automobilových součástek značky Mercedes-Benz (dále jen "zboží"). Kupující podáním objednávky potvrzuje, že souhlasí s těmito podmínkami.
+          Tyto obchodní podmínky (dále jen &quot;podmínky&quot;) upravují práva a povinnosti mezi prodávajícím a kupujícím při prodeji použitých automobilových součástek značky Mercedes-Benz (dále jen &quot;zboží&quot;). Kupující podáním objednávky potvrzuje, že souhlasí s těmito podmínkami.
         </Paragraph>
       </Section>
 
       <Section>
         <Subheading>2. Popis zboží</Subheading>
         <Paragraph>
-          Zboží nabízené k prodeji je použité a prodává se ve stavu "jak stojí a leží", bez dalších záruk nad rámec zákonných povinností prodávajícího. Prodávající nenese odpovědnost za jakékoli škody vzniklé nesprávnou instalací nebo použitím zboží v rozporu s doporučeními.
+          Zboží nabízené k prodeji je použité a prodává se ve stavu &quot;jak stojí a leží&quot;, bez dalších záruk nad rámec zákonných povinností prodávajícího. Prodávající nenese odpovědnost za jakékoli škody vzniklé nesprávnou instalací nebo použitím zboží v rozporu s doporučeními.
         </Paragraph>
       </Section>
 
