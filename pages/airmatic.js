@@ -166,25 +166,25 @@ export default function Featured({ product, menuOpen, heroBanner }) {
                                 <BrandContainer>
                                     <BrandTitle>Mercedes-Benz</BrandTitle>
                                     <ButtonContainer>
-                                        <ModelLink href="/airmatic/Mercedes-C-klasa-W205">Mercedes C klasa W205</ModelLink>
+                                        <ModelLink href="/airmatic/Mercedes-C-trida-W205">Mercedes C trida W205</ModelLink>
                                         <ModelLink href="/airmatic/Mercedes-GLC-W253-GLC-Coupe-C253">Mercedes GLC W253 / GLC Coupe C253</ModelLink>
-                                        <ModelLink href="/airmatic/Mercedes-E-klasa-W211">Mercedes E klasa W211</ModelLink>
-                                        <ModelLink href="/airmatic/Mercedes-E-klasa-W212">Mercedes E klasa W212</ModelLink>
-                                        <ModelLink href="/airmatic/Mercedes-E-klasa-W213">Mercedes E klasa W213</ModelLink>
-                                        <ModelLink href="/airmatic/Mercedes-S-klasa-W220">Mercedes S klasa W220</ModelLink>
-                                        <ModelLink href="/airmatic/Mercedes-S-klasa-W220-ABC">Mercedes S klasa W220 (ABC)</ModelLink>
-                                        <ModelLink href="/airmatic/Mercedes-S-klasa-W221">Mercedes S klasa W221</ModelLink>
-                                        <ModelLink href="/airmatic/Mercedes-S-klasa-W221-ABC">Mercedes S klasa W221 (ABC)</ModelLink>
-                                        <ModelLink href="/airmatic/Mercedes-S-klasa-W222">Mercedes S klasa W222</ModelLink>
-                                        <ModelLink href="/airmatic/Mercedes-S-klasa-W222-ABC">Mercedes S klasa W222 (ABC)</ModelLink>
+                                        <ModelLink href="/airmatic/Mercedes-E-trida-W211">Mercedes E trida W211</ModelLink>
+                                        <ModelLink href="/airmatic/Mercedes-E-trida-W212">Mercedes E trida W212</ModelLink>
+                                        <ModelLink href="/airmatic/Mercedes-E-trida-W213">Mercedes E trida W213</ModelLink>
+                                        <ModelLink href="/airmatic/Mercedes-S-trida-W220">Mercedes S trida W220</ModelLink>
+                                        <ModelLink href="/airmatic/Mercedes-S-trida-W220-ABC">Mercedes S trida W220 (ABC)</ModelLink>
+                                        <ModelLink href="/airmatic/Mercedes-S-trida-W221">Mercedes S trida W221</ModelLink>
+                                        <ModelLink href="/airmatic/Mercedes-S-trida-W221-ABC">Mercedes S trida W221 (ABC)</ModelLink>
+                                        <ModelLink href="/airmatic/Mercedes-S-trida-W222">Mercedes S trida W222</ModelLink>
+                                        <ModelLink href="/airmatic/Mercedes-S-trida-W222-ABC">Mercedes S trida W222 (ABC)</ModelLink>
                                         <ModelLink href="/airmatic/Mercedes-S-coupe-W217">Mercedes S coupe W217</ModelLink>
-                                        <ModelLink href="/airmatic/Mercedes-S-klasa-W217-ABC">Mercedes S klasa W217 (ABC)</ModelLink>
+                                        <ModelLink href="/airmatic/Mercedes-S-trida-W217-ABC">Mercedes S trida W217 (ABC)</ModelLink>
                                         <ModelLink href="/airmatic/Mercedes-CL-W215-ABC">Mercedes CL W215 (ABC)</ModelLink>
                                         <ModelLink href="/airmatic/Mercedes-CL-W216">Mercedes CL W216</ModelLink>
                                         <ModelLink href="/airmatic/Mercedes-CL-W216-ABC">Mercedes CL W216 (ABC)</ModelLink>
                                         <ModelLink href="/airmatic/Mercedes-CLS-W218">Mercedes CLS W218</ModelLink>
                                         <ModelLink href="/airmatic/Mercedes-CLS-W219">Mercedes CLS W219</ModelLink>
-                                        <ModelLink href="/airmatic/Mercedes-R-klasa-W251">Mercedes R-klasa W251</ModelLink>
+                                        <ModelLink href="/airmatic/Mercedes-R-trida-W251">Mercedes R-trida W251</ModelLink>
                                         <ModelLink href="/airmatic/Mercedes-ML-GL-W164">Mercedes ML / GL - W164</ModelLink>
                                         <ModelLink href="/airmatic/Mercedes-GLE-GLE-Coupe-W292">Mercedes GLE / GLE Coupe W292</ModelLink>
                                         <ModelLink href="/airmatic/Mercedes-ML-GL-W166-X166">Mercedes ML / GL – W166 / X166</ModelLink>
