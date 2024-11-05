@@ -177,14 +177,12 @@ export default function Featured({ product, menuOpen, heroBanner }) {
                                         <ModelLink href="/airmatic/Mercedes-S-trida-W221-ABC">Mercedes S trida W221 (ABC)</ModelLink>
                                         <ModelLink href="/airmatic/Mercedes-S-trida-W222">Mercedes S trida W222</ModelLink>
                                         <ModelLink href="/airmatic/Mercedes-S-trida-W222-ABC">Mercedes S trida W222 (ABC)</ModelLink>
-                                        <ModelLink href="/airmatic/Mercedes-S-coupe-W217">Mercedes S coupe W217</ModelLink>
-                                        <ModelLink href="/airmatic/Mercedes-S-trida-W217-ABC">Mercedes S trida W217 (ABC)</ModelLink>
-                                        <ModelLink href="/airmatic/Mercedes-CL-W215-ABC">Mercedes CL W215 (ABC)</ModelLink>
+                                        <ModelLink href="/airmatic/Mercedes-S-coupe-W217">Mercedes S coupe W217</ModelLink>                                      
                                         <ModelLink href="/airmatic/Mercedes-CL-W216">Mercedes CL W216</ModelLink>
-                                        <ModelLink href="/airmatic/Mercedes-CL-W216-ABC">Mercedes CL W216 (ABC)</ModelLink>
+                                  
                                         <ModelLink href="/airmatic/Mercedes-CLS-W218">Mercedes CLS W218</ModelLink>
                                         <ModelLink href="/airmatic/Mercedes-CLS-W219">Mercedes CLS W219</ModelLink>
-                                        <ModelLink href="/airmatic/Mercedes-R-trida-W251">Mercedes R-trida W251</ModelLink>
+                                    
                                         <ModelLink href="/airmatic/Mercedes-ML-GL-W164">Mercedes ML / GL - W164</ModelLink>
                                         <ModelLink href="/airmatic/Mercedes-GLE-GLE-Coupe-W292">Mercedes GLE / GLE Coupe W292</ModelLink>
                                         <ModelLink href="/airmatic/Mercedes-ML-GL-W166-X166">Mercedes ML / GL – W166 / X166</ModelLink>
@@ -200,7 +198,7 @@ export default function Featured({ product, menuOpen, heroBanner }) {
                                 <BrandContainer>
                                     <BrandTitle>Audi</BrandTitle>
                                     <ButtonContainer>
-                                        <ModelLink href="/airmatic/Audi-A6-Allroad-C5">Audi A6 Allroad C5</ModelLink>
+                                        {/* <ModelLink href="/airmatic/Audi-A6-Allroad-C5">Audi A6 Allroad C5</ModelLink>
                                         <ModelLink href="/airmatic/Audi-A6-C6-Allroad">Audi A6 C6 / A6 C6 Allroad</ModelLink>
                                         <ModelLink href="/airmatic/Audi-A6-C7-Allroad">Audi A6 C7 / A6 C7 Allroad</ModelLink>
                                         <ModelLink href="/airmatic/Audi-A6-C8-Allroad">Audi A6 C8 / A6 C8 Allroad</ModelLink>
@@ -211,14 +209,14 @@ export default function Featured({ product, menuOpen, heroBanner }) {
                                         <ModelLink href="/airmatic/Audi-A8-D5">Audi A8 – D5</ModelLink>
                                         <ModelLink href="/airmatic/Audi-Q7-4L">Audi Q7 4L</ModelLink>
                                         <ModelLink href="/airmatic/Audi-Q7-4M">Audi Q7 4M</ModelLink>
-                                        <ModelLink href="/airmatic/Audi-Q8">Audi Q8</ModelLink>
+                                        <ModelLink href="/airmatic/Audi-Q8">Audi Q8</ModelLink> */}
                                     </ButtonContainer>
                                 </BrandContainer>
 
                                 <BrandContainer>
                                     <BrandTitle>BMW</BrandTitle>
                                     <ButtonContainer>
-                                        <ModelLink href="/airmatic/BMW-serii-5-E39">BMW serii 5 E39</ModelLink>
+                                        {/* <ModelLink href="/airmatic/BMW-serii-5-E39">BMW serii 5 E39</ModelLink>
                                         <ModelLink href="/airmatic/BMW-serii-5-E61">BMW serii 5 E61</ModelLink>
                                         <ModelLink href="/airmatic/BMW-serii-5-F11">BMW serii 5 F11</ModelLink>
                                         <ModelLink href="/airmatic/BMW-serii-5-F07-GT">BMW serii 5 F07 GT</ModelLink>
@@ -232,83 +230,83 @@ export default function Featured({ product, menuOpen, heroBanner }) {
                                         <ModelLink href="/airmatic/BMW-X5-E53">BMW X5 E53</ModelLink>
                                         <ModelLink href="/airmatic/BMW-X5-E70-X6-E71">BMW X5 E70 / X6 E71</ModelLink>
                                         <ModelLink href="/airmatic/BMW-X5-F15-X6-F16">BMW X5 F15 / X6 F16</ModelLink>
-                                        <ModelLink href="/airmatic/BMW-X5-G05-X6-G06">BMW X5 G05 / X6 G06</ModelLink>
+                                        <ModelLink href="/airmatic/BMW-X5-G05-X6-G06">BMW X5 G05 / X6 G06</ModelLink> */}
                                     </ButtonContainer>
                                 </BrandContainer>
 
                                 <BrandContainer>
                                     <BrandTitle>Citroen</BrandTitle>
                                     <ButtonContainer>
-                                        <ModelLink href="/airmatic/Citroen-C4-Picasso-C4-Grand-Picasso">Citroen C4 Picasso / C4 Grand Picasso</ModelLink>
+                                        {/* <ModelLink href="/airmatic/Citroen-C4-Picasso-C4-Grand-Picasso">Citroen C4 Picasso / C4 Grand Picasso</ModelLink> */}
                                     </ButtonContainer>
                                 </BrandContainer>
 
                                 <BrandContainer>
                                     <BrandTitle>Jaguar</BrandTitle>
                                     <ButtonContainer>
-                                        <ModelLink href="/airmatic/Jaguar-XF-X250">Jaguar XF X250</ModelLink>
+                                        {/* <ModelLink href="/airmatic/Jaguar-XF-X250">Jaguar XF X250</ModelLink>
                                         <ModelLink href="/airmatic/Jaguar-XJ-X350-X358">Jaguar XJ X350 / X358</ModelLink>
-                                        <ModelLink href="/airmatic/Jaguar-X351">Jaguar X351</ModelLink>
+                                        <ModelLink href="/airmatic/Jaguar-X351">Jaguar X351</ModelLink> */}
                                     </ButtonContainer>
                                 </BrandContainer>
 
                                 <BrandContainer>
                                     <BrandTitle>Jeep</BrandTitle>
                                     <ButtonContainer>
-                                        <ModelLink href="/airmatic/Jeep-Grand-Cherokee-WK2">Jeep Grand Cherokee WK2</ModelLink>
+                                        {/* <ModelLink href="/airmatic/Jeep-Grand-Cherokee-WK2">Jeep Grand Cherokee WK2</ModelLink> */}
                                     </ButtonContainer>
                                 </BrandContainer>
 
                                 <BrandContainer>
                                     <BrandTitle>Lexus</BrandTitle>
                                     <ButtonContainer>
-                                        <ModelLink href="/airmatic/Lexus-LS-400-430-460-600">Lexus LS 400 430 460 600</ModelLink>
+                                        {/* <ModelLink href="/airmatic/Lexus-LS-400-430-460-600">Lexus LS 400 430 460 600</ModelLink> */}
                                     </ButtonContainer>
                                 </BrandContainer>
 
                                 <BrandContainer>
                                     <BrandTitle>Opel</BrandTitle>
                                     <ButtonContainer>
-                                        <ModelLink href="/airmatic/Opel-Astra-H">Opel Astra H</ModelLink>
+                                        {/* <ModelLink href="/airmatic/Opel-Astra-H">Opel Astra H</ModelLink>
                                         <ModelLink href="/airmatic/Opel-Astra-J">Opel Astra J</ModelLink>
                                         <ModelLink href="/airmatic/Opel-Insignia-A">Opel Insignia A</ModelLink>
                                         <ModelLink href="/airmatic/Opel-Signum">Opel Signum</ModelLink>
-                                        <ModelLink href="/airmatic/Opel-Vectra-C">Opel Vectra C</ModelLink>
+                                        <ModelLink href="/airmatic/Opel-Vectra-C">Opel Vectra C</ModelLink> */}
                                     </ButtonContainer>
                                 </BrandContainer>
 
                                 <BrandContainer>
                                     <BrandTitle>Porsche</BrandTitle>
                                     <ButtonContainer>
-                                        <ModelLink href="/airmatic/Porsche-Cayenne-I">Porsche Cayenne I</ModelLink>
+                                        {/* <ModelLink href="/airmatic/Porsche-Cayenne-I">Porsche Cayenne I</ModelLink>
                                         <ModelLink href="/airmatic/Porsche-Cayenne-II">Porsche Cayenne II</ModelLink>
-                                        <ModelLink href="/airmatic/Porsche-Panamera-970">Porsche Panamera 970</ModelLink>
+                                        <ModelLink href="/airmatic/Porsche-Panamera-970">Porsche Panamera 970</ModelLink> */}
                                     </ButtonContainer>
                                 </BrandContainer>
 
                                 <BrandContainer>
                                     <BrandTitle>Rolls Royce</BrandTitle>
                                     <ButtonContainer>
-                                        <ModelLink href="/airmatic/RollsRoyce-Phantom-VII">Rolls Royce Phantom VII</ModelLink>
+                                        {/* <ModelLink href="/airmatic/RollsRoyce-Phantom-VII">Rolls Royce Phantom VII</ModelLink> */}
                                     </ButtonContainer>
                                 </BrandContainer>
 
                                 <BrandContainer>
                                     <BrandTitle>Volvo</BrandTitle>
                                     <ButtonContainer>
-                                        <ModelLink href="/airmatic/Volvo-V70-Cross-Country">Volvo V70 Cross Country</ModelLink>
+                                        {/* <ModelLink href="/airmatic/Volvo-V70-Cross-Country">Volvo V70 Cross Country</ModelLink>
                                         <ModelLink href="/airmatic/Volvo-XC-60-II">Volvo XC 60 II</ModelLink>
-                                        <ModelLink href="/airmatic/Volvo-XC-90-II">Volvo XC 90 II</ModelLink>
+                                        <ModelLink href="/airmatic/Volvo-XC-90-II">Volvo XC 90 II</ModelLink> */}
                                     </ButtonContainer>
                                 </BrandContainer>
 
                                 <BrandContainer>
                                     <BrandTitle>VW</BrandTitle>
                                     <ButtonContainer>
-                                        <ModelLink href="/airmatic/VW-Multivan-T6">VW Multivan T6</ModelLink>
+                                        {/* <ModelLink href="/airmatic/VW-Multivan-T6">VW Multivan T6</ModelLink>
                                         <ModelLink href="/airmatic/VW-Phaeton">VW Phaeton</ModelLink>
                                         <ModelLink href="/airmatic/VW-Touareg-I-7L">VW Touareg I 7L</ModelLink>
-                                        <ModelLink href="/airmatic/VW-Touareg-II-7P">VW Touareg II 7P</ModelLink>
+                                        <ModelLink href="/airmatic/VW-Touareg-II-7P">VW Touareg II 7P</ModelLink> */}
                                     </ButtonContainer>
                                 </BrandContainer>
                             </LeftContent>
