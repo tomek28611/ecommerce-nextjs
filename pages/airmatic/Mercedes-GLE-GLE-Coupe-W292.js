@@ -40,37 +40,37 @@ const MercedesERepair = () => {
       <Container>
         <Header>Mercedes GLE / GLE COUPE W292 (2015-2019) - Měch Přední REGENERACE</Header>
         <Description>Cena: 8990 Kč Montáž do auta: 2500 Kč</Description>
-        <Description>náklady na montáž na amortizátor: 1000 Kč</Description>
+        <Description>náklady na montáž na tlumič: 1000 Kč</Description>
         <Description>
-          <strong>UPOZORNĚNÍ:</strong> Výměna měchu se vztahuje v případě, že amortizátor nedrží vzduch,
-          při této možnosti neprovádíme opravu hydraulického amortizátoru uvnitř – pokud amortizátor bouchá
+          <strong>UPOZORNĚNÍ:</strong> Výměna měchu se vztahuje v případě, že tlumič nedrží vzduch,
+          při této možnosti neprovádíme opravu hydraulického tlumiču uvnitř – pokud tlumič bouchá
           nebo nemá svou účinnost vyjádřenou v % na diagnostické stanici, výměna pouze měchu za nový
-          je v tomto případě bezpředmětná – nezbytná je také regenerace hydraulického amortizátoru.
+          je v tomto případě bezpředmětná – nezbytná je také regenerace hydraulického tlumiču.
         </Description>
 
         <hr />
 
         <Header>Mercedes GLE / GLE COUPE W292 (2015-2019) - Měch Přední NOVÝ</Header>
         <Description>Cena: 9990 Kč Montáž do auta: 2500 Kč</Description>
-        <Description>náklady na montáž na amortizátor: 1000 Kč</Description>
+        <Description>náklady na montáž na tlumič: 1000 Kč</Description>
         <Description>
-          <strong>UPOZORNĚNÍ:</strong> Výměna měchu se vztahuje v případě, že amortizátor nedrží vzduch,
-          při této možnosti neprovádíme opravu hydraulického amortizátoru uvnitř – pokud amortizátor bouchá
+          <strong>UPOZORNĚNÍ:</strong> Výměna měchu se vztahuje v případě, že tlumič nedrží vzduch,
+          při této možnosti neprovádíme opravu hydraulického tlumiču uvnitř – pokud tlumič bouchá
           nebo nemá svou účinnost vyjádřenou v % na diagnostické stanici, výměna pouze měchu za nový
-          je v tomto případě bezpředmětná – nezbytná je také regenerace hydraulického amortizátoru.
+          je v tomto případě bezpředmětná – nezbytná je také regenerace hydraulického tlumiču.
         </Description>
 
         <hr />
 
-        <Header>Mercedes GLE / GLE COUPE W292 (2015-2019) - Amortizátor Přední REGENERACE</Header>
+        <Header>Mercedes GLE / GLE COUPE W292 (2015-2019) - tlumič Přední REGENERACE</Header>
         <RepairOptions>
-          Měch + regenerace hydraulického amortizátoru – 21990 Kč<br />
+          Měch + regenerace hydraulického tlumiču – 21990 Kč<br />
           Montáž do auta: 3000 Kč
         </RepairOptions>
 
         <hr />
 
-        <Header>Mercedes GLE / GLE COUPE W292 (2015-2019) - Amortizátor Zadní – regenerace</Header>
+        <Header>Mercedes GLE / GLE COUPE W292 (2015-2019) - tlumič Zadní – regenerace</Header>
         <Description>Cena: 11990 Kč Montáž: 3000 Kč</Description>
 
         <hr />
@@ -93,9 +93,9 @@ const MercedesERepair = () => {
 
         <hr />
 
-        <Header>Regenerace Amortizátorů Mercedes GLE/GLE Coupe W292</Header>
+        <Header>Regenerace tlumičů Mercedes GLE/GLE Coupe W292</Header>
         <Description>
-          Profesionální služby pro váš Mercedes-Benz. Pravidelná regenerace amortizátorů je nezbytná
+          Profesionální služby pro váš Mercedes-Benz. Pravidelná regenerace tlumičů je nezbytná
           pro zachování luxusu a komfortu jízdy. V našem servisu poskytujeme komplexní služby
           a regeneraci systému odpružení pro model Mercedes GLE/GLE Coupe W292.
         </Description>
@@ -103,8 +103,8 @@ const MercedesERepair = () => {
         <FAQSection>
           <FAQQuestion>FAQ – Často Kladené Dotazy o Mercedes GLE / GLE Coupe W292</FAQQuestion>
           <Description>
-            <strong>Q: Je regenerace amortizátorů v Mercedes GLE / GLE Coupe W292 nezbytná?</strong><br />
-            A: Ano, regenerace amortizátorů je klíčová pro zachování komfortu a bezpečnosti jízdy.
+            <strong>Q: Je regenerace tlumičů v Mercedes GLE / GLE Coupe W292 nezbytná?</strong><br />
+            A: Ano, regenerace tlumičů je klíčová pro zachování komfortu a bezpečnosti jízdy.
           </Description>
           <Description>
             <strong>Q: Jaké jsou příznaky poškozeného měchu v Mercedes GLE / GLE Coupe W292?</strong><br />
@@ -115,14 +115,14 @@ const MercedesERepair = () => {
             A: Oprava kompresoru odpružení je složitý proces a doporučuje se svěřit ji specialistům.
           </Description>
           <Description>
-            <strong>Q: Jak dlouho trvá proces regenerace amortizátorů v Mercedes GLE / GLE Coupe W292?</strong><br />
-            A: Proces může trvat od několika hodin do několika dnů, v závislosti na stavu amortizátorů.
+            <strong>Q: Jak dlouho trvá proces regenerace tlumičů v Mercedes GLE / GLE Coupe W292?</strong><br />
+            A: Proces může trvat od několika hodin do několika dnů, v závislosti na stavu tlumičů.
           </Description>
         </FAQSection>
 
         <Description>
           <strong>Shrnutí:</strong><br />
-          Regenerace amortizátorů v Mercedes GLE / GLE Coupe W292 je klíčový proces pro výkon a bezpečnost těchto luxusních automobilů.
+          Regenerace tlumičů v Mercedes GLE / GLE Coupe W292 je klíčový proces pro výkon a bezpečnost těchto luxusních automobilů.
         </Description>
       </Container>
     </div>

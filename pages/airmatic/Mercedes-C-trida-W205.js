@@ -50,7 +50,7 @@ const PartInfo = () => {
                 <Title>Mercedes C třída W205 (2014-2020)</Title>
                 <Section>
                 <br />
-                    <Subtitle>Amortizátor přední REGENERACE</Subtitle>
+                    <Subtitle>tlumič přední REGENERACE</Subtitle>
                     <img src="/W205-przod.jpg" alt="auto-dily-motor" className="" />
                     <Description>
                         Mercedes C TŘÍDA W205 (2014-2020) PŘEDNÍ
@@ -62,23 +62,23 @@ const PartInfo = () => {
                     <br />
                     <Subtitle>POPIS OPRAVY / REGENERACE:</Subtitle>
                     <Description>
-                        POZOR: regenerace měcha se uplatňuje v případě, že amortizátor neudržuje vzduch,
-                        při této možnosti neopravujeme hydraulický amortizátor uvnitř – takže pokud amortizátor
+                        POZOR: regenerace měcha se uplatňuje v případě, že tlumič neudržuje vzduch,
+                        při této možnosti neopravujeme hydraulický tlumič uvnitř – takže pokud tlumič
                         bouchá nebo nemá svou účinnost vyjádřenou v % na diagnostické stanici, výměna pouze měcha na nový
-                        v takovém případě je bezpředmětná – nezbytná je také regenerace hydraulického amortizátoru.
+                        v takovém případě je bezpředmětná – nezbytná je také regenerace hydraulického tlumiču.
                     </Description>
                     <br />
                     <Subtitle>OPCE OPRAVY / REGENERACE:</Subtitle>
                     <Options>
                         <li>opce 1: výměna měcha na nový / regenerace pneumatiky – <Price>9200 Kč</Price></li>
-                        <li>dodatečný náklad na nasazení měcha na amortizátor - <Price>6000 Kč</Price></li>
-                        <li>opce 2: Komplexní regenerace: Výměna měcha + regenerace hydraulického amortizátoru – <Price>17 000 Kč</Price></li>
+                        <li>dodatečný náklad na nasazení měcha na tlumič - <Price>6000 Kč</Price></li>
+                        <li>opce 2: Komplexní regenerace: Výměna měcha + regenerace hydraulického tlumiču – <Price>17 000 Kč</Price></li>
                     </Options>
                     <Price>Montáž: 2000 Kč / kus</Price>
                 </Section>
 
                 <Section>
-                    <Subtitle>Amortizátor zadní REGENERACE</Subtitle>
+                    <Subtitle>tlumič zadní REGENERACE</Subtitle>
                     <Description>SEDAN / KOMBI</Description>
                     <img src="/W205-rear-shock.jpg" alt="auto-dily-motor" className="" />
                     <Price>Cena: 9000 Kč Montáž: 2000 Kč / kus</Price>
@@ -114,12 +114,12 @@ const PartInfo = () => {
                 </Section>
 
                 <Section>
-                    <Subtitle>Regenerace Amortizátorů Mercedes C-třída W205 (2014-2020) – Cesta k Dokonalosti</Subtitle>
+                    <Subtitle>Regenerace tlumičů Mercedes C-třída W205 (2014-2020) – Cesta k Dokonalosti</Subtitle>
                     <Description>
-                        Úvod do Regenerace Amortizátorů v Mercedes C-třída W205 (2014-2020)
+                        Úvod do Regenerace tlumičů v Mercedes C-třída W205 (2014-2020)
                         Mercedes C-třída W205, vyráběná v letech 2014-2020, je symbolem elegance a inovace v automobilovém světě.
-                        Ale i tento výjimečný model vyžaduje pravidelnou údržbu, a regenerace amortizátorů je klíčovým prvkem
-                        tohoto procesu. V tomto článku se podíváme, jak regenerace amortizátorů, měch, vzduchová pumpa
+                        Ale i tento výjimečný model vyžaduje pravidelnou údržbu, a regenerace tlumičů je klíčovým prvkem
+                        tohoto procesu. V tomto článku se podíváme, jak regenerace tlumičů, měch, vzduchová pumpa
                         a kompresor zavěšení spolupracují v zavěšení Mercedes C-třída W205,
                         a jak může proces regenerace obnovit původní výkon.
                     </Description>
@@ -137,17 +137,17 @@ const PartInfo = () => {
                         a reakci na změny v povrchu vozovky.
                     </Description>
                     <br />
-                    <Subtitle>Proces Regenerace Amortizátorů Mercedes C-třída W205 (2014-2020)</Subtitle>
+                    <Subtitle>Proces Regenerace tlumičů Mercedes C-třída W205 (2014-2020)</Subtitle>
                     <Description>
-                        Regenerace amortizátorů v Mercedes C-třída W205 je složitý proces, který vyžaduje specializované
+                        Regenerace tlumičů v Mercedes C-třída W205 je složitý proces, který vyžaduje specializované
                         vybavení a znalosti. Zahrnuje:
                     </Description>
                     <br />
                     <Options>
-                        <li>Diagnostika: Kontrola stavu amortizátorů a identifikace problémů specifických pro model W205.</li>
-                        <li>Demontáž: Odstranění amortizátorů z vozidla.</li>
+                        <li>Diagnostika: Kontrola stavu tlumičů a identifikace problémů specifických pro model W205.</li>
+                        <li>Demontáž: Odstranění tlumičů z vozidla.</li>
                         <li>Údržba a Oprava: Odstranění nečistot a výměna poškozených částí, se zohledněním specifikace modelu W205.</li>
-                        <li>Montáž: Opětovné namontování amortizátorů do vozidla.</li>
+                        <li>Montáž: Opětovné namontování tlumičů do vozidla.</li>
                         <li>Kalibrace: Přizpůsobení nastavení zavěšení specifikacím Mercedes C-třída W205 (2014-2020).</li>
                     </Options>
                 </Section>
@@ -156,9 +156,9 @@ const PartInfo = () => {
                     <Subtitle>FAQ – Často Kladené Dotazy o Mercedes C-třída W205 (2014-2020)</Subtitle>
                     <Options>
                         <li>
-                            Q: Je regenerace amortizátorů v Mercedes C-třída W205 (2014-2020) nezbytná?
+                            Q: Je regenerace tlumičů v Mercedes C-třída W205 (2014-2020) nezbytná?
                             <br />
-                            A: Ano, regenerace amortizátorů je klíčová pro udržení luxusního komfortu a bezpečnosti jízdy v modelu W205.
+                            A: Ano, regenerace tlumičů je klíčová pro udržení luxusního komfortu a bezpečnosti jízdy v modelu W205.
                         </li>
                         <li>
                             Q: Jaké jsou příznaky poškozeného měcha v Mercedes C-třída W205 (2014-2020)?
@@ -171,9 +171,9 @@ const PartInfo = () => {
                             A: Oprava vzduchové pumpy v modelu W205 je složitým procesem a doporučuje se svěřit ji specialistům.
                         </li>
                         <li>
-                            Q: Jak dlouho trvá proces regenerace amortizátorů v Mercedes C-třída W205 (2014-2020)?
+                            Q: Jak dlouho trvá proces regenerace tlumičů v Mercedes C-třída W205 (2014-2020)?
                             <br />
-                            A: Proces může trvat od několika hodin po několik dní, v závislosti na stavu amortizátorů a dostupnosti náhradních dílů.
+                            A: Proces může trvat od několika hodin po několik dní, v závislosti na stavu tlumičů a dostupnosti náhradních dílů.
                         </li>
                     </Options>
                 </Section>

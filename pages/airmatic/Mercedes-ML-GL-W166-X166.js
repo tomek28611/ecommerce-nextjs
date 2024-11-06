@@ -43,36 +43,36 @@ const MercedesEClassRepair = () => {
         <img src="/W213-front-shock-4x4.jpg" alt="auto-dily-motor" className="" />
 
         <Description>Cena: 8990 Kč     Montáž do auta: 2500 Kč</Description>
-        <Description>náklady na instalaci na amortizátor: 1000 Kč</Description>
+        <Description>náklady na instalaci na tlumič: 1000 Kč</Description>
         <Description>
           <strong>Upozornění:</strong><br />
-          Výměna měchu se vztahuje v případě, že amortizátor nedrží vzduch. 
-          Při této možnosti neprovádíme opravu hydraulického amortizátoru uvnitř – pokud amortizátor bouchá 
+          Výměna měchu se vztahuje v případě, že tlumič nedrží vzduch. 
+          Při této možnosti neprovádíme opravu hydraulického tlumiču uvnitř – pokud tlumič bouchá 
           nebo nemá svou účinnost vyjádřenou v % na diagnostické stanici, výměna pouze měchu za nový 
-          je v tomto případě bezpředmětná – nezbytná je také regenerace hydraulického amortizátoru.
+          je v tomto případě bezpředmětná – nezbytná je také regenerace hydraulického tlumiču.
         </Description>
 
         <hr />
         <Header>Mercedes E-Klasa W166 (2011-) - Měch Přední NOVÝ</Header>
         <Description>Cena: 9990 Kč     Montáž do auta: 2500 Kč</Description>
-        <Description>náklady na instalaci na amortizátor: 1000 Kč</Description>
+        <Description>náklady na instalaci na tlumič: 1000 Kč</Description>
         <Description>
           <strong>Upozornění:</strong><br />
-          Výměna měchu se vztahuje v případě, že amortizátor nedrží vzduch. 
-          Při této možnosti neprovádíme opravu hydraulického amortizátoru uvnitř – pokud amortizátor bouchá 
+          Výměna měchu se vztahuje v případě, že tlumič nedrží vzduch. 
+          Při této možnosti neprovádíme opravu hydraulického tlumiču uvnitř – pokud tlumič bouchá 
           nebo nemá svou účinnost vyjádřenou v % na diagnostické stanici, výměna pouze měchu za nový 
-          je v tomto případě bezpředmětná – nezbytná je také regenerace hydraulického amortizátoru.
+          je v tomto případě bezpředmětná – nezbytná je také regenerace hydraulického tlumiču.
         </Description>
 
         <hr />
-        <Header>Mercedes E-Klasa W166 (2011-) - Amortizátor Přední REGENERACE:</Header>
+        <Header>Mercedes E-Klasa W166 (2011-) - tlumič Přední REGENERACE:</Header>
         <RepairOptions>
-          měch + regenerace hydraulického amortizátoru – 14990 Kč<br />
+          měch + regenerace hydraulického tlumiču – 14990 Kč<br />
           Montáž do auta: 3000 Kč
         </RepairOptions>
 
         <hr />
-        <Header>Mercedes E-Klasa W166 (2011-) - Amortizátor Zadní REGENERACE</Header>
+        <Header>Mercedes E-Klasa W166 (2011-) - tlumič Zadní REGENERACE</Header>
         <Description>Cena: 8990 Kč     Montáž: 3000 Kč</Description>
 
         <hr />
@@ -97,17 +97,17 @@ const MercedesEClassRepair = () => {
         </Description>
 
         <hr />
-        <Header>Regenerace Amortizátorů v Mercedes E-Klasa W166: Klíč k Komfortu a Bezpečnosti</Header>
+        <Header>Regenerace tlumičů v Mercedes E-Klasa W166: Klíč k Komfortu a Bezpečnosti</Header>
         <Description>
           Mercedes E-Klasa W166 je vozidlo, které se vyznačuje vysokým komfortem jízdy a solidními výkony na silnici. 
-          Regenerace amortizátorů je klíčovým prvkem pro udržení pohodlí a bezpečnosti jízdy.
+          Regenerace tlumičů je klíčovým prvkem pro udržení pohodlí a bezpečnosti jízdy.
         </Description>
 
         <FAQSection>
           <FAQQuestion>FAQ – Často Kladené Dotazy o Mercedes E-Klasa W166</FAQQuestion>
           <Description>
-            <strong>Q: Je regenerace amortizátorů v Mercedes E-Klasa W166 nezbytná?</strong><br />
-            A: Ano, regenerace amortizátorů je klíčová pro zachování komfortu a bezpečnosti jízdy v modelech W166.
+            <strong>Q: Je regenerace tlumičů v Mercedes E-Klasa W166 nezbytná?</strong><br />
+            A: Ano, regenerace tlumičů je klíčová pro zachování komfortu a bezpečnosti jízdy v modelech W166.
           </Description>
           <Description>
             <strong>Q: Jaké jsou příznaky poškozeného měchu v Mercedes E-Klasa W166?</strong><br />
@@ -118,14 +118,14 @@ const MercedesEClassRepair = () => {
             A: Oprava kompresoru je složitý proces a doporučuje se svěřit ji specialistům.
           </Description>
           <Description>
-            <strong>Q: Jak dlouho trvá proces regenerace amortizátorů v Mercedes E-Klasa W166?</strong><br />
-            A: Proces může trvat od několika hodin do několika dnů, v závislosti na stavu amortizátorů.
+            <strong>Q: Jak dlouho trvá proces regenerace tlumičů v Mercedes E-Klasa W166?</strong><br />
+            A: Proces může trvat od několika hodin do několika dnů, v závislosti na stavu tlumičů.
           </Description>
         </FAQSection>
 
         <Description>
           <strong>Podsumování:</strong><br />
-          Regenerace amortizátorů v Mercedes E-Klasa W166 je klíčový proces pro výkon a bezpečnost automobilu.
+          Regenerace tlumičů v Mercedes E-Klasa W166 je klíčový proces pro výkon a bezpečnost automobilu.
         </Description>
       </Container>
     </div>

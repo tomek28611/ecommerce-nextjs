@@ -53,19 +53,19 @@ const MercedesEClassRepair = () => {
         <Description>Cena: 3290 Kč   Montáž: 2000 Kč</Description>
 
         <hr />
-        <Header>Profesionální regenerace amortizátorů pro Mercedes Benz V-Class / Vito W638</Header>
+        <Header>Profesionální regenerace tlumičů pro Mercedes Benz V-Class / Vito W638</Header>
         <Description>
-          Jsme specializovaný autoservis, který nabízí komplexní regeneraci amortizátorů a výměnu podušek odpružení pro vozy Mercedes Benz V-Class / Vito W638 (1996-2003). Naše služby zajišťují optimální funkci odpružení, zvyšují komfort jízdy a bezpečnost na silnici.
+          Jsme specializovaný autoservis, který nabízí komplexní regeneraci tlumičů a výměnu podušek odpružení pro vozy Mercedes Benz V-Class / Vito W638 (1996-2003). Naše služby zajišťují optimální funkci odpružení, zvyšují komfort jízdy a bezpečnost na silnici.
         </Description>
 
-        <Header>Ověřené metody regenerace amortizátorů</Header>
+        <Header>Ověřené metody regenerace tlumičů</Header>
         <Description>
-          Naše zkušenosti nám umožňují aplikovat nejnovější metody regenerace amortizátorů pro Mercedes Benz V-Class / Vito W638. Používáme vysoce kvalitní náhradní díly a specializované vybavení, abychom obnovili plnou funkčnost těchto klíčových částí odpružení a ušetřili Vám náklady na výměnu za nové amortizátory.
+          Naše zkušenosti nám umožňují aplikovat nejnovější metody regenerace tlumičů pro Mercedes Benz V-Class / Vito W638. Používáme vysoce kvalitní náhradní díly a specializované vybavení, abychom obnovili plnou funkčnost těchto klíčových částí odpružení a ušetřili Vám náklady na výměnu za nové tlumičy.
         </Description>
 
-        <Header>Vliv regenerace amortizátorů na kvalitu jízdy</Header>
+        <Header>Vliv regenerace tlumičů na kvalitu jízdy</Header>
         <Description>
-          Regenerace amortizátorů má zásadní vliv na kvalitu jízdy Vašeho Mercedesu Benz V-Class / Vito W638. Profesionální proces regenerace zajišťuje správné tlumení nárazů a vibrací, což přispívá k hladkosti jízdy a komfortu pro řidiče i pasažéry.
+          Regenerace tlumičů má zásadní vliv na kvalitu jízdy Vašeho Mercedesu Benz V-Class / Vito W638. Profesionální proces regenerace zajišťuje správné tlumení nárazů a vibrací, což přispívá k hladkosti jízdy a komfortu pro řidiče i pasažéry.
         </Description>
 
         <Header>Výměna podušek odpružení – Klíčový prvek plné funkce odpružení</Header>
@@ -79,14 +79,14 @@ const MercedesEClassRepair = () => {
 
         <RepairOptions>
           Konkurenceschopné ceny a profesionální servis:<br />
-          Cena regenerace amortizátorů pro Mercedes Benz V-Class / Vito W638 je pouze 3290 Kč, což představuje výraznou úsporu ve srovnání s náklady na nové amortizátory. Montáž podušek odpružení: pouze 1000 Kč.
+          Cena regenerace tlumičů pro Mercedes Benz V-Class / Vito W638 je pouze 3290 Kč, což představuje výraznou úsporu ve srovnání s náklady na nové tlumičy. Montáž podušek odpružení: pouze 1000 Kč.
         </RepairOptions>
 
         <FAQSection>
           <FAQQuestion>Často Kladené Dotazy (FAQ)</FAQQuestion>
           <Description>
-            <strong>Q: Jaké jsou příznaky poškozených amortizátorů a podušek odpružení?</strong><br />
-            A: Poškozené amortizátory a podušky odpružení se mohou projevit například netěsnostmi oleje, nerovnoměrným opotřebením pneumatik nebo problémy s...
+            <strong>Q: Jaké jsou příznaky poškozených tlumičů a podušek odpružení?</strong><br />
+            A: Poškozené tlumičy a podušky odpružení se mohou projevit například netěsnostmi oleje, nerovnoměrným opotřebením pneumatik nebo problémy s...
           </Description>
         </FAQSection>
       </Container>

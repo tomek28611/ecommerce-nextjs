@@ -40,55 +40,55 @@ const MercedesEClassRepair = () => {
    
       <Container>
         <Header>Mercedes S třída W221 (2005-) - Měch Přední REGNERACE</Header>
-        <Description>Cena: 7000 Kč                   Montáž na amortizátor: 1000 Kč</Description>
+        <Description>Cena: 7000 Kč                   Montáž na tlumič: 1000 Kč</Description>
         <Description>Montaž do vozidla: 2000 Kč</Description>
         
         <hr />
         
         <Header>Mercedes S třída W221 (2005-) - Měch Přední NOVÝ</Header>
-        <Description>Cena: 7000 Kč                   Montáž na amortizátor: 1000 Kč</Description>
+        <Description>Cena: 7000 Kč                   Montáž na tlumič: 1000 Kč</Description>
         <Description>Montaž do vozidla: 2000 Kč</Description>
         
         <hr />
         
-        <Header>Mercedes S třída W221 (2005-) - Amortizátor Přední REGNERACE</Header>
-        <Description>Měch + Amortizátor</Description>
+        <Header>Mercedes S třída W221 (2005-) - tlumič Přední REGNERACE</Header>
+        <Description>Měch + tlumič</Description>
         <Description>Cena: 13990 Kč                   Montáž: 2000 Kč</Description>
         
         <hr />
         
         <Header>Mercedes S třída W221 (2005-) - Měch Přední REGNERACE – 4 MATIC</Header>
         <Description>Cena: 7000 Kč                   Montáž do vozidla: 2500 Kč</Description>
-        <Description>Montaž na amortizátor: 1000 Kč</Description>
+        <Description>Montaž na tlumič: 1000 Kč</Description>
         
         <hr />
         
         <Header>Mercedes S třída W221 (2005-) - Měch Přední NOVÝ – 4 MATIC</Header>
         <Description>Cena: 7000 Kč                   Montáž do vozidla: 2500 Kč</Description>
-        <Description>Montaž na amortizátor: 1000 Kč</Description>
+        <Description>Montaž na tlumič: 1000 Kč</Description>
         
         <hr />
         
-        <Header>Mercedes S třída W221 (2005-) - Amortizátor Přední 4 MATIC REGNERACE</Header>
-        <Description>Měch + Amortizátor</Description>
+        <Header>Mercedes S třída W221 (2005-) - tlumič Přední 4 MATIC REGNERACE</Header>
+        <Description>Měch + tlumič</Description>
         <Description>Cena: 14990 Kč                   Montáž do vozidla: 2500 Kč</Description>
         
         <hr />
         
         <Header>Mercedes S třída W221 (2005-) - Měch Zadní REGNERACE</Header>
         <Description>Cena: 7000 Kč                   Montáž do vozidla: 3000 Kč</Description>
-        <Description>Montaž na amortizátor: 1000 Kč</Description>
+        <Description>Montaž na tlumič: 1000 Kč</Description>
         
         <hr />
         
         <Header>Mercedes S třída W221 (2005-) - Měch Zadní NOVÝ</Header>
         <Description>Cena: 7000 Kč                   Montáž do vozidla: 3000 Kč</Description>
-        <Description>Montaž na amortizátor: 1000 Kč</Description>
+        <Description>Montaž na tlumič: 1000 Kč</Description>
         
         <hr />
         
-        <Header>Mercedes S třída W221 (2005-) - Amortizátor Zadní REGNERACE</Header>
-        <Description>Měch + Amortizátor</Description>
+        <Header>Mercedes S třída W221 (2005-) - tlumič Zadní REGNERACE</Header>
+        <Description>Měch + tlumič</Description>
         <Description>Cena: 13990 Kč                   Montáž: 3000 Kč</Description>
         
         <hr />
@@ -114,15 +114,15 @@ const MercedesEClassRepair = () => {
         
         <hr />
         
-        <Header>Regenerace amortizátorů v Mercedesu S-třída W221 (2005-)</Header>
+        <Header>Regenerace tlumičů v Mercedesu S-třída W221 (2005-)</Header>
         <Description>Mercedes S-třída W221, symbol luxusu a inovace, je jedním z vlajkových modelů značky Mercedes-Benz. Jeho výjimečný komfort jízdy a dokonalé jízdní vlastnosti do značné míry závisí na funkčnosti systému odpružení.</Description>
         <Description>V tomto článku se podíváme na klíčové prvky tohoto systému a zjistíme, jak regenerace může obnovit jeho původní výkon.</Description>
 
         <FAQSection>
           <FAQQuestion>FAQ – Často Kladené Dotazy o Mercedes S třída W221</FAQQuestion>
           <Description>
-            <strong>Q: Je regenerace amortizátorů v Mercedes S třída W221 nezbytná?</strong><br />
-            A: Ano, regenerace amortizátorů je klíčová pro zachování komfortu a bezpečnosti jízdy v modelech W221.
+            <strong>Q: Je regenerace tlumičů v Mercedes S třída W221 nezbytná?</strong><br />
+            A: Ano, regenerace tlumičů je klíčová pro zachování komfortu a bezpečnosti jízdy v modelech W221.
           </Description>
           <Description>
             <strong>Q: Jaké jsou příznaky poškozeného měchu v Mercedes S třída W221?</strong><br />
@@ -133,14 +133,14 @@ const MercedesEClassRepair = () => {
             A: Oprava kompresoru odpružení je složitý proces a doporučuje se svěřit ji specialistům.
           </Description>
           <Description>
-            <strong>Q: Jak dlouho trvá proces regenerace amortizátorů v Mercedes S třída W221?</strong><br />
-            A: Proces může trvat od několika hodin do několika dnů, v závislosti na stavu amortizátorů.
+            <strong>Q: Jak dlouho trvá proces regenerace tlumičů v Mercedes S třída W221?</strong><br />
+            A: Proces může trvat od několika hodin do několika dnů, v závislosti na stavu tlumičů.
           </Description>
         </FAQSection>
 
         <Description>
           <strong>Podsumování:</strong><br />
-          Regenerace amortizátorů v Mercedes S třída W221 je klíčový proces, který může významně ovlivnit výkon a bezpečnost tohoto luxusního automobilu.
+          Regenerace tlumičů v Mercedes S třída W221 je klíčový proces, který může významně ovlivnit výkon a bezpečnost tohoto luxusního automobilu.
         </Description>
       </Container>
     </div>

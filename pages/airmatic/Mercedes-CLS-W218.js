@@ -38,35 +38,35 @@ const MercedesCLSRepair = () => {
     <div>
       <Header1 />
       <Container>
-        <Header>Mercedes CLS W218 (2011- ) - AMORTIZÁTOR PŘEDNÍ AIRMATIC</Header>
+        <Header>Mercedes CLS W218 (2011- ) - tlumič PŘEDNÍ AIRMATIC</Header>
        
 
         <RepairOptions>
           Možnosti regenerace:<br />
           <strong>Možnost 1:</strong> Výměna měchu za nový – 11990 Kč<br />
-          <strong>Možnost 2:</strong> Měch nový + regenerace hydraulického amortizátoru – 23990 Kč
+          <strong>Možnost 2:</strong> Měch nový + regenerace hydraulického tlumiču – 23990 Kč
         </RepairOptions>
         <Description>
-          UPOZORNĚNÍ: Výměna měchu má použití, pokud amortizátor nedrží vzduch. Při této možnosti neprovádíme opravu hydraulického amortizátoru uvnitř – pokud amortizátor bouchá nebo nemá svou účinnost vyjádřenou v % na diagnostické stanici, výměna pouze měchu za nový v tomto případě je bezpředmětná – nezbytná je také regenerace hydraulického amortizátoru, tedy možnost č. 2.
+          UPOZORNĚNÍ: Výměna měchu má použití, pokud tlumič nedrží vzduch. Při této možnosti neprovádíme opravu hydraulického tlumiču uvnitř – pokud tlumič bouchá nebo nemá svou účinnost vyjádřenou v % na diagnostické stanici, výměna pouze měchu za nový v tomto případě je bezpředmětná – nezbytná je také regenerace hydraulického tlumiču, tedy možnost č. 2.
         </Description>
         <Description>Montáž: 3000 Kč</Description>
         <Description>Dodatečně: Výměna krytu na nový – 1000 Kč / kus</Description>
 
         <hr />
-        <Header>Mercedes CLS W218 (2011- ) - AMORTIZÁTOR PŘEDNÍ AIRMATIC 4 MATIC</Header>
+        <Header>Mercedes CLS W218 (2011- ) - tlumič PŘEDNÍ AIRMATIC 4 MATIC</Header>
         <RepairOptions>
           Možnosti regenerace:<br />
           <strong>Možnost 1:</strong> Výměna měchu za nový – 11990 Kč<br />
-          <strong>Možnost 2:</strong> Měch nový + regenerace hydraulického amortizátoru – 23990 Kč
+          <strong>Možnost 2:</strong> Měch nový + regenerace hydraulického tlumiču – 23990 Kč
         </RepairOptions>
         <Description>
-          UPOZORNĚNÍ: Výměna měchu má použití, pokud amortizátor nedrží vzduch. Při této možnosti neprovádíme opravu hydraulického amortizátoru uvnitř – pokud amortizátor bouchá nebo nemá svou účinnost vyjádřenou v % na diagnostické stanici, výměna pouze měchu za nový v tomto případě je bezpředmětná – nezbytná je také regenerace hydraulického amortizátoru, tedy možnost č. 2.
+          UPOZORNĚNÍ: Výměna měchu má použití, pokud tlumič nedrží vzduch. Při této možnosti neprovádíme opravu hydraulického tlumiču uvnitř – pokud tlumič bouchá nebo nemá svou účinnost vyjádřenou v % na diagnostické stanici, výměna pouze měchu za nový v tomto případě je bezpředmětná – nezbytná je také regenerace hydraulického tlumiču, tedy možnost č. 2.
         </Description>
         <Description>Montáž: 3000 Kč</Description>
         <Description>Dodatečně: Výměna krytu na nový – 1000 Kč / kus</Description>
 
         <hr />
-        <Header>Mercedes CLS W218 (2011- ) - AMORTIZÁTOR ZADNÍ REGENERACE (kombi / sedan)</Header>
+        <Header>Mercedes CLS W218 (2011- ) - tlumič ZADNÍ REGENERACE (kombi / sedan)</Header>
         <Description>Cena: 10990 Kč    Montáž: 3500 Kč</Description>
 
         <hr />
@@ -100,9 +100,9 @@ const MercedesCLSRepair = () => {
         </Description>
 
         <hr />
-        <Header>Regenerace Amortizátorů a Další Služby pro Mercedes CLS W218</Header>
+        <Header>Regenerace tlumičů a Další Služby pro Mercedes CLS W218</Header>
         <Description>
-          Regenerace amortizátorů je jedním z mnoha oborů, na které se specializuje náš autoservis. Správně udržované amortizátory jsou klíčem k pohodlné a bezpečné jízdě, zejména pokud mluvíme o automobilech takové třídy jako Mercedes CLS W218. Význam správného stavu amortizátorů je neocenitelný, proto nabízíme řadu služeb, které vám pomohou udržet váš vůz v nejlepší kondici.
+          Regenerace tlumičů je jedním z mnoha oborů, na které se specializuje náš autoservis. Správně udržované tlumičy jsou klíčem k pohodlné a bezpečné jízdě, zejména pokud mluvíme o automobilech takové třídy jako Mercedes CLS W218. Význam správného stavu tlumičů je neocenitelný, proto nabízíme řadu služeb, které vám pomohou udržet váš vůz v nejlepší kondici.
         </Description>
       </Container>
     </div>

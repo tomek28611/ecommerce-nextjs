@@ -38,23 +38,23 @@ const MercedesEklasaRepair = () => {
     <div>
       <Header1 />
       <Container>
-        <Header>Mercedes CLS W219 - Amortizátor Přední REGENERACE</Header>
+        <Header>Mercedes CLS W219 - tlumič Přední REGENERACE</Header>
         <img src="/W219-front-shock.jpg" alt="auto-dily-motor" className="" />
         <Description>
           <strong>Možnosti Opravy / Regenerace:</strong><br />
           Wýměna měchu na nový / regenerace části pneumatiky – 6990 Kč
         </Description>
         <Description>
-          Montáž do amortizátoru: 1000 Kč<br />
+          Montáž do tlumiču: 1000 Kč<br />
           Montáž do auta: 2000 Kč
         </Description>
         <Description>
-          <strong>UPOZORNĚNÍ:</strong> Wýměna měchu se vztahuje, pokud amortizátor nedrží vzduch. Pokud amortizátor bouchá
-          nebo nemá svou účinnost, výměna měchu za nový je bezpředmětná – nezbytná je také regenerace hydraulického amortizátoru.
+          <strong>UPOZORNĚNÍ:</strong> Wýměna měchu se vztahuje, pokud tlumič nedrží vzduch. Pokud tlumič bouchá
+          nebo nemá svou účinnost, výměna měchu za nový je bezpředmětná – nezbytná je také regenerace hydraulického tlumiču.
         </Description>
 
         <hr />
-        <Header>Mercedes CLS W219 - Amortizátor Přední REGENERACE - Výměna měchu + Regenerace hydraulického amortizátoru</Header>
+        <Header>Mercedes CLS W219 - tlumič Přední REGENERACE - Výměna měchu + Regenerace hydraulického tlumiču</Header>
         <Description>Cena: 12990 Kč Montáž: 2000 Kč</Description>
 
         <hr />
@@ -62,7 +62,7 @@ const MercedesEklasaRepair = () => {
         <Description>Cena: 5900 Kč Montáž: 2000 Kč</Description>
 
         <hr />
-        <Header>Mercedes CLS W219 - Amortizátor Zadní REGENERACE</Header>
+        <Header>Mercedes CLS W219 - tlumič Zadní REGENERACE</Header>
         <Description>Cena: 8990 Kč Montáž: 3000 Kč</Description>
 
         <hr />
@@ -82,19 +82,19 @@ const MercedesEklasaRepair = () => {
         </Description>
 
         <hr />
-        <Header>Regenerace Amortizátorů Mercedes CLS W219 – Klíč k Dokonalé Jízdě</Header>
+        <Header>Regenerace tlumičů Mercedes CLS W219 – Klíč k Dokonalé Jízdě</Header>
         <Description>
-          Regenerace amortizátorů je klíčová pro zajištění bezpečnosti a komfortu jízdy v modelu Mercedes CLS W219.
+          Regenerace tlumičů je klíčová pro zajištění bezpečnosti a komfortu jízdy v modelu Mercedes CLS W219.
         </Description>
         <Description>
-          Správná funkčnost amortizátorů zajišťuje stabilitu a pohodlí během jízdy. Proces regenerace vrací amortizátorům jejich plnou funkčnost, což vede k lepší jízdní dynamice.
+          Správná funkčnost tlumičů zajišťuje stabilitu a pohodlí během jízdy. Proces regenerace vrací tlumičům jejich plnou funkčnost, což vede k lepší jízdní dynamice.
         </Description>
 
         <FAQSection>
           <FAQQuestion>FAQ – Často Kladené Dotazy o Mercedes CLS W219</FAQQuestion>
           <Description>
-            <strong>Q: Je regenerace amortizátorů nezbytná?</strong><br />
-            A: Ano, regenerace amortizátorů je klíčová pro udržení komfortu a bezpečnosti jízdy.
+            <strong>Q: Je regenerace tlumičů nezbytná?</strong><br />
+            A: Ano, regenerace tlumičů je klíčová pro udržení komfortu a bezpečnosti jízdy.
           </Description>
           <Description>
             <strong>Q: Jaké jsou příznaky poškozeného měchu?</strong><br />
@@ -106,13 +106,13 @@ const MercedesEklasaRepair = () => {
           </Description>
           <Description>
             <strong>Q: Jak dlouho trvá proces regenerace?</strong><br />
-            A: Může trvat od několika hodin do několika dnů, záleží na stavu amortizátorů.
+            A: Může trvat od několika hodin do několika dnů, záleží na stavu tlumičů.
           </Description>
         </FAQSection>
 
         <Description>
           <strong>Podsumování:</strong><br />
-          Regenerace amortizátorů v Mercedes CLS W219 je klíčová pro zajištění jejich výkonu a bezpečnosti.
+          Regenerace tlumičů v Mercedes CLS W219 je klíčová pro zajištění jejich výkonu a bezpečnosti.
         </Description>
       </Container>
     </div>

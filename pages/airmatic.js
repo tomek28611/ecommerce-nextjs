@@ -198,7 +198,7 @@ export default function Featured({ product, menuOpen, heroBanner }) {
                                 <BrandContainer>
                                     <BrandTitle>Audi</BrandTitle>
                                     <ButtonContainer>
-                                        {/* <ModelLink href="/airmatic/Audi-A6-Allroad-C5">Audi A6 Allroad C5</ModelLink>
+                                        <ModelLink href="/airmatic/Audi-A6-Allroad-C5">Audi A6 Allroad C5</ModelLink>
                                         <ModelLink href="/airmatic/Audi-A6-C6-Allroad">Audi A6 C6 / A6 C6 Allroad</ModelLink>
                                         <ModelLink href="/airmatic/Audi-A6-C7-Allroad">Audi A6 C7 / A6 C7 Allroad</ModelLink>
                                         <ModelLink href="/airmatic/Audi-A6-C8-Allroad">Audi A6 C8 / A6 C8 Allroad</ModelLink>
@@ -209,7 +209,7 @@ export default function Featured({ product, menuOpen, heroBanner }) {
                                         <ModelLink href="/airmatic/Audi-A8-D5">Audi A8 – D5</ModelLink>
                                         <ModelLink href="/airmatic/Audi-Q7-4L">Audi Q7 4L</ModelLink>
                                         <ModelLink href="/airmatic/Audi-Q7-4M">Audi Q7 4M</ModelLink>
-                                        <ModelLink href="/airmatic/Audi-Q8">Audi Q8</ModelLink> */}
+                                        <ModelLink href="/airmatic/Audi-Q8">Audi Q8</ModelLink> 
                                     </ButtonContainer>
                                 </BrandContainer>
 

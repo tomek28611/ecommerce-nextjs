@@ -39,7 +39,7 @@ const MercedesEClassRepair = () => {
       <Header1 />
    
       <Container>
-        <Header>Mercedes E Trida W213 (2016-202x) - Amortizátor Přední REGENERACE</Header>
+        <Header>Mercedes E Trida W213 (2016-202x) - tlumič Přední REGENERACE</Header>
         <img src="/W213-front-shock.jpg" alt="auto-dily-213" className="" />
 
         <Description>Mercedes E Trida W213 (2016-202x) PŘEDNÍ</Description>
@@ -47,20 +47,20 @@ const MercedesEClassRepair = () => {
         <Description>Všechny motorizace</Description>
         <Description>
           <strong>Popis Opravy / Regenerace:</strong><br />
-          UPOZORNĚNÍ: regenerace měchu se vztahuje v případě, že amortizátor nedrží vzduch,
-          při této možnosti neprovádíme opravu hydraulického amortizátoru uvnitř – pokud amortizátor bouchá
+          UPOZORNĚNÍ: regenerace měchu se vztahuje v případě, že tlumič nedrží vzduch,
+          při této možnosti neprovádíme opravu hydraulického tlumiču uvnitř – pokud tlumič bouchá
           nebo nemá svou účinnost vyjádřenou v % na diagnostické stanici, výměna pouze měchu za nový
-          je v tomto případě bezpředmětná – nezbytná je také regenerace hydraulického amortizátoru.
+          je v tomto případě bezpředmětná – nezbytná je také regenerace hydraulického tlumiču.
         </Description>
         <RepairOptions>
           Možnosti Opravy / Regenerace:<br />
           <strong>Možnost 1:</strong> Výměna měchu za nový / regenerace pneumatické části – 11990 Kč<br />
-          <strong>Možnost 2:</strong> Komplexní regenerace: Výměna měchu + regenerace hydraulického amortizátoru – 19990 Kč
+          <strong>Možnost 2:</strong> Komplexní regenerace: Výměna měchu + regenerace hydraulického tlumiču – 19990 Kč
         </RepairOptions>
         <Description>Montáž: 3000 Kč / kus</Description>
 
         <hr />
-        <Header>Mercedes E Trida W213 (2016-202x) - Amortizátor Zadní REGENERACE</Header>
+        <Header>Mercedes E Trida W213 (2016-202x) - tlumič Zadní REGENERACE</Header>
         <Description>Cena: 9990 Kč   Montáž: 3000 Kč / kus</Description>
 
         <hr />
@@ -119,8 +119,8 @@ const MercedesEClassRepair = () => {
         <FAQSection>
           <FAQQuestion>FAQ – Často Kladené Dotazy o Mercedes E Trida W213</FAQQuestion>
           <Description>
-            <strong>Q: Je regenerace amortizátorů v Mercedes E Trida W213 nezbytná?</strong><br />
-            A: Ano, regenerace amortizátorů je klíčová pro zachování luxusního komfortu a bezpečnosti jízdy v modelech W213.
+            <strong>Q: Je regenerace tlumičů v Mercedes E Trida W213 nezbytná?</strong><br />
+            A: Ano, regenerace tlumičů je klíčová pro zachování luxusního komfortu a bezpečnosti jízdy v modelech W213.
           </Description>
           <Description>
             <strong>Q: Jaké jsou příznaky poškozeného měchu v Mercedes E Trida W213?</strong><br />
@@ -131,14 +131,14 @@ const MercedesEClassRepair = () => {
             A: Oprava kompresoru odpružení v modelech W213 je složitý proces a doporučuje se svěřit ji specialistům.
           </Description>
           <Description>
-            <strong>Q: Jak dlouho trvá proces regenerace amortizátorů v Mercedes E Trida W213?</strong><br />
-            A: Proces může trvat od několika hodin do několika dnů, v závislosti na stavu amortizátorů a dostupnosti náhradních dílů pro modely W213.
+            <strong>Q: Jak dlouho trvá proces regenerace tlumičů v Mercedes E Trida W213?</strong><br />
+            A: Proces může trvat od několika hodin do několika dnů, v závislosti na stavu tlumičů a dostupnosti náhradních dílů pro modely W213.
           </Description>
         </FAQSection>
 
         <Description>
           <strong>Podsumování:</strong><br />
-          Regenerace amortizátorů v Mercedes E Trida W213 je klíčový proces, který může významně ovlivnit výkon a bezpečnost těchto luxusních automobilů.
+          Regenerace tlumičů v Mercedes E Trida W213 je klíčový proces, který může významně ovlivnit výkon a bezpečnost těchto luxusních automobilů.
         </Description>
       </Container>
     </div>

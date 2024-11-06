@@ -46,26 +46,26 @@ const MercedesGLCRepair = () => {
       <Header1 />
    
     <Container>
-      <Header>Mercedes GLC W253 / C253 (2015- 202x) - Amortizátor Přední REGENERACE</Header>
+      <Header>Mercedes GLC W253 / C253 (2015- 202x) - tlumič Přední REGENERACE</Header>
       <img src="/W213-front-shock-4x4.jpg" alt="auto-dily-motor" className="" />
 
       <Description>Všechny motorizace</Description>
       <Description>
         <strong>Popis Opravy / Regenerace:</strong><br />
-        UPOZORNĚNÍ: regenerace měchu se vztahuje v případě, že amortizátor nedrží vzduch,
-        při této možnosti neprovádíme opravu hydraulického amortizátoru uvnitř – pokud amortizátor bouchá
+        UPOZORNĚNÍ: regenerace měchu se vztahuje v případě, že tlumič nedrží vzduch,
+        při této možnosti neprovádíme opravu hydraulického tlumiču uvnitř – pokud tlumič bouchá
         nebo nemá svou účinnost vyjádřenou v % na diagnostické stanici, výměna pouze měchu za nový
-        je v tomto případě bezpředmětná – nezbytná je také regenerace hydraulického amortizátoru.
+        je v tomto případě bezpředmětná – nezbytná je také regenerace hydraulického tlumiču.
       </Description>
       <RepairOptions>
         Možnosti Opravy / Regenerace:<br />
         <strong>Možnost 1:</strong> Výměna měchu za nový / regenerace pneumatické části – 12000 Kč<br />
-        <strong>Možnost 2:</strong> Komplexní regenerace: Výměna měchu + regenerace hydraulického amortizátoru – 19000 Kč
+        <strong>Možnost 2:</strong> Komplexní regenerace: Výměna měchu + regenerace hydraulického tlumiču – 19000 Kč
       </RepairOptions>
       <Description>Montáž: 3000 Kč / kus</Description>
 
       <hr />
-      <Header>Mercedes GLC W253 / C253 (2015- 202x) - Amortizátor Zadní REGENERACE</Header>
+      <Header>Mercedes GLC W253 / C253 (2015- 202x) - tlumič Zadní REGENERACE</Header>
       <Description>Cena: 9990 Kč   Montáž: 3000 Kč / kus</Description>
 
       <hr />
@@ -100,21 +100,21 @@ const MercedesGLCRepair = () => {
       </Description>
 
       <hr />
-      <Header>Regenerace Amortizátorů Mercedes GLC W253 / GLC Coupe C253 – Klíč k Dokonalé Jízdě</Header>
+      <Header>Regenerace tlumičů Mercedes GLC W253 / GLC Coupe C253 – Klíč k Dokonalé Jízdě</Header>
       <Description>
         Mercedes GLC W253 / GLC Coupe C253 jsou výjimečné modely, které spojují eleganci a inovaci. 
-        I tyto luxusní vozy vyžadují pravidelnou údržbu a regenerace amortizátorů je klíčovým prvkem tohoto procesu.
+        I tyto luxusní vozy vyžadují pravidelnou údržbu a regenerace tlumičů je klíčovým prvkem tohoto procesu.
       </Description>
       <Description>
-        V tomto článku se podíváme na to, jak regenerace amortizátorů, měch, kompresor odpružení a pumpa odpružení 
+        V tomto článku se podíváme na to, jak regenerace tlumičů, měch, kompresor odpružení a pumpa odpružení 
         spolupracují v systému odpružení těchto modelů, a jak může proces regenerace obnovit původní výkon.
       </Description>
 
       <FAQSection>
         <FAQQuestion>FAQ – Často Kladené Dotazy o Mercedes GLC W253 / GLC Coupe C253</FAQQuestion>
         <Description>
-          <strong>Q: Je regenerace amortizátorů v Mercedes GLC W253 / GLC Coupe C253 nezbytná?</strong><br />
-          A: Ano, regenerace amortizátorů je klíčová pro zachování luxusního komfortu a bezpečnosti jízdy v modelech W253 / C253.
+          <strong>Q: Je regenerace tlumičů v Mercedes GLC W253 / GLC Coupe C253 nezbytná?</strong><br />
+          A: Ano, regenerace tlumičů je klíčová pro zachování luxusního komfortu a bezpečnosti jízdy v modelech W253 / C253.
         </Description>
         <Description>
           <strong>Q: Jaké jsou příznaky poškozeného měchu v Mercedes GLC W253 / GLC Coupe C253?</strong><br />
@@ -125,14 +125,14 @@ const MercedesGLCRepair = () => {
           A: Oprava kompresoru odpružení v modelech W253 / C253 je složitý proces a doporučuje se svěřit ji specialistům.
         </Description>
         <Description>
-          <strong>Q: Jak dlouho trvá proces regenerace amortizátorů v Mercedes GLC W253 / GLC Coupe C253?</strong><br />
-          A: Proces může trvat od několika hodin do několika dnů, v závislosti na stavu amortizátorů a dostupnosti náhradních dílů pro modely W253 / C253.
+          <strong>Q: Jak dlouho trvá proces regenerace tlumičů v Mercedes GLC W253 / GLC Coupe C253?</strong><br />
+          A: Proces může trvat od několika hodin do několika dnů, v závislosti na stavu tlumičů a dostupnosti náhradních dílů pro modely W253 / C253.
         </Description>
       </FAQSection>
 
       <Description>
         <strong>Podsumování:</strong><br />
-        Regenerace amortizátorů v Mercedes GLC W253 / GLC Coupe C253 je klíčový proces, který může významně ovlivnit výkon a bezpečnost těchto luxusních automobilů.
+        Regenerace tlumičů v Mercedes GLC W253 / GLC Coupe C253 je klíčový proces, který může významně ovlivnit výkon a bezpečnost těchto luxusních automobilů.
       </Description>
     </Container>
     </div>

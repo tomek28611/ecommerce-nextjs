@@ -39,39 +39,39 @@ const MercedesCLW216Repair = () => {
       <Header1 />
       <Container>
         <Header>Mercedes CL W216 (2007-2012) - Měch Přední Regenerace</Header>
-        <Description>Cena: 7990 Kč                   Montáž na amortizátor: 1000 Kč</Description>
+        <Description>Cena: 7990 Kč                   Montáž na tlumič: 1000 Kč</Description>
         <Description>Montáž do vozidla: 200 Kč</Description>
         
         <hr />
         <Header>Mercedes CL W216 (2007-2012) 4 MATIC - Měch Přední Nový</Header>
-        <Description>Cena: 7990 Kč                   Montáž na amortizátor: 1000 Kč</Description>
+        <Description>Cena: 7990 Kč                   Montáž na tlumič: 1000 Kč</Description>
         <Description>Montáž do vozidla: 2000 Kč</Description>
         
         <hr />
-        <Header>Mercedes CL W216 (2007-2012) - Amortizátor Přední</Header>
+        <Header>Mercedes CL W216 (2007-2012) - tlumič Přední</Header>
         <Description>Cena: 13990 Kč                   Montáž: 2000 Kč</Description>
         
         <hr />
         <Header>Mercedes CL W216 (2007-2012) - Měch Přední Regenerace – 4 MATIC</Header>
         <Description>Cena: 7990 Kč                   Montáž do vozidla: 2500 Kč</Description>
-        <Description>Montáž na amortizátor: 1000 Kč</Description>
+        <Description>Montáž na tlumič: 1000 Kč</Description>
         
         <hr />
-        <Header>Mercedes CL W216 (2007-2012) - Amortizátor Přední 4 MATIC</Header>
+        <Header>Mercedes CL W216 (2007-2012) - tlumič Přední 4 MATIC</Header>
         <Description>Cena: 14990 Kč                   Montáž: 2500 Kč</Description>
         
         <hr />
         <Header>Mercedes CL W216 (2007-2012) - Měch Zadní Regenerace</Header>
         <Description>Cena: 7990 Kč                   Montáž do vozidla: 3000 Kč</Description>
-        <Description>Montáž na amortizátor: 1000 Kč</Description>
+        <Description>Montáž na tlumič: 1000 Kč</Description>
         
         <hr />
         <Header>Mercedes CL W216 (2007-2012) - Měch Zadní Nový</Header>
         <Description>Cena: 7990 Kč                   Montáž do vozidla: 3000 Kč</Description>
-        <Description>Montáž na amortizátor: 1000 Kč</Description>
+        <Description>Montáž na tlumič: 1000 Kč</Description>
         
         <hr />
-        <Header>Mercedes CL W216 (2007-2012) - Amortizátor Zadní</Header>
+        <Header>Mercedes CL W216 (2007-2012) - tlumič Zadní</Header>
         <Description>Cena: 13990 Kč                   Montáž: 3000 Kč</Description>
         
         <hr />
@@ -99,8 +99,8 @@ const MercedesCLW216Repair = () => {
         <Description>Cena: 17990 Kč bez DPH Montáž: 3000 – 4000 Kč</Description>
 
         <Description>
-          <strong>Regenerace amortizátorů a další služby pro Mercedes CL W216</strong><br />
-          Vítejte v našem autoservisu, specializujícím se na služby regenerace amortizátorů a další opravy spojené se zavěšením pro automobily značky Mercedes CL W216 (2007-2012). Jsme hrdí na naši znalost a zkušenosti v oblasti automobilového zavěšení, a naše služby jsou navrženy tak, aby zajistily nejvyšší kvalitu, výkonnost a bezpečnost vašeho vozidla.
+          <strong>Regenerace tlumičů a další služby pro Mercedes CL W216</strong><br />
+          Vítejte v našem autoservisu, specializujícím se na služby regenerace tlumičů a další opravy spojené se zavěšením pro automobily značky Mercedes CL W216 (2007-2012). Jsme hrdí na naši znalost a zkušenosti v oblasti automobilového zavěšení, a naše služby jsou navrženy tak, aby zajistily nejvyšší kvalitu, výkonnost a bezpečnost vašeho vozidla.
         </Description>
       </Container>
     </div>

@@ -58,17 +58,17 @@ const MercedesVianoV639Repair = () => {
 
         <hr />
         
-        <Header>Regenerace Amortizátorů Mercedes Vito/Viano V639: Komplexní průvodce</Header>
+        <Header>Regenerace tlumičů Mercedes Vito/Viano V639: Komplexní průvodce</Header>
         <Description>
           Mercedes Vito/Viano V639 je model vozidla, který spojuje funkčnost s komfortem jízdy. 
           Pro zachování těchto vlastností na nejvyšší úrovni je klíčová péče o technický stav vozidla, včetně systému odpružení. 
-          V tomto průvodci se podíváme na to, proč je regenerace amortizátorů tak důležitá a jaké prvky tvoří systém odpružení v tomto modelu.
+          V tomto průvodci se podíváme na to, proč je regenerace tlumičů tak důležitá a jaké prvky tvoří systém odpružení v tomto modelu.
         </Description>
 
-        <Header>Význam amortizátorů pro komfort jízdy</Header>
+        <Header>Význam tlumičů pro komfort jízdy</Header>
         <Description>
-          Amortizátory hrají klíčovou roli v zajištění komfortu jízdy. 
-          V modelu Mercedes Vito/Viano V639 je regenerace amortizátorů nezbytná, když začnou ztrácet svou účinnost, což negativně ovlivňuje komfort jízdy a bezpečnost.
+          tlumičy hrají klíčovou roli v zajištění komfortu jízdy. 
+          V modelu Mercedes Vito/Viano V639 je regenerace tlumičů nezbytná, když začnou ztrácet svou účinnost, což negativně ovlivňuje komfort jízdy a bezpečnost.
         </Description>
 
         <Header>Měch – nepostradatelný prvek pneumatického odpružení</Header>
@@ -79,22 +79,22 @@ const MercedesVianoV639Repair = () => {
 
         <Header>Kompresor a pumpa odpružení – srdce systému</Header>
         <Description>
-          Kompresor odpružení a pumpa odpružení jsou zodpovědné za dodávku vzduchu do měchů amortizátoru. 
+          Kompresor odpružení a pumpa odpružení jsou zodpovědné za dodávku vzduchu do měchů tlumiču. 
           Díky nim funguje systém pneumatického odpružení hladce a jízda je komfortní.
         </Description>
 
         <FAQSection>
           <FAQQuestion>FAQ: Nejčastější dotazy</FAQQuestion>
           <Description>
-            <strong>Otázka: Je regenerace amortizátorů nutná v modelu Mercedes Vito/Viano V639?</strong><br />
-            Ano, regenerace amortizátorů je klíčová pro zachování komfortu a bezpečnosti jízdy v tomto modelu.
+            <strong>Otázka: Je regenerace tlumičů nutná v modelu Mercedes Vito/Viano V639?</strong><br />
+            Ano, regenerace tlumičů je klíčová pro zachování komfortu a bezpečnosti jízdy v tomto modelu.
           </Description>
           <Description>
-            <strong>Otázka: Jaké jsou příznaky opotřebovaných amortizátorů v modelu Mercedes Vito/Viano V639?</strong><br />
-            Příznaky opotřebovaných amortizátorů zahrnují zhoršení komfortu jízdy, nadměrné vibrace a nestabilitu vozidla během jízdy.
+            <strong>Otázka: Jaké jsou příznaky opotřebovaných tlumičů v modelu Mercedes Vito/Viano V639?</strong><br />
+            Příznaky opotřebovaných tlumičů zahrnují zhoršení komfortu jízdy, nadměrné vibrace a nestabilitu vozidla během jízdy.
           </Description>
           <Description>
-            <strong>Otázka: Mohu si sám vyměnit měch amortizátoru v modelu Mercedes Vito/Viano V639?</strong><br />
+            <strong>Otázka: Mohu si sám vyměnit měch tlumiču v modelu Mercedes Vito/Viano V639?</strong><br />
             Doporučujeme svěřit tuto službu odborníkům, aby byla zajištěna správná instalace a bezpečnost.
           </Description>
         </FAQSection>

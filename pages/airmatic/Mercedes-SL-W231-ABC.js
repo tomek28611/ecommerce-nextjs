@@ -29,7 +29,7 @@ const MercedesSLRepair = () => {
     <div>
       <Header1 />
       <Container>
-        <Header>Mercedes SL W231 (2012 – 20xx) - Amortizátor Přední / Zadní</Header>
+        <Header>Mercedes SL W231 (2012 – 20xx) - tlumič Přední / Zadní</Header>
         <Description>
           <strong>Varianty:</strong><br />
           Standardní verze / AMG verze<br />

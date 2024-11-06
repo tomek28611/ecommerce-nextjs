@@ -38,32 +38,32 @@ const MercedesEKlasaRepair = () => {
     <div>
       <Header1 />
       <Container>
-        <Header>Mercedes ML / GL – W164 (2005-2011) - Amortizátor Přední REGENERACE</Header>
-        <Description>Amortizátor + Měch (verze s ADS – Adaptive Damping System)</Description>
+        <Header>Mercedes ML / GL – W164 (2005-2011) - tlumič Přední REGENERACE</Header>
+        <Description>tlumič + Měch (verze s ADS – Adaptive Damping System)</Description>
         <Description><strong>Cena:</strong> 13990 Kč<br /><strong>Montáž:</strong> 3000 Kč</Description>
 
         <hr />
-        <Header>Mercedes ML / GL – W164 (2005-2011) - Měch amortizátora Přední REGENERACE</Header>
+        <Header>Mercedes ML / GL – W164 (2005-2011) - Měch tlumiča Přední REGENERACE</Header>
         <Description>(všechny verze zavěšení)</Description>
-        <Description><strong>Cena:</strong> 4490 Kč<br /><strong>Montáž:</strong> 3000 Kč<br />náklady na montáž na amortizátor: 500 Kč</Description>
+        <Description><strong>Cena:</strong> 4490 Kč<br /><strong>Montáž:</strong> 3000 Kč<br />náklady na montáž na tlumič: 500 Kč</Description>
 
         <hr />
-        <Header>Mercedes ML / GL – W164 (2005-2011) - Měch amortizátora Přední NOVÝ</Header>
+        <Header>Mercedes ML / GL – W164 (2005-2011) - Měch tlumiča Přední NOVÝ</Header>
         <Description>(všechny verze zavěšení)</Description>
-        <Description><strong>Cena:</strong> 4490 Kč<br /><strong>Montáž:</strong> 3000 Kč<br />náklady na montáž na amortizátor: 500 Kč</Description>
+        <Description><strong>Cena:</strong> 4490 Kč<br /><strong>Montáž:</strong> 3000 Kč<br />náklady na montáž na tlumič: 500 Kč</Description>
 
         <hr />
-        <Header>Mercedes GL – W164 (2005-2011) USA - Amortizátor Přední REGENERACE</Header>
-        <Description>Měch + Amortizátor (verze bez ADS)</Description>
+        <Header>Mercedes GL – W164 (2005-2011) USA - tlumič Přední REGENERACE</Header>
+        <Description>Měch + tlumič (verze bez ADS)</Description>
         <Description><strong>Cena:</strong> 13990 Kč<br /><strong>Montáž:</strong> 3000 Kč</Description>
 
         <hr />
-        <Header>Mercedes ML / GL – W164 (2005-2011) - Amortizátor Zadní - regenerace</Header>
+        <Header>Mercedes ML / GL – W164 (2005-2011) - tlumič Zadní - regenerace</Header>
         <Description>(verze s ADS)</Description>
         <Description><strong>Cena:</strong> 8990 Kč<br /><strong>Montáž:</strong> 3000 Kč</Description>
 
         <hr />
-        <Header>Mercedes GL – W164 (2005-2011) USA - Amortizátor Zadní - regenerace</Header>
+        <Header>Mercedes GL – W164 (2005-2011) USA - tlumič Zadní - regenerace</Header>
         <Description>(verze bez ADS)</Description>
         <Description><strong>Cena:</strong> 8990 Kč<br /><strong>Montáž:</strong> 3000 Kč</Description>
 
@@ -82,17 +82,17 @@ const MercedesEKlasaRepair = () => {
         <Description>PRODUCENT OEM Mercedes-Benz: AMK<br /><strong>Cena:</strong> 14990 Kč<br /><strong>Montáž:</strong> 2500 Kč</Description>
 
         <hr />
-        <Header>Regenerace Amortizátorů Mercedes ML / GL W164 (2005-2011) – Klíč k Dokonalé Jízdě</Header>
+        <Header>Regenerace tlumičů Mercedes ML / GL W164 (2005-2011) – Klíč k Dokonalé Jízdě</Header>
         <Description>
           Mercedes ML / GL W164 jsou výjimečné modely, které spojují eleganci a inovaci. 
-          Tyto luxusní vozy vyžadují pravidelnou údržbu, a regenerace amortizátorů je klíčovým prvkem tohoto procesu.
+          Tyto luxusní vozy vyžadují pravidelnou údržbu, a regenerace tlumičů je klíčovým prvkem tohoto procesu.
         </Description>
 
         <FAQSection>
           <FAQQuestion>FAQ – Často Kladené Dotazy o Mercedes ML / GL W164</FAQQuestion>
           <Description>
-            <strong>Q: Je regenerace amortizátorů v Mercedes ML / GL W164 nezbytná?</strong><br />
-            A: Ano, regenerace amortizátorů je klíčová pro zachování luxusního komfortu a bezpečnosti jízdy v modelech W164.
+            <strong>Q: Je regenerace tlumičů v Mercedes ML / GL W164 nezbytná?</strong><br />
+            A: Ano, regenerace tlumičů je klíčová pro zachování luxusního komfortu a bezpečnosti jízdy v modelech W164.
           </Description>
           <Description>
             <strong>Q: Jaké jsou příznaky poškozeného měchu v Mercedes ML / GL W164?</strong><br />
@@ -103,14 +103,14 @@ const MercedesEKlasaRepair = () => {
             A: Oprava kompresoru odpružení v modelech W164 je složitý proces a doporučuje se svěřit ji specialistům.
           </Description>
           <Description>
-            <strong>Q: Jak dlouho trvá proces regenerace amortizátorů v Mercedes ML / GL W164?</strong><br />
-            A: Proces může trvat od několika hodin do několika dnů, v závislosti na stavu amortizátorů a dostupnosti náhradních dílů pro modely W164.
+            <strong>Q: Jak dlouho trvá proces regenerace tlumičů v Mercedes ML / GL W164?</strong><br />
+            A: Proces může trvat od několika hodin do několika dnů, v závislosti na stavu tlumičů a dostupnosti náhradních dílů pro modely W164.
           </Description>
         </FAQSection>
 
         <Description>
           <strong>Podsumování:</strong><br />
-          Regenerace amortizátorů v Mercedes ML / GL W164 je klíčový proces, který může významně ovlivnit výkon a bezpečnost těchto luxusních automobilů.
+          Regenerace tlumičů v Mercedes ML / GL W164 je klíčový proces, který může významně ovlivnit výkon a bezpečnost těchto luxusních automobilů.
         </Description>
       </Container>
     </div>

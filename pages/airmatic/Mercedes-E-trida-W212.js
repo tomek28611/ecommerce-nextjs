@@ -39,26 +39,26 @@ const MercedesEClassRepair = () => {
       <Header1 />
 
       <Container>
-        <Header>Mercedes E třída W212 (2009- ) - Amortizátor Přední AIRMATIC – REGENERACE</Header>
+        <Header>Mercedes E třída W212 (2009- ) - tlumič Přední AIRMATIC – REGENERACE</Header>
         <img src="" alt="auto-dily-212" className="" />
 
         <RepairOptions>
           Možnosti Regenerace:<br />
           <strong>Možnost 1:</strong> Výměna měchu za nový – 11990 Kč<br />
-          <strong>Možnost 2:</strong> Nový měch + regenerace hydraulického amortizátoru – 23990 Kč
+          <strong>Možnost 2:</strong> Nový měch + regenerace hydraulického tlumiču – 23990 Kč
         </RepairOptions>
         <Description>
-          UPOZORNĚNÍ: Výměna měchu se vztahuje v případě, že amortizátor nedrží vzduch. 
-          Při této možnosti neprovádíme opravu hydraulického amortizátoru uvnitř – pokud amortizátor bouchá 
+          UPOZORNĚNÍ: Výměna měchu se vztahuje v případě, že tlumič nedrží vzduch. 
+          Při této možnosti neprovádíme opravu hydraulického tlumiču uvnitř – pokud tlumič bouchá 
           nebo nemá svou účinnost vyjádřenou v % na diagnostické stanici, výměna pouze měchu za nový 
-          je v tomto případě bezpředmětná – nezbytná je také regenerace hydraulického amortizátoru, což je 
+          je v tomto případě bezpředmětná – nezbytná je také regenerace hydraulického tlumiču, což je 
           Možnost č. 2.
         </Description>
         <Description>Montáž: 3000 Kč</Description>
         <Description>Dodatečně: Výměna osvědčení na nové – 1000 Kč / kus</Description>
 
         <hr />
-        <Header>Mercedes E třída W212 (2009- ) - Amortizátor Zadní REGENERACE (kombi/sedan)</Header>
+        <Header>Mercedes E třída W212 (2009- ) - tlumič Zadní REGENERACE (kombi/sedan)</Header>
         <Description>GWARANCJA 12 měsíců</Description>
         <Description>Cena: 10990 Kč Montáž: 3500 Kč</Description>
 
@@ -91,10 +91,10 @@ const MercedesEClassRepair = () => {
         <Description>FILTR + RELÉ = 990 Kč</Description>
 
         <hr />
-        <Header>Regenerace Amortizátorů v Mercedes-Benz E-Klasa (W212): Udržení Legendárního Komfortu Jízdy</Header>
+        <Header>Regenerace tlumičů v Mercedes-Benz E-Klasa (W212): Udržení Legendárního Komfortu Jízdy</Header>
         <Description>
           Mercedes-Benz E-Klasa (W212) je ztělesněním elegance a výkonu. Klíčem k zachování těchto vlastností 
-          je dokonalý systém odpružení, ve kterém regenerace amortizátorů hraje důležitou roli.
+          je dokonalý systém odpružení, ve kterém regenerace tlumičů hraje důležitou roli.
         </Description>
         <Description>
           Elementy Závěsu v Mercedes-Benz E-Klasa (W212).
@@ -103,8 +103,8 @@ const MercedesEClassRepair = () => {
         <FAQSection>
           <FAQQuestion>FAQ – Často Kladené Dotazy o Mercedes E-Klasa W212</FAQQuestion>
           <Description>
-            <strong>Q: Je regenerace amortizátorů v Mercedes E-Klasa W212 nezbytná?</strong><br />
-            A: Ano, regenerace amortizátorů je klíčová pro zachování luxusního komfortu a bezpečnosti jízdy.
+            <strong>Q: Je regenerace tlumičů v Mercedes E-Klasa W212 nezbytná?</strong><br />
+            A: Ano, regenerace tlumičů je klíčová pro zachování luxusního komfortu a bezpečnosti jízdy.
           </Description>
           <Description>
             <strong>Q: Jaké jsou příznaky poškozeného měchu v Mercedes E-Klasa W212?</strong><br />
@@ -115,14 +115,14 @@ const MercedesEClassRepair = () => {
             A: Oprava kompresoru odpružení je složitý proces a doporučuje se svěřit ji specialistům.
           </Description>
           <Description>
-            <strong>Q: Jak dlouho trvá proces regenerace amortizátorů v Mercedes E-Klasa W212?</strong><br />
-            A: Proces může trvat od několika hodin do několika dnů, v závislosti na stavu amortizátorů.
+            <strong>Q: Jak dlouho trvá proces regenerace tlumičů v Mercedes E-Klasa W212?</strong><br />
+            A: Proces může trvat od několika hodin do několika dnů, v závislosti na stavu tlumičů.
           </Description>
         </FAQSection>
 
         <Description>
           <strong>Podsumowanie:</strong><br />
-          Regenerace amortizátorů v Mercedes E-Klasa W212 je klíčový proces, který může významně ovlivnit výkon a bezpečnost.
+          Regenerace tlumičů v Mercedes E-Klasa W212 je klíčový proces, který může významně ovlivnit výkon a bezpečnost.
         </Description>
       </Container>
     </div>

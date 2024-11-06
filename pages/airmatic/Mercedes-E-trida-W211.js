@@ -38,25 +38,25 @@ const MercedesERepair = () => {
     <div>
       <Header1 />
       <Container>
-        <Header>Mercedes E Klasa W211 (2002-2009) - Amortizátor Přední REGENERACE</Header>
+        <Header>Mercedes E Klasa W211 (2002-2009) - tlumič Přední REGENERACE</Header>
         <img src="/W211-front-shock.jpg" alt="auto-dily-motor" className="" />
 
         <Description>
           <strong>Popis Opravy / Regenerace:</strong><br />
-          UPOZORNĚNÍ: Výměna měchu má použití v případě, že amortizátor nedrží vzduch. Při této možnosti
-          neprovádíme opravu hydraulického amortizátoru uvnitř – pokud amortizátor bouchá nebo nemá svou
+          UPOZORNĚNÍ: Výměna měchu má použití v případě, že tlumič nedrží vzduch. Při této možnosti
+          neprovádíme opravu hydraulického tlumiču uvnitř – pokud tlumič bouchá nebo nemá svou
           účinnost vyjádřenou v % na diagnostické stanici, výměna pouze měchu za nový je v tomto případě
-          bezpředmětná – nezbytná je také regenerace hydraulického amortizátoru.
+          bezpředmětná – nezbytná je také regenerace hydraulického tlumiču.
         </Description>
         <RepairOptions>
           Možnosti Opravy / Regenerace:<br />
           <strong>Možnost 1:</strong> Výměna měchu na nový / regenerace pneumatické části – 6990 Kč<br />
-          <strong>Možnost 2:</strong> Komplexní regenerace: Výměna měchu + regenerace hydraulického amortizátoru – 12990 Kč
+          <strong>Možnost 2:</strong> Komplexní regenerace: Výměna měchu + regenerace hydraulického tlumiču – 12990 Kč
         </RepairOptions>
         <Description>Montáž: 2000 Kč / kus</Description>
 
         <hr />
-        <Header>Mercedes E Klasa W211 (2002-2009) - Amortizátor Přední 4 MATIC REGENERACE</Header>
+        <Header>Mercedes E Klasa W211 (2002-2009) - tlumič Přední 4 MATIC REGENERACE</Header>
         <Description>Cena: 14990 Kč   Montáž: 3000 Kč / kus</Description>
 
         <hr />
@@ -68,7 +68,7 @@ const MercedesERepair = () => {
         <Description>Cena: 5990 Kč   Montáž: 2000 Kč / kus</Description>
 
         <hr />
-        <Header>Mercedes E Klasa W211 (2002-2009) - Amortizátor Zadní REGENERACE</Header>
+        <Header>Mercedes E Klasa W211 (2002-2009) - tlumič Zadní REGENERACE</Header>
         <Description>Cena: 10990 Kč   Montáž: 3000 Kč / kus</Description>
 
         <hr />
@@ -82,21 +82,21 @@ const MercedesERepair = () => {
         </Description>
 
         <hr />
-        <Header>Regenerace Amortizátorů Mercedes E Klasa W211 – Klíč k Dokonalé Jízdě</Header>
+        <Header>Regenerace tlumičů Mercedes E Klasa W211 – Klíč k Dokonalé Jízdě</Header>
         <Description>
           Mercedes E Klasa W211 je výjimečný model, který spojuje eleganci a inovaci. 
-          Pravidelná údržba a regenerace amortizátorů jsou klíčovými prvky tohoto procesu.
+          Pravidelná údržba a regenerace tlumičů jsou klíčovými prvky tohoto procesu.
         </Description>
         <Description>
-          V tomto článku se podíváme na to, jak regenerace amortizátorů a kompresoru spolupracují 
+          V tomto článku se podíváme na to, jak regenerace tlumičů a kompresoru spolupracují 
           v systému odpružení těchto modelů, a jak může proces regenerace obnovit původní výkon.
         </Description>
 
         <FAQSection>
           <FAQQuestion>FAQ – Často Kladené Dotazy o Mercedes E Klasa W211</FAQQuestion>
           <Description>
-            <strong>Q: Je regenerace amortizátorů v Mercedes E Klasa W211 nezbytná?</strong><br />
-            A: Ano, regenerace amortizátorů je klíčová pro zachování komfortu a bezpečnosti jízdy v modelech W211.
+            <strong>Q: Je regenerace tlumičů v Mercedes E Klasa W211 nezbytná?</strong><br />
+            A: Ano, regenerace tlumičů je klíčová pro zachování komfortu a bezpečnosti jízdy v modelech W211.
           </Description>
           <Description>
             <strong>Q: Jaké jsou příznaky poškozeného měchu v Mercedes E Klasa W211?</strong><br />
@@ -107,14 +107,14 @@ const MercedesERepair = () => {
             A: Oprava kompresoru odpružení v modelech W211 je složitý proces a doporučuje se svěřit ji specialistům.
           </Description>
           <Description>
-            <strong>Q: Jak dlouho trvá proces regenerace amortizátorů v Mercedes E Klasa W211?</strong><br />
-            A: Proces může trvat od několika hodin do několika dnů, v závislosti na stavu amortizátorů a dostupnosti náhradních dílů.
+            <strong>Q: Jak dlouho trvá proces regenerace tlumičů v Mercedes E Klasa W211?</strong><br />
+            A: Proces může trvat od několika hodin do několika dnů, v závislosti na stavu tlumičů a dostupnosti náhradních dílů.
           </Description>
         </FAQSection>
 
         <Description>
           <strong>Podsumování:</strong><br />
-          Regenerace amortizátorů v Mercedes E Klasa W211 je klíčový proces, který může významně ovlivnit výkon a bezpečnost tohoto luxusního automobilu.
+          Regenerace tlumičů v Mercedes E Klasa W211 je klíčový proces, který může významně ovlivnit výkon a bezpečnost tohoto luxusního automobilu.
         </Description>
       </Container>
     </div>

@@ -38,20 +38,20 @@ const MercedesEClassRepair = () => {
     <div>
       <Header1 />
       <Container>
-        <Header>Mercedes GLE / GLS W167 / X167 (2018-) - Amortizátor Přední REGENERACE</Header>
+        <Header>Mercedes GLE / GLS W167 / X167 (2018-) - tlumič Přední REGENERACE</Header>
         <Description>
           <strong>Možnosti Opravy / Regenerace:</strong><br />
           <strong>Možnost 1:</strong> Výměna měchu za nový / regenerace pneumatické části – 14990 Kč / kus<br />
-          (Výměna měchu má použití v případě, že amortizátor nedrží vzduch.)
+          (Výměna měchu má použití v případě, že tlumič nedrží vzduch.)
         </Description>
         <RepairOptions>
-          <strong>Možnost 2:</strong> Komplexní regenerace: Výměna měchu + regenerace hydraulického amortizátoru – 24990 Kč / kus<br />
-          (Regenerace hydraulického amortizátoru má použití, pokud amortizátor teče (olej), bouchá nebo nemá svou účinnost vyjádřenou v % na diagnostické stanici.)
+          <strong>Možnost 2:</strong> Komplexní regenerace: Výměna měchu + regenerace hydraulického tlumiču – 24990 Kč / kus<br />
+          (Regenerace hydraulického tlumiču má použití, pokud tlumič teče (olej), bouchá nebo nemá svou účinnost vyjádřenou v % na diagnostické stanici.)
         </RepairOptions>
         <Description>Montáž: 4000 Kč / kus</Description>
 
         <hr />
-        <Header>Mercedes GLE / GLS W167 / X167 (2018-) - Amortizátor Zadní REGENERACE</Header>
+        <Header>Mercedes GLE / GLS W167 / X167 (2018-) - tlumič Zadní REGENERACE</Header>
         <Description>Cena: 12990 Kč   Montáž: 4000 Kč / kus</Description>
       </Container>
     </div>

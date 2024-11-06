@@ -51,14 +51,14 @@ const MercedesEClassRepair = () => {
         <Description>Cena: 17990 Kč bez DPH Montáž: 3000 – 4000 Kč</Description>
 
         <hr />
-        <Header>Regenerace Amortizátorů pro Mercedes S-Klasa W221 (2005-2013) se systémem ABC</Header>
+        <Header>Regenerace tlumičů pro Mercedes S-Klasa W221 (2005-2013) se systémem ABC</Header>
         <Description>
           Profesionalita a Preciznost v Servisu Zavěšení<br />
-          V našem servisu se specializujeme na regeneraci amortizátorů pro model Mercedes S-Klasa W221 se systémem ABC, poskytujeme služby na nejvyšší úrovni. Chápeme, jak důležité je udržet vysokou kvalitu a efektivitu zavěšení v tak prestižních modelech jako je Mercedes S-Klasa.
+          V našem servisu se specializujeme na regeneraci tlumičů pro model Mercedes S-Klasa W221 se systémem ABC, poskytujeme služby na nejvyšší úrovni. Chápeme, jak důležité je udržet vysokou kvalitu a efektivitu zavěšení v tak prestižních modelech jako je Mercedes S-Klasa.
         </Description>
         
         <Description><strong>Naše Nabídka Obsahuje:</strong><br />
-          Regenerace Amortizátorů ABC: Profesionální obnovení funkcí amortizátorů v systému ABC, které jsou klíčové pro zachování dynamických vlastností jízdy.
+          Regenerace tlumičů ABC: Profesionální obnovení funkcí tlumičů v systému ABC, které jsou klíčové pro zachování dynamických vlastností jízdy.
         </Description>
         
         <Description><strong>Proč Si Vybrat Náš Servis?</strong><br />
@@ -69,7 +69,7 @@ const MercedesEClassRepair = () => {
         <FAQSection>
           <FAQQuestion>FAQ – Často Kladené Dotazy</FAQQuestion>
           <Description>
-            <strong>Q: Jak důležitá je regenerace amortizátorů v Mercedes S-Klasa W221?</strong><br />
+            <strong>Q: Jak důležitá je regenerace tlumičů v Mercedes S-Klasa W221?</strong><br />
             A: Je to klíčový prvek pro udržení jak komfortu, tak bezpečnosti jízdy, zejména v modelech s pokročilým systémem zavěšení ABC.
           </Description>
           <Description>
@@ -77,14 +77,14 @@ const MercedesEClassRepair = () => {
             A: Doporučujeme pravidelnou kontrolu zavěšení, zejména po dosažení nájezdu 100 000 km.
           </Description>
           <Description>
-            <strong>Q: Má regenerace amortizátorů vliv na výkon jízdy?</strong><br />
-            A: Ano, správně servisované amortizátory výrazně zlepšují jak komfort jízdy, tak celkový výkon vozidla.
+            <strong>Q: Má regenerace tlumičů vliv na výkon jízdy?</strong><br />
+            A: Ano, správně servisované tlumičy výrazně zlepšují jak komfort jízdy, tak celkový výkon vozidla.
           </Description>
         </FAQSection>
 
         <Description>
           <strong>Souhrn:</strong><br />
-          Regenerace amortizátorů v Mercedes S-Klasa W221 je klíčový proces, který může významně ovlivnit výkon a bezpečnost tohoto luxusního automobilu.
+          Regenerace tlumičů v Mercedes S-Klasa W221 je klíčový proces, který může významně ovlivnit výkon a bezpečnost tohoto luxusního automobilu.
         </Description>
       </Container>
     </div>
