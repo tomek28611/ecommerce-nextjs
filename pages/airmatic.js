@@ -7,6 +7,8 @@ import { useRouter } from 'next/router';
 import Spinner from "@/components/Spinner";
 import Header from "@/components/Header";
 import Footer from '@/components/Footer';
+import Head from "next/head";
+
 
 const SectionWrapper = styled.div`
   display: flex;
@@ -124,202 +126,227 @@ const TextContainer = styled.div`
 
 
 export default function Featured({ product, menuOpen, heroBanner }) {
-    const { addProduct } = useContext(CartContext);
-    const router = useRouter();
-    const [isLoading, setIsLoading] = useState(false);
-    const [selectedBrand, setSelectedBrand] = useState(null);
+  const { addProduct } = useContext(CartContext);
+  const router = useRouter();
+  const [isLoading, setIsLoading] = useState(false);
+  const [selectedBrand, setSelectedBrand] = useState(null);
 
-    const handleButtonClick = (brand) => {
-        setSelectedBrand(selectedBrand === brand ? null : brand);
-    };
+  const handleButtonClick = (brand) => {
+    setSelectedBrand(selectedBrand === brand ? null : brand);
+  };
 
-    return (
-        <div>
-            <Header />
-            <SectionWrapper>
+  return (
+    <div>
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+        <title>Nové a Repasované měchy, tlumiče | airmatic | Mrecedes, BMW, Audi </title>
+        <meta
+          name="description"
+          content="Nové a Repasované měchy a tlumiče pro Mercedes, BMW, Audi, Jaguar, Jeep, Lexus, Porsche a VW. Kvalita a spolehlivost za skvělé ceny!"
+        />
+        <meta name="keywords" content="Repasované Měchy,repasované měchy Mercedes,Měchy Mercedes, repasované měchy Audi, Měchy Audi,Repasované měchy BMW, Měchy BMW,vzduchové pérování Mercedes,Vzduchové pérování Audi,vzduchové pérování BMW"></meta>
+        <link rel="cannonical" href="https://autodilyexpress.cz/airmatic" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/auto-dily-logo.png" />
+        <meta property="og:locale" content="cs_CZ" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Nabízíme motorové díly, prvky karoserie, elektrické součástky a další. Rychlá dodávka" />
+        <meta property="og:image" content="/auto-dily-logo.png" />
+        <meta property="og:image:width" content="50" />
+        <meta property="og:image:height" content="50" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:description" content="Nabízíme motorové díly, prvky karoserie, elektrické součástky a další. Rychlá dodávka" />
+        <meta property="og:url" content="https://autodilyexpress.cz" />
+        <meta property="og:site_name" content="autodilyexpress.cz" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Nabízíme motorové díly, prvky karoserie, elektrické součástky a další. Rychlá dodávka" />
+        <meta name="twitter:description" content="Nabízíme motorové díly, prvky karoserie, elektrické součástky a další. Rychlá dodávka"></meta>
 
-                <div className="hero-banner-containerr">
-                    <div>
-                        <h1 className="">Regenerace vzduchových pérování a hydraulické ABC- Active Body Control<br />
-                        </h1>
-                        <div>
-                            <RightContent>
-                                <TextContainer>
-                                    <p>Specialitou naší společnosti je profesionální regenerace</p>
-                                    <p>(komplexní oprava)<strong> tlumičů Airmatic </strong>(vzpěry) a vzduchové měchy při použití v továrně nové náhradní díly na Mercedes / Audi / VW / BMW / Bentley.</p>
-                                    <p>Provádíme také regeneraci hydraulických tlumičů Mercedes ABC (Active Body Control)</p>
-                                    <br/>
-                                    <img src="/amo2.png" alt="auto-dily-motor" className="image" />
-                                    <br/>
-                                    <p>Kromě toho provádíme diagnostiku a komplexní opravy systémů vzduchového pérování pomocí vyhrazeného servisního vybavení.</p>
-                                    <br/>
-                                    <img src="/amo3.png" alt="auto-dily-motor" className="image" />
-                                    <br/>
-                                    <p>Naší doménou jsou bohaté zkušenosti v tomto oboru – to znamená, že každá diagnostika je přesná a oprava rychlá a efektivní – odstávka vozidla většinou nepřesáhne 1 hodinu.</p>
-                                    <p>(máme všechny díly potřebné k opravě na místě - včetně: tlumičů, kompresorů, rozvodných lišt, senzorů, svíčky).</p>
-                                    <br/>
-                                    <img src="/amo.png" alt="auto-dily-motor" className="image" />
-                                </TextContainer>
-                            </RightContent>
+      </Head>
+      <Header />
+      <SectionWrapper>
 
-                            <LeftContent>
-                                <BrandContainer>
-                                    <BrandTitle>Mercedes-Benz</BrandTitle>
-                                    <ButtonContainer>
-                                        <ModelLink href="/airmatic/Mercedes-C-trida-W205">Mercedes C trida W205</ModelLink>
-                                        <ModelLink href="/airmatic/Mercedes-GLC-W253-GLC-Coupe-C253">Mercedes GLC W253 / GLC Coupe C253</ModelLink>
-                                        <ModelLink href="/airmatic/Mercedes-E-trida-W211">Mercedes E trida W211</ModelLink>
-                                        <ModelLink href="/airmatic/Mercedes-E-trida-W212">Mercedes E trida W212</ModelLink>
-                                        <ModelLink href="/airmatic/Mercedes-E-trida-W213">Mercedes E trida W213</ModelLink>
-                                        <ModelLink href="/airmatic/Mercedes-S-trida-W220">Mercedes S trida W220</ModelLink>
-                                        <ModelLink href="/airmatic/Mercedes-S-trida-W220-ABC">Mercedes S trida W220 (ABC)</ModelLink>
-                                        <ModelLink href="/airmatic/Mercedes-S-trida-W221">Mercedes S trida W221</ModelLink>
-                                        <ModelLink href="/airmatic/Mercedes-S-trida-W221-ABC">Mercedes S trida W221 (ABC)</ModelLink>
-                                        <ModelLink href="/airmatic/Mercedes-S-trida-W222">Mercedes S trida W222</ModelLink>
-                                        <ModelLink href="/airmatic/Mercedes-S-trida-W222-ABC">Mercedes S trida W222 (ABC)</ModelLink>
-                                        <ModelLink href="/airmatic/Mercedes-S-coupe-W217">Mercedes S coupe W217</ModelLink>                                      
-                                        <ModelLink href="/airmatic/Mercedes-CL-W216">Mercedes CL W216</ModelLink>
-                                  
-                                        <ModelLink href="/airmatic/Mercedes-CLS-W218">Mercedes CLS W218</ModelLink>
-                                        <ModelLink href="/airmatic/Mercedes-CLS-W219">Mercedes CLS W219</ModelLink>
-                                    
-                                        <ModelLink href="/airmatic/Mercedes-ML-GL-W164">Mercedes ML / GL - W164</ModelLink>
-                                        <ModelLink href="/airmatic/Mercedes-GLE-GLE-Coupe-W292">Mercedes GLE / GLE Coupe W292</ModelLink>
-                                        <ModelLink href="/airmatic/Mercedes-ML-GL-W166-X166">Mercedes ML / GL – W166 / X166</ModelLink>
-                                        <ModelLink href="/airmatic/Mercedes-GLE-GLS-W167-X167">Mercedes GLE / GLS - W167 / X167</ModelLink>
-                                        <ModelLink href="/airmatic/Mercedes-GLS-2015-2019">Mercedes GLS 2015-2019</ModelLink>
-                                        <ModelLink href="/airmatic/Mercedes-SL-W230-ABC">Mercedes SL W230 (ABC)</ModelLink>
-                                        <ModelLink href="/airmatic/Mercedes-SL-W231-ABC">Mercedes SL W231 (ABC)</ModelLink>
-                                        <ModelLink href="/airmatic/Mercedes-Vito-Viano-W638">Mercedes Vito / Viano W638</ModelLink>
-                                        <ModelLink href="/airmatic/Mercedes-Vito-Viano-V639">Mercedes Vito / Viano V639</ModelLink>
-                                    </ButtonContainer>
-                                </BrandContainer>
+        <div className="hero-banner-containerr">
+          <div>
+            <h1 className="">Regenerace vzduchových pérování a hydraulické ABC- Active Body Control<br />
+            </h1>
+            <div>
+              <RightContent>
+                <TextContainer>
+                  <p>Specialitou naší společnosti je profesionální regenerace</p>
+                  <p>(komplexní oprava)<strong> tlumičů Airmatic </strong>(vzpěry) a vzduchové měchy při použití v továrně nové náhradní díly na Mercedes / Audi / VW / BMW / Bentley.</p>
+                  <p>Provádíme také regeneraci hydraulických tlumičů Mercedes ABC (Active Body Control)</p>
+                  <br />
+                  <img src="/amo2.png" alt="auto-dily-motor" className="image" />
+                  <br />
+                  <p>Kromě toho provádíme diagnostiku a komplexní opravy systémů vzduchového pérování pomocí vyhrazeného servisního vybavení.</p>
+                  <br />
+                  <img src="/amo3.png" alt="auto-dily-motor" className="image" />
+                  <br />
+                  <p>Naší doménou jsou bohaté zkušenosti v tomto oboru – to znamená, že každá diagnostika je přesná a oprava rychlá a efektivní – odstávka vozidla většinou nepřesáhne 1 hodinu.</p>
+                  <p>(máme všechny díly potřebné k opravě na místě - včetně: tlumičů, kompresorů, rozvodných lišt, senzorů, svíčky).</p>
+                  <br />
+                  <img src="/amo.png" alt="auto-dily-motor" className="image" />
+                </TextContainer>
+              </RightContent>
 
-                                <BrandContainer>
-                                    <BrandTitle>Audi</BrandTitle>
-                                    <ButtonContainer>
-                                        <ModelLink href="/airmatic/Audi-A6-Allroad-C5">Audi A6 Allroad C5</ModelLink>
-                                        <ModelLink href="/airmatic/Audi-A6-C6-Allroad">Audi A6 C6 / A6 C6 Allroad</ModelLink>
-                                        <ModelLink href="/airmatic/Audi-A6-C7-Allroad">Audi A6 C7 / A6 C7 Allroad</ModelLink>
-                                        <ModelLink href="/airmatic/Audi-A6-C8-Allroad">Audi A6 C8 / A6 C8 Allroad</ModelLink>
-                                        <ModelLink href="/airmatic/Audi-A7-4G">Audi A7 4G</ModelLink>
-                                        <ModelLink href="/airmatic/Audi-A7-4K">Audi A7 4K</ModelLink>
-                                        <ModelLink href="/airmatic/Audi-A8-D3">Audi A8 – D3</ModelLink>
-                                        <ModelLink href="/airmatic/Audi-A8-D4">Audi A8 – D4</ModelLink>
-                                        <ModelLink href="/airmatic/Audi-A8-D5">Audi A8 – D5</ModelLink>
-                                        <ModelLink href="/airmatic/Audi-Q7-4L">Audi Q7 4L</ModelLink>
-                                        <ModelLink href="/airmatic/Audi-Q7-4M">Audi Q7 4M</ModelLink>
-                                        <ModelLink href="/airmatic/Audi-Q8">Audi Q8</ModelLink> 
-                                    </ButtonContainer>
-                                </BrandContainer>
+              <LeftContent>
+                <BrandContainer>
+                  <BrandTitle>Mercedes-Benz</BrandTitle>
+                  <ButtonContainer>
+                    <ModelLink href="/airmatic/Mercedes-C-trida-W205">Mercedes C trida W205</ModelLink>
+                    <ModelLink href="/airmatic/Mercedes-GLC-W253-GLC-Coupe-C253">Mercedes GLC W253 / GLC Coupe C253</ModelLink>
+                    <ModelLink href="/airmatic/Mercedes-E-trida-W211">Mercedes E trida W211</ModelLink>
+                    <ModelLink href="/airmatic/Mercedes-E-trida-W212">Mercedes E trida W212</ModelLink>
+                    <ModelLink href="/airmatic/Mercedes-E-trida-W213">Mercedes E trida W213</ModelLink>
+                    <ModelLink href="/airmatic/Mercedes-S-trida-W220">Mercedes S trida W220</ModelLink>
+                    <ModelLink href="/airmatic/Mercedes-S-trida-W220-ABC">Mercedes S trida W220 (ABC)</ModelLink>
+                    <ModelLink href="/airmatic/Mercedes-S-trida-W221">Mercedes S trida W221</ModelLink>
+                    <ModelLink href="/airmatic/Mercedes-S-trida-W221-ABC">Mercedes S trida W221 (ABC)</ModelLink>
+                    <ModelLink href="/airmatic/Mercedes-S-trida-W222">Mercedes S trida W222</ModelLink>
+                    <ModelLink href="/airmatic/Mercedes-S-trida-W222-ABC">Mercedes S trida W222 (ABC)</ModelLink>
+                    <ModelLink href="/airmatic/Mercedes-S-coupe-W217">Mercedes S coupe W217</ModelLink>
+                    <ModelLink href="/airmatic/Mercedes-CL-W216">Mercedes CL W216</ModelLink>
 
-                                <BrandContainer>
-                                    <BrandTitle>BMW</BrandTitle>
-                                    <ButtonContainer>
-                                        <ModelLink href="/airmatic/BMW-5-E39">BMW - 5 E39</ModelLink>
-                                        <ModelLink href="/airmatic/BMW-5-E61">BMW - 5 E61</ModelLink>
-                                        <ModelLink href="/airmatic/BMW-5-F11">BMW - 5 F11</ModelLink>
-                                        <ModelLink href="/airmatic/BMW-5-F07-GT">BMW - 5 F07 GT</ModelLink>
-                                        <ModelLink href="/airmatic/BMW-5-G30-G31">BMW - 5 G30 / G31</ModelLink>
-                                        <ModelLink href="/airmatic/BMW-6-G32-GT">BMW - 6 G32 GT</ModelLink>
-                                        <ModelLink href="/airmatic/BMW-7-E65-E66">BMW - 7 E65 E66</ModelLink>
-                                        <ModelLink href="/airmatic/BMW-7-F01-F02">BMW - 7 F01 F02</ModelLink>
-                                        <ModelLink href="/airmatic/BMW-7-G11-G12">BMW - 7 G11 G12</ModelLink>
-                                        <ModelLink href="/airmatic/BMW-X3-F25-X4-F26">BMW X3 F25 / X4 F26</ModelLink>
-                                        <ModelLink href="/airmatic/BMW-4-Gran-Coupe">BMW 4 Gran Coupe</ModelLink>
-                                        <ModelLink href="/airmatic/BMW-X5-E53">BMW X5 E53</ModelLink>
-                                        <ModelLink href="/airmatic/BMW-X5-E70-X6-E71">BMW X5 E70 / X6 E71</ModelLink>
-                                        <ModelLink href="/airmatic/BMW-X5-F15-X6-F16">BMW X5 F15 / X6 F16</ModelLink>
-                                        <ModelLink href="/airmatic/BMW-X5-G05-X6-G06">BMW X5 G05 / X6 G06</ModelLink>
-                                    </ButtonContainer>
-                                </BrandContainer>
+                    <ModelLink href="/airmatic/Mercedes-CLS-W218">Mercedes CLS W218</ModelLink>
+                    <ModelLink href="/airmatic/Mercedes-CLS-W219">Mercedes CLS W219</ModelLink>
 
-                                <BrandContainer>
-                                    <BrandTitle>Citroen</BrandTitle>
-                                    <ButtonContainer>
-                                        {/* <ModelLink href="/airmatic/Citroen-C4-Picasso-C4-Grand-Picasso">Citroen C4 Picasso / C4 Grand Picasso</ModelLink> */}
-                                    </ButtonContainer>
-                                </BrandContainer>
+                    <ModelLink href="/airmatic/Mercedes-ML-GL-W164">Mercedes ML / GL - W164</ModelLink>
+                    <ModelLink href="/airmatic/Mercedes-GLE-GLE-Coupe-W292">Mercedes GLE / GLE Coupe W292</ModelLink>
+                    <ModelLink href="/airmatic/Mercedes-ML-GL-W166-X166">Mercedes ML / GL – W166 / X166</ModelLink>
+                    <ModelLink href="/airmatic/Mercedes-GLE-GLS-W167-X167">Mercedes GLE / GLS - W167 / X167</ModelLink>
+                    <ModelLink href="/airmatic/Mercedes-GLS-2015-2019">Mercedes GLS 2015-2019</ModelLink>
+                    <ModelLink href="/airmatic/Mercedes-SL-W230-ABC">Mercedes SL W230 (ABC)</ModelLink>
+                    <ModelLink href="/airmatic/Mercedes-SL-W231-ABC">Mercedes SL W231 (ABC)</ModelLink>
+                    <ModelLink href="/airmatic/Mercedes-Vito-Viano-W638">Mercedes Vito / Viano W638</ModelLink>
+                    <ModelLink href="/airmatic/Mercedes-Vito-Viano-V639">Mercedes Vito / Viano V639</ModelLink>
+                  </ButtonContainer>
+                </BrandContainer>
 
-                                <BrandContainer>
-                                    <BrandTitle>Jaguar</BrandTitle>
-                                    <ButtonContainer>
-                                        {/* <ModelLink href="/airmatic/Jaguar-XF-X250">Jaguar XF X250</ModelLink>
+                <BrandContainer>
+                  <BrandTitle>Audi</BrandTitle>
+                  <ButtonContainer>
+                    <ModelLink href="/airmatic/Audi-A6-Allroad-C5">Audi A6 Allroad C5</ModelLink>
+                    <ModelLink href="/airmatic/Audi-A6-C6-Allroad">Audi A6 C6 / A6 C6 Allroad</ModelLink>
+                    <ModelLink href="/airmatic/Audi-A6-C7-Allroad">Audi A6 C7 / A6 C7 Allroad</ModelLink>
+                    <ModelLink href="/airmatic/Audi-A6-C8-Allroad">Audi A6 C8 / A6 C8 Allroad</ModelLink>
+                    <ModelLink href="/airmatic/Audi-A7-4G">Audi A7 4G</ModelLink>
+                    <ModelLink href="/airmatic/Audi-A7-4K">Audi A7 4K</ModelLink>
+                    <ModelLink href="/airmatic/Audi-A8-D3">Audi A8 – D3</ModelLink>
+                    <ModelLink href="/airmatic/Audi-A8-D4">Audi A8 – D4</ModelLink>
+                    <ModelLink href="/airmatic/Audi-A8-D5">Audi A8 – D5</ModelLink>
+                    <ModelLink href="/airmatic/Audi-Q7-4L">Audi Q7 4L</ModelLink>
+                    <ModelLink href="/airmatic/Audi-Q7-4M">Audi Q7 4M</ModelLink>
+                    <ModelLink href="/airmatic/Audi-Q8">Audi Q8</ModelLink>
+                  </ButtonContainer>
+                </BrandContainer>
+
+                <BrandContainer>
+                  <BrandTitle>BMW</BrandTitle>
+                  <ButtonContainer>
+                    <ModelLink href="/airmatic/BMW-5-E39">BMW - 5 E39</ModelLink>
+                    <ModelLink href="/airmatic/BMW-5-E61">BMW - 5 E61</ModelLink>
+                    <ModelLink href="/airmatic/BMW-5-F11">BMW - 5 F11</ModelLink>
+                    <ModelLink href="/airmatic/BMW-5-F07-GT">BMW - 5 F07 GT</ModelLink>
+                    <ModelLink href="/airmatic/BMW-5-G30-G31">BMW - 5 G30 / G31</ModelLink>
+                    <ModelLink href="/airmatic/BMW-6-G32-GT">BMW - 6 G32 GT</ModelLink>
+                    <ModelLink href="/airmatic/BMW-7-E65-E66">BMW - 7 E65 E66</ModelLink>
+                    <ModelLink href="/airmatic/BMW-7-F01-F02">BMW - 7 F01 F02</ModelLink>
+                    <ModelLink href="/airmatic/BMW-7-G11-G12">BMW - 7 G11 G12</ModelLink>
+                    <ModelLink href="/airmatic/BMW-X3-F25-X4-F26">BMW X3 F25 / X4 F26</ModelLink>
+                    <ModelLink href="/airmatic/BMW-4-Gran-Coupe">BMW 4 Gran Coupe</ModelLink>
+                    <ModelLink href="/airmatic/BMW-X5-E53">BMW X5 E53</ModelLink>
+                    <ModelLink href="/airmatic/BMW-X5-E70-X6-E71">BMW X5 E70 / X6 E71</ModelLink>
+                    <ModelLink href="/airmatic/BMW-X5-F15-X6-F16">BMW X5 F15 / X6 F16</ModelLink>
+                    <ModelLink href="/airmatic/BMW-X5-G05-X6-G06">BMW X5 G05 / X6 G06</ModelLink>
+                  </ButtonContainer>
+                </BrandContainer>
+
+                <BrandContainer>
+                  <BrandTitle>Citroen</BrandTitle>
+                  <ButtonContainer>
+                    {/* <ModelLink href="/airmatic/Citroen-C4-Picasso-C4-Grand-Picasso">Citroen C4 Picasso / C4 Grand Picasso</ModelLink> */}
+                  </ButtonContainer>
+                </BrandContainer>
+
+                <BrandContainer>
+                  <BrandTitle>Jaguar</BrandTitle>
+                  <ButtonContainer>
+                    {/* <ModelLink href="/airmatic/Jaguar-XF-X250">Jaguar XF X250</ModelLink>
                                         <ModelLink href="/airmatic/Jaguar-XJ-X350-X358">Jaguar XJ X350 / X358</ModelLink>
                                         <ModelLink href="/airmatic/Jaguar-X351">Jaguar X351</ModelLink> */}
-                                    </ButtonContainer>
-                                </BrandContainer>
+                  </ButtonContainer>
+                </BrandContainer>
 
-                                <BrandContainer>
-                                    <BrandTitle>Jeep</BrandTitle>
-                                    <ButtonContainer>
-                                        {/* <ModelLink href="/airmatic/Jeep-Grand-Cherokee-WK2">Jeep Grand Cherokee WK2</ModelLink> */}
-                                    </ButtonContainer>
-                                </BrandContainer>
+                <BrandContainer>
+                  <BrandTitle>Jeep</BrandTitle>
+                  <ButtonContainer>
+                    {/* <ModelLink href="/airmatic/Jeep-Grand-Cherokee-WK2">Jeep Grand Cherokee WK2</ModelLink> */}
+                  </ButtonContainer>
+                </BrandContainer>
 
-                                <BrandContainer>
-                                    <BrandTitle>Lexus</BrandTitle>
-                                    <ButtonContainer>
-                                        {/* <ModelLink href="/airmatic/Lexus-LS-400-430-460-600">Lexus LS 400 430 460 600</ModelLink> */}
-                                    </ButtonContainer>
-                                </BrandContainer>
+                <BrandContainer>
+                  <BrandTitle>Lexus</BrandTitle>
+                  <ButtonContainer>
+                    {/* <ModelLink href="/airmatic/Lexus-LS-400-430-460-600">Lexus LS 400 430 460 600</ModelLink> */}
+                  </ButtonContainer>
+                </BrandContainer>
 
-                                <BrandContainer>
-                                    <BrandTitle>Opel</BrandTitle>
-                                    <ButtonContainer>
-                                        {/* <ModelLink href="/airmatic/Opel-Astra-H">Opel Astra H</ModelLink>
+                <BrandContainer>
+                  <BrandTitle>Opel</BrandTitle>
+                  <ButtonContainer>
+                    {/* <ModelLink href="/airmatic/Opel-Astra-H">Opel Astra H</ModelLink>
                                         <ModelLink href="/airmatic/Opel-Astra-J">Opel Astra J</ModelLink>
                                         <ModelLink href="/airmatic/Opel-Insignia-A">Opel Insignia A</ModelLink>
                                         <ModelLink href="/airmatic/Opel-Signum">Opel Signum</ModelLink>
                                         <ModelLink href="/airmatic/Opel-Vectra-C">Opel Vectra C</ModelLink> */}
-                                    </ButtonContainer>
-                                </BrandContainer>
+                  </ButtonContainer>
+                </BrandContainer>
 
-                                <BrandContainer>
-                                    <BrandTitle>Porsche</BrandTitle>
-                                    <ButtonContainer>
-                                        {/* <ModelLink href="/airmatic/Porsche-Cayenne-I">Porsche Cayenne I</ModelLink>
+                <BrandContainer>
+                  <BrandTitle>Porsche</BrandTitle>
+                  <ButtonContainer>
+                    {/* <ModelLink href="/airmatic/Porsche-Cayenne-I">Porsche Cayenne I</ModelLink>
                                         <ModelLink href="/airmatic/Porsche-Cayenne-II">Porsche Cayenne II</ModelLink>
                                         <ModelLink href="/airmatic/Porsche-Panamera-970">Porsche Panamera 970</ModelLink> */}
-                                    </ButtonContainer>
-                                </BrandContainer>
+                  </ButtonContainer>
+                </BrandContainer>
 
-                                <BrandContainer>
-                                    <BrandTitle>Rolls Royce</BrandTitle>
-                                    <ButtonContainer>
-                                        {/* <ModelLink href="/airmatic/RollsRoyce-Phantom-VII">Rolls Royce Phantom VII</ModelLink> */}
-                                    </ButtonContainer>
-                                </BrandContainer>
+                <BrandContainer>
+                  <BrandTitle>Rolls Royce</BrandTitle>
+                  <ButtonContainer>
+                    {/* <ModelLink href="/airmatic/RollsRoyce-Phantom-VII">Rolls Royce Phantom VII</ModelLink> */}
+                  </ButtonContainer>
+                </BrandContainer>
 
-                                <BrandContainer>
-                                    <BrandTitle>Volvo</BrandTitle>
-                                    <ButtonContainer>
-                                        {/* <ModelLink href="/airmatic/Volvo-V70-Cross-Country">Volvo V70 Cross Country</ModelLink>
+                <BrandContainer>
+                  <BrandTitle>Volvo</BrandTitle>
+                  <ButtonContainer>
+                    {/* <ModelLink href="/airmatic/Volvo-V70-Cross-Country">Volvo V70 Cross Country</ModelLink>
                                         <ModelLink href="/airmatic/Volvo-XC-60-II">Volvo XC 60 II</ModelLink>
                                         <ModelLink href="/airmatic/Volvo-XC-90-II">Volvo XC 90 II</ModelLink> */}
-                                    </ButtonContainer>
-                                </BrandContainer>
+                  </ButtonContainer>
+                </BrandContainer>
 
-                                <BrandContainer>
-                                    <BrandTitle>VW</BrandTitle>
-                                    <ButtonContainer>
-                                        {/* <ModelLink href="/airmatic/VW-Multivan-T6">VW Multivan T6</ModelLink>
+                <BrandContainer>
+                  <BrandTitle>VW</BrandTitle>
+                  <ButtonContainer>
+                    {/* <ModelLink href="/airmatic/VW-Multivan-T6">VW Multivan T6</ModelLink>
                                         <ModelLink href="/airmatic/VW-Phaeton">VW Phaeton</ModelLink>
                                         <ModelLink href="/airmatic/VW-Touareg-I-7L">VW Touareg I 7L</ModelLink>
                                         <ModelLink href="/airmatic/VW-Touareg-II-7P">VW Touareg II 7P</ModelLink> */}
-                                    </ButtonContainer>
-                                </BrandContainer>
-                            </LeftContent>
-                        </div>
+                  </ButtonContainer>
+                </BrandContainer>
+              </LeftContent>
+            </div>
 
 
-                    </div>
+          </div>
 
-                </div>
-
-
-            </SectionWrapper>
-            <Footer />
         </div>
-    );
+
+
+      </SectionWrapper>
+      <Footer />
+    </div>
+  );
 }
