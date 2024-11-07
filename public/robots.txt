@@ -1,5 +1,9 @@
-User-Agent: *
+# *
+User-agent: *
 Allow: /
-Disallow: 
 
+# Host
+Host: https://www.autodilyexpress.cz
+
+# Sitemaps
 Sitemap: https://www.autodilyexpress.cz/sitemap.xml
