@@ -98,7 +98,9 @@ export default function ProductPage({ product }) {
                     </div>
                 </div>
                 <div className="product-detail-desc">
-                    <h2>{product.title}</h2>
+                    <h1>{product.title}</h1>
+                    
+
                     <div className="reviews">
                         <div>
                             <AiFillStar />
