@@ -86,7 +86,7 @@ export default function ProductsPage({ products }) {
       </Head>
       <Header />
       <Center>
-      <h1>Náhradní díly pro model Mercedes CLS-Třída</h1>
+      <h1>Náhradní díly pro model Mercedes G-Třída</h1>
       <ExpandableText title="Nabídka náhradních dílů" content={seoTextContent} /> 
         {products.length === 0 ? (
           <NoProductsContainer>
