@@ -91,6 +91,7 @@ export default function ProductPage({ product }) {
                             <img
                                 key={i}
                                 src={item}
+                                alt="Product Image small"
                                 className={i === index ? 'small-image selected-image' : 'small-image'}
                                 onMouseEnter={() => setIndex(i)}
                             />
