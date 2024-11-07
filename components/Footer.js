@@ -5,14 +5,21 @@ import Link from 'next/link';
 const Footer = () => {
   return (
     <div className="footer-container">
-        <p className="">2024 Auto Dily All rights reserved</p>
+      <p className="">2024 Auto Dily All rights reserved</p>
+      <div>
         <Link href="/obchodni-podminky">
-        Obchodní podmínky
+          Obchodní podmínky
         </Link>
-        <p className="icons">
-            <AiFillInstagram />
-            <AiOutlineTwitter />
-        </p>
+      </div>
+      <div>
+        <Link href="/airmatic">
+          Airmatic
+        </Link>
+      </div>
+      <p className="icons">
+        <AiFillInstagram />
+        <AiOutlineTwitter />
+      </p>
     </div>
   )
 }
