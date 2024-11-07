@@ -48,7 +48,7 @@ export default function ProductPage({ product }) {
                 <title>Auto Dily Express | {product.title}</title>
                 <meta
                     name="description"
-                    content="Objevte širokou nabídku kvalitních autodílů pro vozy Mercedes..."
+                    content="Široká nabídka náhradních dílů pro Mercedes. Vysoce kvalitní originální a kompatibilní díly pro spolehlivý výkon a dlouhou životnost vozu."
                 />
                 <link rel="cannonical"  href={`https://www.autodilyexpress.cz/nahradni-dily/${product.title}`} />
                 <link rel="apple-touch-icon" sizes="180x180" href="/auto-dily-logo.png" />
