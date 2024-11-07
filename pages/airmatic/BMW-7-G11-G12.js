@@ -88,7 +88,7 @@ const BMW7Repair = () => {
 
         <hr />
         <Header>BMW série 7 G11 G12 (2015-) - Kompresor / Pumpa odpružení</Header>
-        <img src="/BMW7-compressor.jpg" alt="auto-dily-motor" className="" />
+    
         <Description>Cena: 24990 Kč</Description>
         <Description>
           Nový, výrobce WABCO (výrobce pro první montáž OEM) – bezproblémová montáž<br />

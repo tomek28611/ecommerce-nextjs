@@ -86,7 +86,7 @@ const BMW6GTRepair = () => {
 
       <hr />
       <Header>BMW 6 GT G32 (2017-2023) - Kompresor / čerpadlo / pumpa odpružení</Header>
-      <img src="/BMW6GT-compressor.jpg" alt="auto-dily-bmw" className="" />
+    
       <Description>Cena: 109900 Kč</Description>
       <Description>
         Nový, výrobce WABCO (výrobce pro první montáž OEM) – bezproblémová montáž<br />

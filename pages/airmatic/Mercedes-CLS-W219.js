@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Header1 from '@/components/Header';
+import Head from "next/head";
 
 const Container = styled.div`
   max-width: 800px;
@@ -36,10 +37,35 @@ const FAQQuestion = styled.h3`
 const MercedesEklasaRepair = () => {
   return (
     <div>
+         <Head>
+        <link rel="icon" href="/favicon.ico" />
+        <title>Nové a Repasované měchy, tlumiče | Mercedes-CLS-W219</title>
+        <meta
+          name="description"
+          content="Repasované měchy a tlumiče pro Mercedes, BMW, Audi, Jaguar, Jeep, Lexus, Porsche a VW. Kvalita a spolehlivost za skvělé ceny!"
+        />
+        <meta name="keywords" content="Repasované Měchy,repasované měchy Mercedes,Měchy Mercedes, repasované měchy Audi, Měchy Audi,Repasované měchy BMW, Měchy BMW,vzduchové pérování Mercedes,Vzduchové pérování Audi,vzduchové pérování BMW"></meta>
+        <link rel="cannonical" href="https://autodilyexpress.cz/airmatic/Mercedes-CLS-W219" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/auto-dily-logo.png" />
+        <meta property="og:locale" content="cs_CZ" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Nabízíme motorové díly, prvky karoserie, elektrické součástky a další. Rychlá dodávka" />
+        <meta property="og:image" content="/auto-dily-logo.png" />
+        <meta property="og:image:width" content="50" />
+        <meta property="og:image:height" content="50" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:description" content="Nabízíme motorové díly, prvky karoserie, elektrické součástky a další. Rychlá dodávka" />
+        <meta property="og:url" content="https://autodilyexpress.cz" />
+        <meta property="og:site_name" content="autodilyexpress.cz" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Nabízíme motorové díly, prvky karoserie, elektrické součástky a další. Rychlá dodávka" />
+        <meta name="twitter:description" content="Nabízíme motorové díly, prvky karoserie, elektrické součástky a další. Rychlá dodávka"></meta>
+
+      </Head>
       <Header1 />
       <Container>
         <Header>Mercedes CLS W219 - tlumič Přední REGENERACE</Header>
-        <img src="/W219-front-shock.jpg" alt="auto-dily-motor" className="" />
+      
         <Description>
           <strong>Možnosti Opravy / Regenerace:</strong><br />
           Wýměna měchu na nový / regenerace části pneumatiky – 6990 Kč
@@ -67,7 +93,7 @@ const MercedesEklasaRepair = () => {
 
         <hr />
         <Header>Mercedes CLS W219 - Kompresor / čerpadlo odpružení</Header>
-        <img src="/W219-compressor.jpg" alt="auto-dily-motor" className="" />
+       
         <Description>Cena: 12990 Kč</Description>
         <Description>
           Nový a originální WABCO, vyrobený v Německu, záruka výrobce: 24 měsíců<br />
@@ -78,7 +104,7 @@ const MercedesEklasaRepair = () => {
         <Header>Filtr Kompresora + Převodník + Schéma umístění</Header>
         <Description>
           Cena: 990 Kč<br />
-          <a href="https://shop.limak-airsuspension.pl/img/Foto/zestaw_w211_w220_w219.jpg" target="_blank" rel="noopener noreferrer">Zobrazit schéma</a>
+          <a href="" target="_blank" rel="noopener noreferrer">Zobrazit schéma</a>
         </Description>
 
         <hr />

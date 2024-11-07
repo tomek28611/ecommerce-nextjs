@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components'; 
 import Header1 from '@/components/Header';
 import Head from "next/head";
-import Head from "next/head";
 
 const Container = styled.div`
   max-width: 800px;

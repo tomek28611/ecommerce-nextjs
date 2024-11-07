@@ -66,7 +66,7 @@ const BMW7F01F02Repair = () => {
 
       <Container>
         <Header>BMW řady 7 F01 F02 (2008-2015) - tlumič Zadní REGENERACE</Header>
-        <img src="/BMW7F01F02-rear-shock.jpg" alt="auto-dily-motor" className="" />
+   
 
         <Description>Všechny motorizace</Description>
         <Description>
@@ -89,7 +89,7 @@ const BMW7F01F02Repair = () => {
 
         <hr />
         <Header>BMW řady 7 F01 F02 (2008-2015) - Kompresor / Čerpadlo Závěšení</Header>
-        <img src="/BMW7F01F02-compressor.jpg" alt="auto-dily-motor" className="" />
+      
         <Description>Cena: 21490 Kč</Description>
         <Description>
           Nový, výrobce WABCO (výrobce pro první montáž OEM) – bezproblémová montáž<br />

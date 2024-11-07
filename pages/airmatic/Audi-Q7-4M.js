@@ -92,7 +92,7 @@ const AudiQ7Repair = () => {
 
         <hr />
         <Header>Audi Q7 4M (2015-2020) / Audi SQ7 4M (2016-2020) - Kompresor / čerpadlo odpružení - NOVÝ</Header>
-        <img src="/Audi-Q7-compressor.jpg" alt="auto-dily-motor" />
+    
         <Description>Cena: 28490 Kč</Description>
         <Description>
           Nový, výrobce WABCO – vyrobeno v Německu<br />

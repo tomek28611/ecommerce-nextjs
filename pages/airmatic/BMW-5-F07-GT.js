@@ -67,7 +67,7 @@ const BMW5F07GTRepair = () => {
    
       <Container>
         <Header>BMW 5 F07 GT (2008 –  ) - Měch Zadní NOVÝ</Header>
-        <img src="/BMW5-f07-gt-rear-bag.jpg" alt="auto-dily-motor" className="" />
+   
 
         <Description>Rok výroby: (2008 – )</Description>
         <Description><strong>Výrobce:</strong> LUFTMASTER</Description>
@@ -105,7 +105,7 @@ const BMW5F07GTRepair = () => {
         <hr />
 
         <Header>BMW 5 F07 GT (2008 – ) - Kompresor / čerpadlo odpružení</Header>
-        <img src="/BMW5-gt-compressor.jpg" alt="auto-dily-motor" className="" />
+      
         <Description>
           <strong>Cena:</strong> 2149 Kč<br />
           Záruka výrobce WABCO (vyrobeno v Německu): 24 měsíců

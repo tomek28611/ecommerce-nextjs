@@ -66,7 +66,7 @@ const AudiA7Repair = () => {
       <Header1 />
       <Container>
         <Header>Audi A7 4K (2017-) - Přední tlumič REGENERACE</Header>
-        <img src="/audi-a7-front-shock.jpg" alt="auto-dily-audi-a7" className="" />
+       
 
         <Description>Všechny motorizace</Description>
         <Description>

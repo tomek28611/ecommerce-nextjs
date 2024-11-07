@@ -93,7 +93,7 @@ const AudiQ7Repair = () => {
 
         <hr />
         <Header>Audi Q7 (2007-2010) - Sprężarka / Kompresor Zawieszenia</Header>
-        <img src="/Miech_AUDI_Q7_przod_lewy.jpg" alt="auto-dily-motor" className="" />
+       
         <Description>Cena: 17990 Kč Montáž: 3500 Kč</Description>
         <Description>
           Nový kompresor od Wabco (Made in Germany), pro všechny verze motorowe. <br />

@@ -103,7 +103,7 @@ const BMWX5Repair = () => {
 
         <hr />
         <Header>BMW X5 E53 (1999-2006) - Kompresor / čerpadlo / pumpa odpružení</Header>
-        <img src="/BMW-X5-compressor.jpg" alt="auto-dily-motor" className="" />
+   
         <Description>Cena: 209900 Kč</Description>
         <Description>
           Nový, výrobce WABCO (výrobce pro první montáž OEM) – bezproblémová montáž<br />

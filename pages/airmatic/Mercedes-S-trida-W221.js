@@ -1,6 +1,7 @@
 import React from 'react'; 
 import styled from 'styled-components';
 import Header1 from '@/components/Header';
+import Head from "next/head";
 
 const Container = styled.div`
   max-width: 800px;
@@ -94,7 +95,7 @@ const MercedesEClassRepair = () => {
         <hr />
         
         <Header>Mercedes S třída W221 (2005-) - Kompresor / čerpadlo odpružení</Header>
-        <img src="" alt="auto-dily-motor" className="" />
+       
         <Description>Cena: 14990 Kč                   Montáž: 2500 Kč</Description>
         <Description>Nový – Originál MB !!!</Description>
         <Description>Výrobce OEM: AMK</Description>
@@ -109,7 +110,7 @@ const MercedesEClassRepair = () => {
         <hr />
         
         <Header>Filtr kompresora + relé + schéma umístění</Header>
-        <img src="" alt="auto-dily-motor" className="" />
+      
         <Description>Cena: 990 Kč</Description>
         
         <hr />

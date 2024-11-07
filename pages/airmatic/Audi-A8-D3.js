@@ -91,7 +91,7 @@ const AudiA8D3Repair = () => {
 
         <hr />
         <Header>Audi A8 D3 (2002-2009) - Kompresor / čerpadlo odpružení</Header>
-        <img src="/audi-a8-compressor.jpg" alt="auto-dily-motor" className="" />
+       
         <Description>Cena: 20990 Kč</Description>
         <Description>
           Nový, výrobce WABCO (výrobce pro první montáž OEM) – bezproblémová montáž<br />

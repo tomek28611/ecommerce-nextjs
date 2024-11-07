@@ -94,7 +94,7 @@ const AudiQ8Repair = () => {
 
         <hr />
         <Header>Audi Q8 - Kompresor / čerpadlo / pumpa odpružení</Header>
-        <img src="/Audi-Q8-compressor.jpg" alt="auto-dily-motor" className="" />
+      
         <Description>Cena: 28490 Kč</Description>
         <Description>
           Nový, výrobce WABCO – bezproblémová montáž<br />

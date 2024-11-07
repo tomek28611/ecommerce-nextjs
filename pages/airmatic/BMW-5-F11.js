@@ -19,7 +19,7 @@ const Description = styled.p`
   font-size: 1em;
   margin: 10px 0;
 `;
-
+ 
 const RepairOptions = styled.div`
   margin: 20px 0;
   font-weight: bold;
@@ -93,7 +93,7 @@ const BMW5F11Repair = () => {
 
       <hr />
       <Header>BMW 5 F11 (2010 – ) - Kompresor / Čerpadlo / Pumpa Odpružení</Header>
-      <img src="/BMW5F11-compressor.jpg" alt="auto-dily-motor" className="" />
+      
       <Description>Cena: 21490 Kč</Description>
       <Description>
         Nový, originální WABCO (výrobce pro OEM montáž) – bezproblémová montáž<br />
