@@ -126,11 +126,11 @@ export default function Buttons({ setMenuOpen }) {
       <Center>
         <Wrapper>
           <StyledNav>
-            <a href="/airmatic">
+           
           <NavLink bgImage="/miech.webp" onClick={() => handleNavigation('/airmatic')}>
               <Label>Regenerace vzduchových pérování</Label>
             </NavLink>
-            </a>
+          
             <NavLink bgImage="/motor.png" onClick={() => handleNavigation('/nahradni-dily/mercedes/motory')}>
               <Label>Motory</Label>
             </NavLink>
