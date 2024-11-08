@@ -370,7 +370,7 @@ text-align: end;
   
 }
 
-.footer-container{
+.footer-container {
   color: #324d67;
   text-align: center;
   margin-top: 20px;
@@ -379,15 +379,29 @@ text-align: end;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 20px; /* Zwiększony odstęp między sekcjami */
   justify-content: center;
-
 }
-.footer-container .icons{
+
+.footer-container .footer-links {
+  display: flex;
+  flex-wrap: wrap; /* Pozwoli na zawijanie linków w dwóch rzędach */
+  justify-content: center;
+  gap: 20px; /* Odstęp między linkami */
+}
+
+.footer-container .footer-links div {
+  flex-basis: 45%; /* Każdy link będzie zajmować 45% szerokości, co pozwoli na dwa rzędy */
+}
+
+.footer-container .icons {
   font-size: 30px;
   display: flex;
   gap: 10px;
+  justify-content: center;
+  margin-top: 20px; /* Odstęp od linków */
 }
+
 .models{
   position: absolute;
   width: 90px;
