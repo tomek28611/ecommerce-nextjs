@@ -248,125 +248,125 @@ export default function Header({ setMenuOpen }) {
         <ModalOverlay onClick={closeModal}>
           <ModelsOverlay onClick={(e) => e.stopPropagation()}>
             <CloseButton onClick={closeModal}>×</CloseButton>
-            <a href="/nahradni-dily/mercedes/A-Trida">
+            <Link href="/nahradni-dily/mercedes/A-Trida">
               <ModelItem bgImage="a.webp">
                 <Label>
                   Mercedes-Benz třídy A
                 </Label>
               </ModelItem>
-            </a>
+            </Link>
 
-            <a href="/nahradni-dily/mercedes/B-Trida">
+            <Link href="/nahradni-dily/mercedes/B-Trida">
               <ModelItem bgImage="b.webp">
                 <Label>
                   Mercedes-Benz třídy B
                 </Label>
               </ModelItem>
-            </a>
+            </Link>
 
-            <a href="/nahradni-dily/mercedes/C-Trida">
+            <Link href="/nahradni-dily/mercedes/C-Trida">
               <ModelItem bgImage="c.webp">
                 <Label>
                   Mercedes-Benz třídy C
                 </Label>
               </ModelItem>
-            </a>
+            </Link>
 
-            <a href="/nahradni-dily/mercedes/CLA-Trida">
+            <Link href="/nahradni-dily/mercedes/CLA-Trida">
               <ModelItem bgImage="cla.webp">
                 <Label>
                   Mercedes-Benz třídy CLA
                 </Label>
               </ModelItem>
-            </a>
+            </Link>
 
-            <a href="/nahradni-dily/mercedes/CLS-Trida">
+            <Link href="/nahradni-dily/mercedes/CLS-Trida">
               <ModelItem bgImage="cls.webp">
                 <Label>
                   Mercedes-Benz třídy CLS
                 </Label>
               </ModelItem>
-            </a>
+            </Link>
 
-            <a href="/nahradni-dily/mercedes/E-Trida">
+            <Link href="/nahradni-dily/mercedes/E-Trida">
               <ModelItem bgImage="e.webp">
                 <Label>
                   Mercedes-Benz třídy E
                 </Label>
               </ModelItem>
-            </a>
+            </Link>
 
-            <a href="/nahradni-dily/mercedes/G-Trida">
+            <Link href="/nahradni-dily/mercedes/G-Trida">
               <ModelItem bgImage="g.webp">
                 <Label>
                   Mercedes-Benz třídy G
                 </Label>
               </ModelItem>
-            </a>
+            </Link>
 
-            <a href="/nahradni-dily/mercedes/GLA-Trida">
+            <Link href="/nahradni-dily/mercedes/GLA-Trida">
               <ModelItem bgImage="gla.webp">
                 <Label>
                   Mercedes-Benz třídy GLA
                 </Label>
               </ModelItem>
-            </a>
+            </Link>
 
-            <a href="/nahradni-dily/mercedes/GLB-Trida">
+            <Link href="/nahradni-dily/mercedes/GLB-Trida">
               <ModelItem bgImage="glb.webp">
                 <Label>
                   Mercedes-Benz třídy GLB
                 </Label>
               </ModelItem>
-            </a>
+            </Link>
 
-            <a href="/nahradni-dily/mercedes/GLC-Trida">
+            <Link href="/nahradni-dily/mercedes/GLC-Trida">
               <ModelItem bgImage="glc.webp">
                 <Label>
                   Mercedes-Benz třídy GLC
                 </Label>
               </ModelItem>
-            </a>
+            </Link>
 
-            <a href="/nahradni-dily/mercedes/GLE-(ML)-Trida">
+            <Link href="/nahradni-dily/mercedes/GLE-(ML)-Trida">
               <ModelItem bgImage="gle.webp">
                 <Label>
                   Mercedes-Benz třídy GLE
                 </Label>
               </ModelItem>
-            </a>
+            </Link>
 
-            <a href="/nahradni-dily/mercedes/GLK-Trida">
+            <Link href="/nahradni-dily/mercedes/GLK-Trida">
               <ModelItem bgImage="glk.webp">
                 <Label>
                   Mercedes-Benz třídy GLK
                 </Label>
               </ModelItem>
-            </a>
+            </Link>
 
-            <a href="/nahradni-dily/mercedes/GLS-Trida">
+            <Link href="/nahradni-dily/mercedes/GLS-Trida">
               <ModelItem bgImage="gls.webp">
                 <Label>
                   Mercedes-Benz třídy GLS
                 </Label>
               </ModelItem>
-            </a>
+            </Link>
 
-            <a href="/nahradni-dily/mercedes/S-Trida">
+            <Link href="/nahradni-dily/mercedes/S-Trida">
               <ModelItem bgImage="s.webp">
                 <Label>
                   Mercedes-Benz třídy S
                 </Label>
               </ModelItem>
-            </a>
+            </Link>
 
-            <a href="/nahradni-dily/mercedes/SL-Trida">
+            <Link href="/nahradni-dily/mercedes/SL-Trida">
               <ModelItem bgImage="sl.webp">
                 <Label>
                   Mercedes-Benz třídy SL
                 </Label>
               </ModelItem>
-            </a>
+            </Link>
 
           </ModelsOverlay>
         </ModalOverlay>
