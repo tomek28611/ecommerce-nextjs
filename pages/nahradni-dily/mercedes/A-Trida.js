@@ -61,6 +61,7 @@ const seoTextContent = `
 export default function ProductsPage({ products }) {
   return (
     <>
+  
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <title>Auto Dily Express | Náhradní díly pro Mercedes A třídy</title>

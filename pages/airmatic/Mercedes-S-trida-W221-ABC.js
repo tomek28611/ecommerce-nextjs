@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Header1 from '@/components/Header';
 import Head from "next/head";
 
-const Container = styled.div`
+const Container = styled.div` 
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;

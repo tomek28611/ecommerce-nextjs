@@ -388,6 +388,24 @@ text-align: end;
   display: flex;
   gap: 10px;
 }
+.models{
+  position: absolute;
+  width: 90px;
+  height: 60px;
+  top: 18px;
+
+}
+.model_img {
+  width: 60px;
+ 
+}
+
+@media (max-width: 768px) {
+  .models {
+    display: none;
+  }
+}
+
  .cart-heading{
   display: flex;
   align-items: center;

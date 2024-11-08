@@ -9,6 +9,8 @@ import Table from "@/components/Table";
 import Input from "@/components/Input";
 import Spinner from "@/components/Spinner"; 
 import Footer from "@/components/Footer";
+import Head from "next/head";
+
 
 const ColumnsWrapper = styled.div`
   display: grid;
@@ -146,6 +148,31 @@ export default function CartPage() {
   if (isSuccess) {
     return (
       <>
+        <Head>
+        <link rel="icon" href="/favicon.ico" />
+        <title>Auto Dily Express | Nákupní košík | úspěch </title>
+        <meta
+          name="description"
+          content="Repasované měchy a tlumiče pro Mercedes, BMW, Audi, Jaguar, Jeep, Lexus, Porsche a VW. Kvalita a spolehlivost za skvělé ceny!"
+        />
+        <meta name="keywords" content="Repasované Měchy,repasované měchy Mercedes,Měchy Mercedes, repasované měchy Audi, Měchy Audi,Repasované měchy BMW, Měchy BMW,vzduchové pérování Mercedes,Vzduchové pérování Audi,vzduchové pérování BMW"></meta>
+        <link rel="cannonical" href="https://autodilyexpress.cz/cart" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/auto-dily-logo.png" />
+        <meta property="og:locale" content="cs_CZ" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Nabízíme motorové díly, prvky karoserie, elektrické součástky a další. Rychlá dodávka" />
+        <meta property="og:image" content="/auto-dily-logo.png" />
+        <meta property="og:image:width" content="50" />
+        <meta property="og:image:height" content="50" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:description" content="Nabízíme motorové díly, prvky karoserie, elektrické součástky a další. Rychlá dodávka" />
+        <meta property="og:url" content="https://autodilyexpress.cz" />
+        <meta property="og:site_name" content="autodilyexpress.cz" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Nabízíme motorové díly, prvky karoserie, elektrické součástky a další. Rychlá dodávka" />
+        <meta name="twitter:description" content="Nabízíme motorové díly, prvky karoserie, elektrické součástky a další. Rychlá dodávka"></meta>
+
+      </Head>
         <Header />
         <Center>
           <ColumnsWrapper>
@@ -161,6 +188,31 @@ export default function CartPage() {
 
   return (
     <>
+     <Head>
+        <link rel="icon" href="/favicon.ico" />
+        <title>Auto Dily Express | Nákupní košík </title>
+        <meta
+          name="description"
+          content="Repasované měchy a tlumiče pro Mercedes, BMW, Audi, Jaguar, Jeep, Lexus, Porsche a VW. Kvalita a spolehlivost za skvělé ceny!"
+        />
+        <meta name="keywords" content="Repasované Měchy,repasované měchy Mercedes,Měchy Mercedes, repasované měchy Audi, Měchy Audi,Repasované měchy BMW, Měchy BMW,vzduchové pérování Mercedes,Vzduchové pérování Audi,vzduchové pérování BMW"></meta>
+        <link rel="cannonical" href="https://autodilyexpress.cz/cart" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/auto-dily-logo.png" />
+        <meta property="og:locale" content="cs_CZ" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Nabízíme motorové díly, prvky karoserie, elektrické součástky a další. Rychlá dodávka" />
+        <meta property="og:image" content="/auto-dily-logo.png" />
+        <meta property="og:image:width" content="50" />
+        <meta property="og:image:height" content="50" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:description" content="Nabízíme motorové díly, prvky karoserie, elektrické součástky a další. Rychlá dodávka" />
+        <meta property="og:url" content="https://autodilyexpress.cz" />
+        <meta property="og:site_name" content="autodilyexpress.cz" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Nabízíme motorové díly, prvky karoserie, elektrické součástky a další. Rychlá dodávka" />
+        <meta name="twitter:description" content="Nabízíme motorové díly, prvky karoserie, elektrické součástky a další. Rychlá dodávka"></meta>
+
+      </Head>
       <Header />
       <Center>
         <ColumnsWrapper>

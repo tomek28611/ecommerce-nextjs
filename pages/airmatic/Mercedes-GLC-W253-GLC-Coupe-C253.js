@@ -116,7 +116,7 @@ const MercedesGLCRepair = () => {
 
       <hr />
       <Header>Mercedes GLC W253 / C253 (2015- 202x) - Kompresor / čerpadlo / pumpa odpružení</Header>
-      <img src="/W205-kompresor.jpg" alt="auto-dily-motor" className="" />
+      <img src="/w205-kompresor.jpg" alt="auto-dily-motor" className="" />
       <Description>Cena: 20990 Kč</Description>
       <Description>
         Nový, výrobce WABCO (výrobce pro první montáž OEM) – bezproblémová montáž<br />

@@ -126,7 +126,7 @@ const PartInfo = () => {
                 <Section>
                     <Subtitle>Kompresor / pumpa / vzduchová pumpa zavěšení</Subtitle>
                     <Description>Mercedes E-třída W205</Description>
-                    <img src="/W205-kompresor.jpg" alt="auto-dily-motor" className="" />
+                    <img src="/w205-kompresor.jpg" alt="auto-dily-motor" className="" />
                     <Price>Cena: 20 000 Kč</Price>
                     <Description>
                         Nový, výrobce WABCO (výrobce pro první montáž OEM) – bezproblémová montáž
