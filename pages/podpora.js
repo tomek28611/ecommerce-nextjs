@@ -99,6 +99,8 @@ export default function Podpora() {
           <p>Pokud se chcete zeptat na autodíl, můžete zavolat:</p>
           <p><strong>728 445 566</strong> nebo<strong> 606 400 968</strong></p>
           <p>nebo </p>
+          <p><srong>bednarikautodilyexpress@seznam.cz</srong></p>
+          <p>nebo </p>
           <p>vyplňte formulář, odpovíme vám co nejdříve</p>
         </div>
         {success && <p className={styles.success}>Zpráva byla odeslána!</p>}
