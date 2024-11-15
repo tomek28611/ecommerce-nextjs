@@ -150,9 +150,7 @@ export default function Buttons({ setMenuOpen }) {
               <Label>Interiér</Label>
             </NavLink>
             
-            {/* <NavLink bgImage="/najit.jpg" onClick={handleScrollToNewProducts}>
-              <Label>Najít podle modelu</Label>
-            </NavLink> */}
+       
             <Margin />
             <Label onClick={handleScrollToNewProducts}>
                         Můžete také najít podle modelu

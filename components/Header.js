@@ -248,7 +248,8 @@ export default function Header({ setMenuOpen }) {
         <ModalOverlay onClick={closeModal}>
           <ModelsOverlay onClick={(e) => e.stopPropagation()}>
             <CloseButton onClick={closeModal}>×</CloseButton>
-            <Link href="/nahradni-dily/mercedes/A-Trida">
+       
+            <Link href="/nahradni-dily/mercedes/A-Trida" >
               <ModelItem bgImage="a.webp">
                 <Label>
                   Mercedes-Benz třídy A

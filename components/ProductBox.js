@@ -76,7 +76,7 @@ export default function ProductBox({_id,title,description,price,images}) {
   const {addProduct} = useContext(CartContext);
   const url = '/nahradni-dily/'+_id;
   return (
-
+ 
     <div>
     <Link href={url}>
         <div className="product-card">

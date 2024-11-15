@@ -101,7 +101,7 @@ export default async function handler(req, res) {
       // Send email to admin
       await transporter.sendMail({
         from: `"🚗 AUTO-DILY zpráva od klienta : ${req.body.name}" <autodilyobchod@gmail.com>`,
-        to: 'tomek28611@gmail.com, autodilykr@gmail.com, 728445566@seznam.cz',
+        to: 'tomek28611@gmail.com, autodilykr@gmail.com, bednarikautodilyexpress@seznam.cz',
         subject: `Nový dotaz od zákazníka na díl: ${req.body.title}`,
         html: `
           <div style="font-family: Arial, sans-serif; background-color: #f7f7f7; padding: 20px; border-radius: 18px;">

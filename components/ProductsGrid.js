@@ -104,7 +104,7 @@ export default function ProductsGrid({ products }) {
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
       />
-
+ 
       {isLoading ? ( 
         <Spinner />
       ) : (
